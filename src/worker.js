@@ -23,6 +23,7 @@ export default {
       } else response=await env.ASSETS.fetch(request);
     }
     const headers=new Headers(response.headers);
+    if (/^\/prompts\/[a-zA-Z0-9-]+\/(index\.md)?$/.test(url.pathname)) headers.set('vary','Accept');
     headers.set('x-content-type-options','nosniff');
     headers.set('referrer-policy','strict-origin-when-cross-origin');
     headers.set('x-frame-options','DENY');

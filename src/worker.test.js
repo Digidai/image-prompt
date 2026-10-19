@@ -32,6 +32,6 @@ test('Worker enforces canonical host, read-only methods, HEAD and CORS',async()=
 });
 test('Markdown negotiation and filter URLs preserve cache/index boundaries',async()=>{
  let seen='';const env={ASSETS:{fetch:async req=>{seen=req.url;return new Response('body',{headers:{'content-type':seen.endsWith('.md')?'text/markdown':'text/html'}});}}};
- const md=await worker.fetch(new Request(origin+'/prompts/gpt4o-097/',{headers:{accept:'text/markdown'}}),env);assert(seen.endsWith('/index.md'));assert.equal(md.headers.get('x-robots-tag'),'noindex, follow');
+ const md=await worker.fetch(new Request(origin+'/prompts/gpt4o-097/',{headers:{accept:'text/markdown'}}),env);assert(seen.endsWith('/index.md'));assert.equal(md.headers.get('x-robots-tag'),'noindex, follow');assert.equal(md.headers.get('vary'),'Accept');
  const html=await worker.fetch(new Request(origin+'/?category=product'),env);assert.equal(html.headers.get('x-robots-tag'),'noindex, follow');assert(html.headers.get('content-security-policy').includes("script-src 'self'"));
 });
