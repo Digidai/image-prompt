@@ -1,0 +1,99 @@
+{
+  "checkedAt": "2026-10-19T16:46:40.435634+00:00",
+  "sourceCommit": "b6adcfc5250c402105d069116a8725b36f723ba3",
+  "canonicalOrigin": "https://prompt.genedai.me",
+  "contentSnapshot": "2026-10-19",
+  "staticValidation": {
+    "canonicalPages": 516,
+    "cases": 474,
+    "categories": 22,
+    "markdownAlternates": 474,
+    "jsonLdBlocks": 1540,
+    "internalLinksChecked": 20078,
+    "homeHtmlKiB": 59,
+    "result": "passed"
+  },
+  "apiTests": {
+    "passed": 6,
+    "failed": 0,
+    "covers": [
+      "pagination without duplication",
+      "intersecting search filters",
+      "Chinese search",
+      "input rejection",
+      "provenance",
+      "categories and details",
+      "canonical redirect",
+      "HEAD",
+      "CORS",
+      "read-only methods",
+      "Markdown and Vary: Accept"
+    ]
+  },
+  "browser": {
+    "local": "passed",
+    "production": "passed",
+    "productionViewports": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "horizontalOverflow": false,
+    "gptFamilyFilterCount": 144,
+    "features": [
+      "search and empty state",
+      "reset",
+      "local favorites",
+      "detail dialog",
+      "Escape",
+      "rewrite workbench",
+      "list/grid",
+      "load more",
+      "full static prompt",
+      "no-JavaScript home, category and detail"
+    ],
+    "platformCspNote": "Application module works. Strict CSP blocks optional Cloudflare-injected analytics beacon and inline challenge JavaScript; these create browser console policy messages."
+  },
+  "liveSmoke": {
+    "passed": 24,
+    "includes": [
+      "canonical metadata",
+      "HTTPS",
+      "JSON and Markdown",
+      "OpenAPI",
+      "manifest",
+      "robots and sitemap",
+      "social card",
+      "404",
+      "invalid API input",
+      "405"
+    ],
+    "userAgentAccessChecks": {
+      "Googlebot": 200,
+      "bingbot": 200,
+      "GPTBot": 200,
+      "OAI-SearchBot": 200,
+      "ChatGPT-User": 200,
+      "Claude-SearchBot": 200,
+      "PerplexityBot": 200
+    },
+    "userAgentChecksAreNot": "Proof of an independent crawler visit or AI citation"
+  },
+  "ci": {
+    "validate": "https://github.com/Digidai/image-prompt/actions/runs/39288070566",
+    "validateStatus": "success",
+    "deploy": "https://github.com/Digidai/image-prompt/actions/runs/39288070563",
+    "deployStatus": "success",
+    "liveCommitMatches": true,
+    "previousCredentialRecoveryDeployment": "https://github.com/Digidai/image-prompt/actions/runs/39287863370"
+  },
+  "searchEvidence": "search-submissions.json",
+  "sourceFileSha256": "1d21d434c78ad730b9b7fb9a52c8d87ab19db7dc60fb76989ed1b7498397196b",
+  "repositorySecurity": {
+    "dependabotSecurityUpdates": true,
+    "secretScanning": true,
+    "secretScanningPushProtection": true,
+    "privateVulnerabilityReporting": true
+  }
+}

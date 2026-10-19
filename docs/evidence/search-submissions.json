@@ -1,0 +1,59 @@
+[
+  {
+    "at": "2026-10-19T16:37:31.155Z",
+    "provider": "IndexNow",
+    "endpoint": "https://api.indexnow.org/indexnow",
+    "httpStatus": 403,
+    "urlCount": 516,
+    "status": "failed",
+    "message": "{\"errorCode\":\"SiteVerificationNotCompleted\",\"message\":\"Site Verification is not completed. Please wait for some time for the verification to complete and try again.\",\"details\":null}",
+    "notEvidenceOf": "crawl, indexation, rank, traffic or AI citation"
+  },
+  {
+    "at": "2026-10-19T16:38:30.006918+00:00",
+    "provider": "Google Search Console",
+    "kind": "sitemap",
+    "property": "sc-domain:genedai.me",
+    "url": "https://prompt.genedai.me/sitemap.xml",
+    "status": "processed_successfully",
+    "discoveredPages": 516,
+    "evidence": "Authenticated UI: Sitemap processed successfully; discovered pages 516; last read 10/20/26",
+    "notEvidenceOf": "Individual page indexation, ranking, traffic or AI citation"
+  },
+  {
+    "at": "2026-10-19T16:38:50.096898+00:00",
+    "provider": "Google Search Console",
+    "kind": "url_indexing_request",
+    "property": "sc-domain:genedai.me",
+    "url": "https://prompt.genedai.me/",
+    "status": "quota_exceeded",
+    "inspectionBefore": "URL is not on Google; URL is unknown to Google",
+    "notEvidenceOf": "Actual indexation, ranking, traffic or AI citation",
+    "completedAt": "2026-10-19T16:39:40.815904+00:00",
+    "evidence": "Authenticated UI: Quota Exceeded; daily quota exceeded; request was not processed.",
+    "retryRule": "Do not retry the same day. Sitemap submission is separately processed successfully."
+  },
+  {
+    "at": "2026-10-19T16:39:40.815904+00:00",
+    "provider": "Bing Webmaster Tools",
+    "kind": "site_verification_and_sitemap",
+    "site": "https://prompt.genedai.me/",
+    "url": "https://prompt.genedai.me/sitemap.xml",
+    "status": "processed_successfully",
+    "verification": "HTML msvalidate.01 verified; site selectable in authenticated account",
+    "evidence": "Authenticated UI: Success; URLs discovered 516; errors 0; warnings 0",
+    "notEvidenceOf": "Actual page indexation, rankings, traffic or AI citations",
+    "checkedAt": "2026-10-19T16:42:48.153067+00:00",
+    "discoveredPages": 516
+  },
+  {
+    "at": "2026-10-19T16:39:43.626Z",
+    "provider": "IndexNow",
+    "endpoint": "https://api.indexnow.org/indexnow",
+    "httpStatus": 200,
+    "urlCount": 516,
+    "status": "accepted",
+    "message": "",
+    "notEvidenceOf": "crawl, indexation, rank, traffic or AI citation"
+  }
+]
