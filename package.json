@@ -1,0 +1,19 @@
+{
+  "name": "image-prompt",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "An open, source-attributed atlas of image prompts with crawlable pages and a read-only agent API.",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "test": "node --test",
+    "dev": "npm run build && wrangler dev",
+    "deploy": "npm run build && npm run check && npm test && wrangler deploy",
+    "submit:indexnow": "node scripts/submit-indexnow.mjs",
+    "verify:live": "node scripts/verify-live.mjs"
+  },
+  "devDependencies": { "wrangler": "4.151.1" }
+}

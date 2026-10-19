@@ -1,0 +1,13 @@
+{
+  "sourceFilename": "Prompt_Atlas_2026-10-19.html",
+  "sha256": "1d21d434c78ad730b9b7fb9a52c8d87ab19db7dc60fb76989ed1b7498397196b",
+  "snapshotDate": "2026-10-19",
+  "cases": 474,
+  "categories": 22,
+  "changes": [
+    "Decoded embedded previews into content-hashed WebP assets",
+    "Extracted original CSS and JavaScript",
+    "Removed unverified current-model release claims; retained historical case labels",
+    "Kept attribution, original prompts, source URLs and licenses"
+  ]
+}

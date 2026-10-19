@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.wrangler/
+.dev.vars*
+.env*
+!.env.example
+.DS_Store
+coverage/
+test-results/
+playwright-report/
+docs/evidence/*.png
+docs/evidence/*.jsonl
+
+.playwright-cli/
+output/

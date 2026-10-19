@@ -1,0 +1,20 @@
+name: Case correction or contribution
+description: Report provenance, prompt, attribution, image or licensing issues; suggest an attributable case.
+body:
+  - type: input
+    id: case
+    attributes:
+      label: Case URL or ID
+  - type: textarea
+    id: source
+    attributes:
+      label: Original source and evidence
+      description: Include original post, author, full prompt, image provenance and license. Do not include private reference images.
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: Requested change
+    validations:
+      required: true
