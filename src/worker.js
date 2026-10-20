@@ -1,4 +1,6 @@
 import catalog from '../data/catalog.json' with { type: 'json' };
+import {catalogApi,meta} from './catalog-api.js';
+import {dynamicResponse} from './render-catalog.js';
 import { ORIGIN, apiResponse, cors, json } from './api.js';
 
 export default {
@@ -13,14 +15,15 @@ export default {
     if (url.pathname.startsWith('/api/')) {
       if (request.method === 'OPTIONS') return new Response(null,{status:204,headers:cors});
       if (!['GET','HEAD'].includes(request.method)) return json({error:'Read-only API. Use GET or HEAD.'},405,{allow:'GET, HEAD, OPTIONS'});
-      response=apiResponse(url);
+      try{response=env.CATALOG?await catalogApi(url,env):apiResponse(url);}catch{response=json({error:'Catalog temporarily unavailable. Please retry.'},503,{'retry-after':'30'});}
     } else {
       if (!['GET','HEAD'].includes(request.method)) return new Response('Method not allowed',{status:405,headers:{allow:'GET, HEAD'}});
+      if(env.CATALOG&&env.CONTENT){try{response=await dynamicResponse(request,env);}catch{response=new Response('Catalog temporarily unavailable',{status:503,headers:{'retry-after':'30'}});}}
       // Optional content negotiation complements permanent .md and JSON links.
-      if (request.headers.get('accept')?.includes('text/markdown') && /^\/prompts\/[a-zA-Z0-9-]+\/$/.test(url.pathname)) {
+      if (!response && request.headers.get('accept')?.includes('text/markdown') && /^\/prompts\/[a-zA-Z0-9-]+\/$/.test(url.pathname)) {
         url.pathname+='index.md';
         response=await env.ASSETS.fetch(new Request(url,request));
-      } else response=await env.ASSETS.fetch(request);
+      } else if(!response) response=await env.ASSETS.fetch(request);
     }
     const headers=new Headers(response.headers);
     if (/^\/prompts\/[a-zA-Z0-9-]+\/(index\.md)?$/.test(url.pathname)) headers.set('vary','Accept');
@@ -29,13 +32,14 @@ export default {
     headers.set('x-frame-options','DENY');
     headers.set('permissions-policy','camera=(), microphone=(), geolocation=(), payment=()');
     headers.set('strict-transport-security','max-age=31536000');
-    headers.set('x-content-snapshot',catalog.snapshotDate);
+    headers.set('x-content-snapshot',env.CATALOG?meta.snapshotDate:catalog.snapshotDate);
+    if(env.CATALOG)headers.set('x-content-release',meta.releaseId);
     if (headers.get('content-type')?.includes('text/html')) {
-      headers.set('content-security-policy',"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'");
+      headers.set('content-security-policy',"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; media-src 'self' https:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'");
       headers.append('link',`<${ORIGIN}/llms.txt>; rel="describedby"; type="text/plain"`);
       // Filter/sort URLs are useful to humans but do not create new index targets.
       if (url.search) headers.set('x-robots-tag','noindex, follow');
-    } else if (/\.(json|md)$/.test(url.pathname) || url.pathname.startsWith('/api/')) {
+    } else if (/\.(json|md)$/.test(url.pathname) || url.pathname.startsWith('/api/') || url.pathname.startsWith('/llms')) {
       headers.set('x-robots-tag','noindex, follow');
     }
     if (/\.[a-f0-9]{12}\./.test(url.pathname) || /-[a-f0-9]{12}\.webp$/.test(url.pathname)) headers.set('cache-control','public, max-age=31536000, immutable');

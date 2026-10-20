@@ -6,7 +6,7 @@ export const cors = {
   'access-control-allow-origin': '*',
   'access-control-allow-methods': 'GET, HEAD, OPTIONS',
   'access-control-allow-headers': 'Accept, If-None-Match',
-  'access-control-expose-headers': 'ETag, Link, X-Content-Snapshot',
+  'access-control-expose-headers': 'ETag, Link, X-Content-Snapshot, X-Content-Release',
 };
 const publicCase = c => ({ ...c, preview: ORIGIN + c.preview, markdownUrl: `${c.url}index.md` });
 export function json(value, status = 200, extra = {}) {

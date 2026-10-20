@@ -1,12 +1,17 @@
 import assert from 'node:assert/strict';
+import meta from '../src/catalog-meta.json' with {type:'json'};
 const origin=process.env.SITE_ORIGIN||'https://prompt.genedai.me';
-const paths=['/','/prompts/','/categories/','/categories/product/','/guide/','/sources/','/about/','/agents/','/sitemap.xml','/robots.txt','/llms.txt','/llms-full.txt','/openapi.json','/.well-known/agent.json','/data/catalog.json','/build-info.json','/og.png'];
+const paths=['/','/prompts/','/prompts/page/14/','/categories/','/categories/product/','/categories/opennana/','/categories/opennana/page/2/','/guide/','/sources/','/sources/opennana/','/about/','/agents/','/sitemap.xml','/robots.txt','/llms.txt','/openapi.json','/.well-known/agent.json','/data/site.json','/data/catalog-manifest.json','/build-info.json','/og.png'];
 let count=0;
-for(const path of paths){const r=await fetch(origin+path);assert.equal(r.status,200,path);assert(r.headers.get('x-content-type-options')==='nosniff',path);if(path.endsWith('/')){const html=await r.text();assert(html.includes(`rel="canonical" href="https://prompt.genedai.me${path}"`),path);}count++;}
-const body=await (await fetch(origin+'/api/v1/prompts?category=product&limit=2')).json();assert(body.total>0);assert.equal(body.data.length,2);assert(body.next);
-const c=body.data[0];assert.equal((await fetch(c.url)).status,200);assert.equal((await fetch(c.markdownUrl)).status,200);
-const negotiated=await fetch(c.url,{headers:{accept:'text/markdown'}});assert(negotiated.headers.get('content-type').includes('text/markdown'));
-assert.equal((await fetch(origin+'/not-a-real-page-123456')).status,404);
-assert.equal((await fetch(origin+'/api/v1/prompts?limit=101')).status,400);
-assert.equal((await fetch(origin+'/api/v1/prompts',{method:'POST'})).status,405);
-console.log(`Passed ${count+7} live page, API, Markdown, error and security checks on ${origin}.`);
+for(const path of paths){const r=await fetch(origin+path);assert.equal(r.status,200,path);assert.equal(r.headers.get('x-content-type-options'),'nosniff',path);if(path.endsWith('/')){const html=await r.text();assert(html.includes(`rel="canonical" href="https://prompt.genedai.me${path}"`),path);assert.equal((html.match(/<h1\b/g)||[]).length,1,path);}else await r.body?.cancel();count++;}
+const ready=await(await fetch(origin+'/api/v1/releases/'+meta.releaseId)).json();assert.equal(ready.status,'ready');assert.equal(ready.caseCount,meta.total);
+const all=await(await fetch(origin+'/api/v1/prompts?limit=1')).json();assert.equal(all.total,meta.total);assert.equal(all.releaseId,meta.releaseId);
+const body=await(await fetch(origin+'/api/v1/prompts?category=opennana&limit=2')).json();assert.equal(body.total,meta.opennana.imported);assert.equal(body.data.length,2);assert(body.next);
+for(const c of body.data){assert(c.sourceAccess==='free'&&c.sourceUrl.startsWith('https://')&&c.author);assert.equal(c.requiresReference,null);const html=await(await fetch(origin+'/prompts/'+c.id+'/')).text();assert(html.includes(c.author)&&html.includes(c.sourceUrl)&&html.includes('id="full-prompt"'));const md=await fetch(origin+'/prompts/'+c.id+'/index.md');assert.equal(md.status,200);assert((await md.text()).includes(c.prompt));}
+const c=body.data[0],negotiated=await fetch(origin+'/prompts/'+c.id+'/',{headers:{accept:'text/markdown'}});assert(negotiated.headers.get('content-type').includes('text/markdown'));await negotiated.body.cancel();
+const zh=await(await fetch(origin+'/api/v1/prompts?collection=opennana&q='+encodeURIComponent('拼贴')+'&limit=2')).json();assert(zh.total>0);assert(zh.data.every(c=>c.collectionKey==='opennana'));
+for(const path of ['/not-a-real-page-123456','/prompts/opennana-18345/','/api/v1/prompts/opennana-18345','/categories/opennana/page/9999/'])assert.equal((await fetch(origin+path)).status,404,path);
+assert.equal((await fetch(origin+'/api/v1/prompts?limit=101')).status,400);assert.equal((await fetch(origin+'/api/v1/prompts',{method:'POST'})).status,405);
+const redirect=await fetch(origin+'/prompts/'+c.id,{redirect:'manual'});assert.equal(redirect.status,308);
+for(const path of ['/data/catalog.json','/llms-full.txt']){const r=await fetch(origin+path);assert.equal(r.status,200);const reader=r.body.getReader(),first=await reader.read();assert(first.value.length>0);await reader.cancel();}
+console.log(`Passed ${count+15} live page, full prompt, source scope, Chinese search, pagination, streaming export and security checks on ${origin}. Dataset ${meta.releaseId}, ${meta.total} cases.`);

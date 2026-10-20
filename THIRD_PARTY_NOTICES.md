@@ -17,3 +17,13 @@ Source prompts are preserved. Where an upstream template provides default variab
 Historical engagement and repository Stars are source-snapshot records, not current measurements, satisfaction scores or generation success rates. Repository license statements do not independently establish commercial rights to every depicted person, trademark, character or third-party work. Follow the individual source and any exception notice when reusing content. Keep attribution, link the source license and identify modifications.
 
 For a correction, attribution request or rights-holder removal request, [open an issue](https://github.com/Digidai/image-prompt/issues). Include the relevant case ID, source and requested correction; do not upload private reference photos.
+
+## OpenNana expansion (2026-10-20)
+
+Source: https://opennana.com/awesome-prompt-gallery
+
+The project maintainer confirmed full redistribution authorization and subsequently limited the import to free, unlocked full prompts with attributed public original-source URLs. Paid entries and records lacking public original-source citations or full prompt text are excluded. The import does not unlock or bypass source restrictions. See `data/opennana/manifest.json` for counts and SHA-256 digests, and `reconciliation.json` for duplicates and exclusions.
+
+Original creators retain rights to prompts, images, translations and other media. This import does **not** relicense OpenNana material under the MIT code license or under the CC BY declarations of the original three datasets. Each record preserves the author, original source URL, OpenNana item, source model label, available prompt language variants and media source URLs. Attribution, correction and removal requests can be filed through GitHub Issues.
+
+Source-provided original-post links are public citations, not independent verification of authorship, present link accessibility or generation results. OpenNana entry dates are not original-post publication dates. OpenNana page metrics are not original-post engagement. Unknown reference-image requirements remain unknown. Source images/previews are hosted by the original media provider and may become unavailable.

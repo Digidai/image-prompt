@@ -21,6 +21,7 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build && npm run check && npm test
+      - run: node scripts/check-release-ready.mjs
       - name: Deploy with scoped Cloudflare token
         run: npx wrangler deploy
         env:

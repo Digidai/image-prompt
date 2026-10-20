@@ -13,3 +13,4 @@ docs/evidence/*.jsonl
 
 .playwright-cli/
 output/
+.cache/
