@@ -1,0 +1,67 @@
+{
+  "at": "2026-10-20T09:49:37.462992+00:00",
+  "commit": "aa426b9092f99cc1278a1a9ad6595e7915568295",
+  "workerVersion": "2761570b-e3ab-4a1b-91b6-3d3464583c6d",
+  "datasetReleaseId": "465e0259274b1b15",
+  "interfaceLanguages": [
+    "zh-CN",
+    "en"
+  ],
+  "cases": 17892,
+  "canonicalHtmlUrls": 37804,
+  "staticHtmlPages": 1034,
+  "tests": 15,
+  "productionChecks": 49,
+  "ci": {
+    "validate": {
+      "id": 39402915514,
+      "conclusion": "success"
+    },
+    "deploy": {
+      "id": 39402915459,
+      "conclusion": "success"
+    }
+  },
+  "browser": {
+    "bothLanguages": true,
+    "promptPreserved": true,
+    "workbenchPreserved": true,
+    "filtersRestored": true,
+    "favoritesPreserved": true,
+    "languageRemembered": true,
+    "noOverflowAt": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "applicationPageErrors": 0,
+    "platformNote": "Optional Cloudflare script CSP policy messages remain blocked by the strict policy."
+  },
+  "localized404": {
+    "status": 404,
+    "englishHtmlBody": true,
+    "locationHeader": null
+  },
+  "indexnow": {
+    "newEnglishUrlsAccepted": 18902,
+    "batchCounts": [
+      10000,
+      8902
+    ],
+    "httpStatuses": [
+      200,
+      200
+    ],
+    "totalCanonicalCoverage": 37804,
+    "pendingNewUrls": 0
+  },
+  "sourceLanguagePolicy": "Source titles, creator names and literal prompt text retain their original language. API/download records remain language-neutral.",
+  "notEvidenceOf": "Google/Bing actual indexing, ranking, traffic or AI citation",
+  "homepageMonitor": {
+    "id": "image-prompt",
+    "status": "ACTIVE",
+    "startsAt": "2026-10-21T10:00:00+08:00",
+    "notify": "Meaningful result or required action; quiet on unchanged waiting state"
+  }
+}

@@ -2,12 +2,13 @@
 
 Launch date: **2026-10-20, Asia/Shanghai**. Public site: **https://prompt.genedai.me/**. Public repository: **https://github.com/Digidai/image-prompt**.
 
-## Chinese and English interface — validated locally, release in progress
+## Chinese and English interface — published and verified
 
 - Added Chinese/default and English `/en/` HTML routes, a persistent language switch, reciprocal hreflang and self-canonicals. Both languages appear in the XML sitemap: **37,804 canonical HTML URLs**, with 1,034 static pages and language variants of dynamic directories/details.
 - Localized navigation, category labels, filters, dynamic counts, messages, modal/workbench controls, accessibility labels, guide, rights/sources and agent documentation. Original source titles, author names and prompt text keep their original language; API/download records stay language-neutral.
+- The initial English 404 route was canonicalized by the hosting layer into an empty response; the final release uses an index route and verifies a localized body with a genuine 404 status. Narrow mobile actions wrap without horizontal overflow.
 - Switching preserves the current page, query filters and anchor. Local favorites keep the same IDs and storage key. Browser checks passed both directions, remembered language, filter restoration, favorite preservation and 390px layout. Literal prompts and workbench text remained unchanged.
-- Fourteen tests passed. Local serving checks passed **49** page/API/source/locale/Markdown/error checks. Source data release remains `465e0259274b1b15`; the catalog was not reimported for an interface change. Production and new English IndexNow receipts follow after deployment.
+- Fifteen tests passed. **49 production checks** passed for pages, API, sources, locales, Markdown and errors. Desktop/mobile browser checks passed at 320, 390, 768 and 1440 px with zero application page errors. Source data release remains `465e0259274b1b15`; the catalog was not reimported for an interface change. Production source commit `aa426b9092f99cc1278a1a9ad6595e7915568295` matches live build-info. [Validate](https://github.com/Digidai/image-prompt/actions/runs/39402915514) and [Deploy](https://github.com/Digidai/image-prompt/actions/runs/39402915459) succeeded. IndexNow accepted **18,902 new English URLs** in batches of 10,000 and 8,902; all 37,804 canonical URLs now have acceptance receipts. These are not actual indexation proof.
 
 ## OpenNana expansion — published and verified
 
