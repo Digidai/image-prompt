@@ -35,13 +35,13 @@ for(const address of urls){
  for(const match of html.matchAll(/(?:href|src)="(\/[^"#?]*)(?:[?#][^"]*)?"/g)){
   const href=match[1];if(href.startsWith('//')||href.startsWith('/api/'))continue;
   const file=path.join(dist,href.endsWith('/')?href+'index.html':href);
-  await fs.access(file).catch(()=>{if(!allUrls.includes('https://prompt.genedai.me'+href))throw new Error(`Broken link ${pathname} -> ${href}`)});linkCount++;
+  await fs.access(file).catch(()=>{if(!allUrls.includes('https://prompt.genedai.me'+href)&&!href.match(/^\/en\/prompts\/[^/]+\/index\.md$/))throw new Error(`Broken link ${pathname} -> ${href}`)});linkCount++;
  }
 }
 const api=JSON.parse(await fs.readFile(path.join(dist,'openapi.json'),'utf8'));assert.equal(api.openapi,'3.1.0');
 assert.equal(api.paths['/api/v1/prompts'].get.parameters.find(p=>p.name==='limit').schema.maximum,100);
 const home=await fs.readFile(path.join(dist,'index.html'),'utf8');assert(Buffer.byteLength(home)<180000,'Homepage HTML too large');
-assert.equal((sitemap.match(/<image:image>/g)||[]).length,meta.total,'Image sitemap incomplete');
+assert.equal((sitemap.match(/<image:image>/g)||[]).length,meta.total*2,'Image sitemap incomplete');
 assert.equal(new Set(allUrls).size,allUrls.length,'Duplicate canonical URLs');
 assert.equal(expansion.freeCount,expansion.imported+expansion.duplicates+expansion.excluded+expansion.missing,'Source reconciliation mismatch');
 const assets=JSON.parse(await fs.readFile(path.join(dist,'asset-manifest.json'),'utf8'));

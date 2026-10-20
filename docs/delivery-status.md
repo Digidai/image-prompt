@@ -2,6 +2,13 @@
 
 Launch date: **2026-10-20, Asia/Shanghai**. Public site: **https://prompt.genedai.me/**. Public repository: **https://github.com/Digidai/image-prompt**.
 
+## Chinese and English interface — validated locally, release in progress
+
+- Added Chinese/default and English `/en/` HTML routes, a persistent language switch, reciprocal hreflang and self-canonicals. Both languages appear in the XML sitemap: **37,804 canonical HTML URLs**, with 1,034 static pages and language variants of dynamic directories/details.
+- Localized navigation, category labels, filters, dynamic counts, messages, modal/workbench controls, accessibility labels, guide, rights/sources and agent documentation. Original source titles, author names and prompt text keep their original language; API/download records stay language-neutral.
+- Switching preserves the current page, query filters and anchor. Local favorites keep the same IDs and storage key. Browser checks passed both directions, remembered language, filter restoration, favorite preservation and 390px layout. Literal prompts and workbench text remained unchanged.
+- Fourteen tests passed. Local serving checks passed **49** page/API/source/locale/Markdown/error checks. Source data release remains `465e0259274b1b15`; the catalog was not reimported for an interface change. Production and new English IndexNow receipts follow after deployment.
+
 ## OpenNana expansion — published and verified
 
 - Authorization: maintainer confirmed redistribution permission, then limited scope to free full prompts with public original-source citations. Paid content and non-public/missing-source entries are excluded.

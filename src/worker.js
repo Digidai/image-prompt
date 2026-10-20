@@ -1,11 +1,12 @@
 import catalog from '../data/catalog.json' with { type: 'json' };
 import {catalogApi,meta} from './catalog-api.js';
 import {dynamicResponse} from './render-catalog.js';
+import {language,stripLocale} from './i18n.js';
 import { ORIGIN, apiResponse, cors, json } from './api.js';
 
 export default {
   async fetch(request, env) {
-    const url = new URL(request.url);
+    const url = new URL(request.url),locale=language(url.pathname),normalized=new URL(url);normalized.pathname=stripLocale(url.pathname);
     // Keep preview and workers.dev hosts out of the canonical search index.
     if (!['localhost','127.0.0.1','prompt.genedai.me'].includes(url.hostname)) {
       url.protocol='https:';url.hostname='prompt.genedai.me';url.port='';
@@ -18,15 +19,17 @@ export default {
       try{response=env.CATALOG?await catalogApi(url,env):apiResponse(url);}catch{response=json({error:'Catalog temporarily unavailable. Please retry.'},503,{'retry-after':'30'});}
     } else {
       if (!['GET','HEAD'].includes(request.method)) return new Response('Method not allowed',{status:405,headers:{allow:'GET, HEAD'}});
-      if(env.CATALOG&&env.CONTENT){try{response=await dynamicResponse(request,env);}catch{response=new Response('Catalog temporarily unavailable',{status:503,headers:{'retry-after':'30'}});}}
+      if(env.CATALOG&&env.CONTENT){try{response=await dynamicResponse(new Request(normalized,request),env,locale);}catch{response=new Response('Catalog temporarily unavailable',{status:503,headers:{'retry-after':'30'}});}}
       // Optional content negotiation complements permanent .md and JSON links.
-      if (!response && request.headers.get('accept')?.includes('text/markdown') && /^\/prompts\/[a-zA-Z0-9-]+\/$/.test(url.pathname)) {
-        url.pathname+='index.md';
-        response=await env.ASSETS.fetch(new Request(url,request));
+      if(!response&&locale==='en'&&normalized.pathname.endsWith('/index.md'))response=await env.ASSETS.fetch(new Request(normalized,request));
+      if (!response && request.headers.get('accept')?.includes('text/markdown') && /^\/prompts\/[a-zA-Z0-9-]+\/$/.test(normalized.pathname)) {
+        normalized.pathname+='index.md';
+        response=await env.ASSETS.fetch(new Request(normalized,request));
       } else if(!response) response=await env.ASSETS.fetch(request);
+      if(locale==='en'&&response.status===404&&response.headers.get('content-type')?.includes('text/html')){const error=await env.ASSETS.fetch(new Request(new URL('/en/404.html',url),request));response=new Response(error.body,{status:404,headers:error.headers});}
     }
     const headers=new Headers(response.headers);
-    if (/^\/prompts\/[a-zA-Z0-9-]+\/(index\.md)?$/.test(url.pathname)) headers.set('vary','Accept');
+    if (/^\/(?:en\/)?prompts\/[a-zA-Z0-9-]+\/(index\.md)?$/.test(url.pathname)) headers.set('vary','Accept');
     headers.set('x-content-type-options','nosniff');
     headers.set('referrer-policy','strict-origin-when-cross-origin');
     headers.set('x-frame-options','DENY');
@@ -39,7 +42,7 @@ export default {
       headers.append('link',`<${ORIGIN}/llms.txt>; rel="describedby"; type="text/plain"`);
       // Filter/sort URLs are useful to humans but do not create new index targets.
       if (url.search) headers.set('x-robots-tag','noindex, follow');
-    } else if (/\.(json|md)$/.test(url.pathname) || url.pathname.startsWith('/api/') || url.pathname.startsWith('/llms')) {
+    } else if (headers.get('content-type')?.includes('text/markdown') || /\.(json|md)$/.test(url.pathname) || url.pathname.startsWith('/api/') || url.pathname.startsWith('/llms')) {
       headers.set('x-robots-tag','noindex, follow');
     }
     if (/\.[a-f0-9]{12}\./.test(url.pathname) || /-[a-f0-9]{12}\.webp$/.test(url.pathname)) headers.set('cache-control','public, max-age=31536000, immutable');

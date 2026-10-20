@@ -2,7 +2,7 @@
 
 A source-attributed prompt atlas with complete HTML, Markdown and a read-only API. It combines the original **474 cases / 22 creative categories** with OpenNana's free, attributed public-source prompts. Current import counts, exclusions and checksums are in [the source manifest](data/opennana/manifest.json).
 
-**Live:** [prompt.genedai.me](https://prompt.genedai.me) · [OpenNana gallery](https://prompt.genedai.me/categories/opennana/) · [Agent documentation](https://prompt.genedai.me/agents/) · [Source policy](https://prompt.genedai.me/sources/opennana/)
+**Live:** [中文](https://prompt.genedai.me/) · [English](https://prompt.genedai.me/en/) · [OpenNana gallery](https://prompt.genedai.me/categories/opennana/) · [Agent documentation](https://prompt.genedai.me/agents/) · [Source policy](https://prompt.genedai.me/sources/opennana/)
 
 ![Prompt Atlas interface](https://prompt.genedai.me/og.png)
 
@@ -13,6 +13,10 @@ A source-attributed prompt atlas with complete HTML, Markdown and a read-only AP
 OpenNana 扩展只收录免费、已公开全文、附有原始公开来源引用的条目。付费、没有公开原始出处、没有全文的内容排除；实质相同的提示词去重，额外来源保留在对账文件或案例引用中。维护者已确认转载授权，原作者权利保留；此授权不将第三方内容改为 MIT 或 CC BY。原帖引用不代表独立核实作者身份、链接当前可达性或生成结果。
 
 原有内容快照为 2026-10-19，OpenNana 快照为 2026-10-20。图片不是本站逐条重新生图的结果。来源模型名称、条目创建日期、历史互动与参考图要求分别标注；未知要求不会标为纯文字起步。
+
+## Interface languages
+
+Switch between 中文 and English from the header. The switch keeps the current page, filters and anchor; language preference and favorites are stored locally. English HTML uses `/en/` with self-canonicals and reciprocal hreflang. Navigation, filters, messages, details, workbench, guide, sources and agent documentation are localized. Source titles and complete prompt text retain their original language. API/download records remain language-neutral.
 
 ## Features
 
