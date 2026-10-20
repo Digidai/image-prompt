@@ -22,7 +22,7 @@ Switch between 中文 and English from the header. The switch keeps the current 
 
 - Crawlable HTML and per-case Markdown with canonical URLs, full text and author/source citations.
 - Bounded server pagination, Chinese/English full-text search, filters and browser-local favorites.
-- XML/image sitemap, JSON-LD, social metadata, robots.txt and genuine 404 responses.
+- Restrained, listing-only XML sitemap, JSON-LD, social metadata, robots.txt and genuine 404 responses.
 - `llms.txt`, streamed complete JSON/text exports, OpenAPI 3.1 and an agent manifest.
 - GET/HEAD/OPTIONS only, public CORS, input validation and strict script CSP.
 - Versioned D1 search metadata and private R2 content shards; content snapshots and digests committed in Git.
@@ -78,9 +78,11 @@ Production uses Cloudflare Workers/Static Assets, D1 and R2. `CLOUDFLARE_API_TOK
 ## Search submissions
 
 ```sh
-npm run submit:indexnow             # Dry run: only canonical URLs without prior receipts
+npm run submit:indexnow             # Dry run: approved list entrances without prior receipts
 npm run submit:indexnow -- --execute
 ```
+
+**Only 52 collection entrances are promoted** across Chinese and English: homepage, prompt directory first page, category overview and each category first page. Detail pages, later pagination and utility documentation are excluded from both the sitemap and IndexNow. The same allowlist is exported as `url-list.json`; the complete `route-list.json` is for route/link validation. A hard URL budget and submission guard prevent accidental bulk detail promotion. Details remain available for browsing, sharing and agents; historical receipts are retained, without repeating previously accepted URLs.
 
 The [public IndexNow key](https://prompt.genedai.me/d46f8c2a59eb4dcab314f45a8efbe85e.txt) validates the domain. The script checks the live sitemap and submits at most 10,000 URLs per batch, preserving URL coverage and receipts. Existing Google/Bing sitemap registrations use the same sitemap URL. Sitemap discovery, IndexNow acceptance, Google indexing requests and actual indexation are separate states. The authorized thread monitor retries the homepage request from 2026-10-21 10:00 Beijing time, then checks actual Google/Bing indexing; see the evidence ledger for observed results.
 

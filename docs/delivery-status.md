@@ -2,13 +2,19 @@
 
 Launch date: **2026-10-20, Asia/Shanghai**. Public site: **https://prompt.genedai.me/**. Public repository: **https://github.com/Digidai/image-prompt**.
 
-## Chinese and English interface — published and verified
+## Restrained search promotion — implementation complete, release verification pending
 
-- Added Chinese/default and English `/en/` HTML routes, a persistent language switch, reciprocal hreflang and self-canonicals. Both languages appear in the XML sitemap: **37,804 canonical HTML URLs**, with 1,034 static pages and language variants of dynamic directories/details.
+- Per the latest maintainer instruction, search promotion is restricted to **52 Chinese/English collection entrances**: homepage, prompt directory first page, category index and all 23 category first pages in each language. Detail pages, later pagination and utility documentation are excluded from sitemap/IndexNow inputs.
+- A shared allowlist, a hard 52-URL budget and pre-submission validation prevent bulk detail promotion. The full 37,804-route registry is kept separately for site/link verification. Existing details, language routes, prompts and agent access continue to work.
+- Historical IndexNow receipts for 37,804 URLs are preserved. Restricting promotion is not an index-removal request; no prior acceptance or actual indexing is rewritten. Already accepted collection entrances must not be resubmitted. The authorized homepage-only Google retry/Google-Bing monitor is unchanged.
+
+## Chinese and English interface — historical release, published and verified
+
+- Added Chinese/default and English `/en/` HTML routes, a persistent language switch, reciprocal hreflang and self-canonicals. At that release, both languages appeared in the XML sitemap: **37,804 canonical HTML URLs**, with 1,034 static pages and language variants of dynamic directories/details.
 - Localized navigation, category labels, filters, dynamic counts, messages, modal/workbench controls, accessibility labels, guide, rights/sources and agent documentation. Original source titles, author names and prompt text keep their original language; API/download records stay language-neutral.
 - The initial English 404 route was canonicalized by the hosting layer into an empty response; the final release uses an index route and verifies a localized body with a genuine 404 status. Narrow mobile actions wrap without horizontal overflow.
 - Switching preserves the current page, query filters and anchor. Local favorites keep the same IDs and storage key. Browser checks passed both directions, remembered language, filter restoration, favorite preservation and 390px layout. Literal prompts and workbench text remained unchanged.
-- Fifteen tests passed. **49 production checks** passed for pages, API, sources, locales, Markdown and errors. Desktop/mobile browser checks passed at 320, 390, 768 and 1440 px with zero application page errors. Source data release remains `465e0259274b1b15`; the catalog was not reimported for an interface change. Production source commit `aa426b9092f99cc1278a1a9ad6595e7915568295` matches live build-info. [Validate](https://github.com/Digidai/image-prompt/actions/runs/39402915514) and [Deploy](https://github.com/Digidai/image-prompt/actions/runs/39402915459) succeeded. IndexNow accepted **18,902 new English URLs** in batches of 10,000 and 8,902; all 37,804 canonical URLs now have acceptance receipts. These are not actual indexation proof.
+- Fifteen tests passed. **49 production checks** passed for pages, API, sources, locales, Markdown and errors. Desktop/mobile browser checks passed at 320, 390, 768 and 1440 px with zero application page errors. Source data release remains `465e0259274b1b15`; the catalog was not reimported for an interface change. Production source commit `aa426b9092f99cc1278a1a9ad6595e7915568295` matches live build-info. [Validate](https://github.com/Digidai/image-prompt/actions/runs/39402915514) and [Deploy](https://github.com/Digidai/image-prompt/actions/runs/39402915459) succeeded. IndexNow accepted **18,902 new English URLs** in batches of 10,000 and 8,902; that release brought historical acceptance coverage to all 37,804 canonical URLs. These are not actual indexation proof.
 
 ## OpenNana expansion — published and verified
 
@@ -40,7 +46,7 @@ Launch date: **2026-10-20, Asia/Shanghai**. Public site: **https://prompt.geneda
 
 ## SEO, GEO and agent access
 
-- Canonical metadata, individual descriptions, Open Graph/Twitter cards, breadcrumbs, WebSite/CollectionPage/CreativeWork JSON-LD, XML/image sitemap, robots and full source-linked text.
+- Canonical metadata, individual descriptions, Open Graph/Twitter cards, breadcrumbs, WebSite/CollectionPage/CreativeWork JSON-LD, a restrained listing-only XML sitemap, robots and full source-linked text.
 - `/llms.txt`, `/llms-full.txt`, `/openapi.json`, `/.well-known/agent.json`, complete `/data/catalog.json`, per-case Markdown and `Accept: text/markdown` negotiation with `Vary: Accept`.
 - Public API: `/api/v1/prompts`, `/api/v1/prompts/{id}` and `/api/v1/categories`. Validated query/category/model/reference filters, limits, pagination, CORS, GET/HEAD/OPTIONS and 405 for mutations.
 
