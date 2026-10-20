@@ -26,7 +26,7 @@ export default {
         normalized.pathname+='index.md';
         response=await env.ASSETS.fetch(new Request(normalized,request));
       } else if(!response) response=await env.ASSETS.fetch(request);
-      if(locale==='en'&&response.status===404&&response.headers.get('content-type')?.includes('text/html')){const error=await env.ASSETS.fetch(new Request(new URL('/en/404.html',url),request));response=new Response(error.body,{status:404,headers:error.headers});}
+      if(locale==='en'&&response.status===404&&response.headers.get('content-type')?.includes('text/html')){const error=await env.ASSETS.fetch(new Request(new URL('/en/404/',url),request));response=new Response(error.body,{status:404,headers:error.headers});}
     }
     const headers=new Headers(response.headers);
     if (/^\/(?:en\/)?prompts\/[a-zA-Z0-9-]+\/(index\.md)?$/.test(url.pathname)) headers.set('vary','Accept');
