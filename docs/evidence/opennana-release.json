@@ -1,0 +1,33 @@
+{
+  "at": "2026-10-20T09:22:17.092564+00:00",
+  "releaseId": "465e0259274b1b15",
+  "commit": "fd22e6e5710ff1e4a5e836eea47b3f5c60177b50",
+  "workerVersion": "11fad98a-e626-4648-bbeb-9af3b100e5ff",
+  "cases": 17892,
+  "addedCases": 17418,
+  "indexableUrls": 18902,
+  "ci": {
+    "validate": {
+      "id": 39399400689,
+      "conclusion": "success"
+    },
+    "deploy": {
+      "id": 39399400595,
+      "conclusion": "success"
+    }
+  },
+  "liveChecks": 36,
+  "browser": {
+    "promptLength": 2933,
+    "source": "https://x.com/Ziha_ai/status/2111646913766584356",
+    "sourceCount": 17418,
+    "mobileOverflow390": false
+  },
+  "indexnowNewUrlsAccepted": 18386,
+  "notEvidenceOf": "Google/Bing actual indexing, ranking, traffic or AI citations",
+  "monitor": {
+    "id": "image-prompt",
+    "startsAt": "2026-10-21T10:00:00+08:00",
+    "scope": "Homepage Google request retry and actual Google/Bing indexing; quiet on unchanged waiting state"
+  }
+}

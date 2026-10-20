@@ -55,5 +55,29 @@
     "status": "accepted",
     "message": "",
     "notEvidenceOf": "crawl, indexation, rank, traffic or AI citation"
+  },
+  {
+    "at": "2026-10-20T09:18:36.583Z",
+    "provider": "IndexNow",
+    "endpoint": "https://api.indexnow.org/indexnow",
+    "httpStatus": 200,
+    "urlCount": 10000,
+    "status": "accepted",
+    "urlListFile": "docs/evidence/indexnow-5956dcfc0eea.json",
+    "urlListSha256": "5956dcfc0eeabd78eaeda526d04037f1247d19eb8547575fda0f877326c645d7",
+    "message": "",
+    "notEvidenceOf": "crawl, indexation, rank, traffic or AI citation"
+  },
+  {
+    "at": "2026-10-20T09:18:37.811Z",
+    "provider": "IndexNow",
+    "endpoint": "https://api.indexnow.org/indexnow",
+    "httpStatus": 200,
+    "urlCount": 8386,
+    "status": "accepted",
+    "urlListFile": "docs/evidence/indexnow-022a2330f1bf.json",
+    "urlListSha256": "022a2330f1bf8b99ad050ea5ff3edb047bab96e9723817abbdb48bda6a0556bc",
+    "message": "",
+    "notEvidenceOf": "crawl, indexation, rank, traffic or AI citation"
   }
 ]

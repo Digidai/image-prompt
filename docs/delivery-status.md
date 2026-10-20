@@ -2,7 +2,7 @@
 
 Launch date: **2026-10-20, Asia/Shanghai**. Public site: **https://prompt.genedai.me/**. Public repository: **https://github.com/Digidai/image-prompt**.
 
-## OpenNana expansion — dataset validated, release in progress
+## OpenNana expansion — published and verified
 
 - Authorization: maintainer confirmed redistribution permission, then limited scope to free full prompts with public original-source citations. Paid content and non-public/missing-source entries are excluded.
 - Complete acquisition: **18,142 / 18,142 free details**, zero failed downloads. Source manifest: 23,657 total; 5,515 paid excluded.
@@ -10,7 +10,7 @@ Launch date: **2026-10-20, Asia/Shanghai**. Public site: **https://prompt.geneda
 - Preserved original text/language variants, authors, original source citations, collection links, source model labels, image/video URLs and notes. Unknown reference requirements remain null. Entry dates are OpenNana creation dates, not original-post dates. Original creator rights remain; no MIT/CC relabeling.
 - Added versioned D1 search and private R2 content/complete exports, bounded frontend pagination, Chinese bigram/character and English prefix search, image/video filters, full server-rendered HTML and Markdown. Existing case URLs remain stable.
 - Dataset release: `465e0259274b1b15`. Committed shards pass SHA-256 verification. Full reconciliation, 18,902 canonical URLs, 517 static pages and all 17,418 dynamic case renders passed output validation; eleven SQLite/API/Worker tests passed. Browser checks covered Chinese results, 36→72 pagination, full prompts, public attribution, persisted favorites and 390 px overflow.
-- A non-published Worker version upload verified the existing deployment credential can bind the D1 and R2 resources. Remote storage seeding completed: 47 content/export objects plus a ready marker, 17,892 D1 rows and 17,892 FTS rows verified. A pre-deploy readiness check prevents switching code before its dataset is ready. Production verification receipts will be appended after deployment.
+- A non-published Worker version upload verified the existing deployment credential can bind the D1 and R2 resources. Remote storage seeding completed: 47 content/export objects plus a ready marker, 17,892 D1 rows and 17,892 FTS rows verified. A pre-deploy readiness check prevents switching code before its dataset is ready. Production commit `fd22e6e5710ff1e4a5e836eea47b3f5c60177b50` is live. Validate `39399400689` and Deploy `39399400595` succeeded; 36 production checks passed, with exact live build-info and readiness verification. IndexNow accepted 18,386 new URLs in batches of 10,000 and 8,386 (HTTP 200 each). These receipts do not prove actual indexing.
 - Source previews remain on the source media host; outages can affect images. Source citations do not independently establish authorship, present link accessibility or reproduction results.
 
 ## Original launch (historical)
