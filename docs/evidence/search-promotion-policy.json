@@ -1,0 +1,130 @@
+{
+  "observedAt": "2026-10-20T10:17:01.932Z",
+  "status": "published_verified",
+  "sourceCommit": "26499bf3fe60e9073fa6b71038498c8ad89bac6e",
+  "policy": "listing-landings-v1",
+  "canonicalOrigin": "https://prompt.genedai.me",
+  "previousSubmissionUrlCount": 37804,
+  "submissionUrlCount": 52,
+  "locales": [
+    "zh-CN",
+    "en"
+  ],
+  "scope": "Homepage, prompt directory first page, category index and 23 category first pages per locale.",
+  "excluded": [
+    "case detail pages",
+    "later pagination pages",
+    "guide/source/about/agent utility pages",
+    "query filters",
+    "API/data/Markdown"
+  ],
+  "sitemap": {
+    "url": "https://prompt.genedai.me/sitemap.xml",
+    "bytes": 15307,
+    "sha256": "c44750f3ee2c262fa6515d1308034275c27e5b78a6a16c23e4a57dbbface649d",
+    "urls": [
+      "https://prompt.genedai.me/",
+      "https://prompt.genedai.me/prompts/",
+      "https://prompt.genedai.me/categories/",
+      "https://prompt.genedai.me/categories/architecture/",
+      "https://prompt.genedai.me/categories/art/",
+      "https://prompt.genedai.me/categories/brand/",
+      "https://prompt.genedai.me/categories/character/",
+      "https://prompt.genedai.me/categories/cinematic/",
+      "https://prompt.genedai.me/categories/editing/",
+      "https://prompt.genedai.me/categories/fashion/",
+      "https://prompt.genedai.me/categories/food/",
+      "https://prompt.genedai.me/categories/icon/",
+      "https://prompt.genedai.me/categories/infographic/",
+      "https://prompt.genedai.me/categories/material/",
+      "https://prompt.genedai.me/categories/miniature/",
+      "https://prompt.genedai.me/categories/nature/",
+      "https://prompt.genedai.me/categories/opennana/",
+      "https://prompt.genedai.me/categories/pixel/",
+      "https://prompt.genedai.me/categories/portrait/",
+      "https://prompt.genedai.me/categories/poster/",
+      "https://prompt.genedai.me/categories/product/",
+      "https://prompt.genedai.me/categories/social/",
+      "https://prompt.genedai.me/categories/storyboard/",
+      "https://prompt.genedai.me/categories/surreal/",
+      "https://prompt.genedai.me/categories/toy/",
+      "https://prompt.genedai.me/categories/typography/",
+      "https://prompt.genedai.me/en/",
+      "https://prompt.genedai.me/en/prompts/",
+      "https://prompt.genedai.me/en/categories/",
+      "https://prompt.genedai.me/en/categories/architecture/",
+      "https://prompt.genedai.me/en/categories/art/",
+      "https://prompt.genedai.me/en/categories/brand/",
+      "https://prompt.genedai.me/en/categories/character/",
+      "https://prompt.genedai.me/en/categories/cinematic/",
+      "https://prompt.genedai.me/en/categories/editing/",
+      "https://prompt.genedai.me/en/categories/fashion/",
+      "https://prompt.genedai.me/en/categories/food/",
+      "https://prompt.genedai.me/en/categories/icon/",
+      "https://prompt.genedai.me/en/categories/infographic/",
+      "https://prompt.genedai.me/en/categories/material/",
+      "https://prompt.genedai.me/en/categories/miniature/",
+      "https://prompt.genedai.me/en/categories/nature/",
+      "https://prompt.genedai.me/en/categories/opennana/",
+      "https://prompt.genedai.me/en/categories/pixel/",
+      "https://prompt.genedai.me/en/categories/portrait/",
+      "https://prompt.genedai.me/en/categories/poster/",
+      "https://prompt.genedai.me/en/categories/product/",
+      "https://prompt.genedai.me/en/categories/social/",
+      "https://prompt.genedai.me/en/categories/storyboard/",
+      "https://prompt.genedai.me/en/categories/surreal/",
+      "https://prompt.genedai.me/en/categories/toy/",
+      "https://prompt.genedai.me/en/categories/typography/"
+    ]
+  },
+  "buildInfo": {
+    "project": "image-prompt",
+    "commit": "26499bf3fe60e9073fa6b71038498c8ad89bac6e",
+    "sourceSha256": "1d21d434c78ad730b9b7fb9a52c8d87ab19db7dc60fb76989ed1b7498397196b",
+    "snapshotDate": "2026-10-20",
+    "contentUpdatedAt": "2026-10-20",
+    "catalogSnapshotDate": "2026-10-20",
+    "cases": 17892,
+    "originalCases": 474,
+    "opennanaCases": 17418,
+    "contentRelease": "465e0259274b1b15",
+    "categories": 23,
+    "canonicalOrigin": "https://prompt.genedai.me",
+    "interfaceLanguages": [
+      "zh-CN",
+      "en"
+    ],
+    "searchSubmissions": {
+      "policy": "listing-landings-v1",
+      "urlCount": 52
+    }
+  },
+  "indexNow": {
+    "action": "none",
+    "reason": "All 52 approved collection entrances have prior acceptance receipts; no repeated submissions.",
+    "pendingUrlCount": 0,
+    "historicalAcceptedUrlCount": 37804,
+    "historicalCoverageSha256": "f49f95206bbb6f3c18e632b20292800719f964f379d1721e26f4fd5418f86478"
+  },
+  "homepageMonitor": "Existing homepage-only Google retry and Google/Bing read-only index monitor unchanged; earliest retry 2026-10-21 10:00 Asia/Shanghai.",
+  "boundaries": [
+    "Existing detail routes remain accessible with their existing indexing directives.",
+    "No request to remove previously submitted or indexed URLs was sent.",
+    "This receipt proves the live submission scope, not search-engine recrawl or actual indexation."
+  ],
+  "verification": {
+    "testsPassed": 18,
+    "productionChecksPassed": 52,
+    "validate": {
+      "runId": 39406682431,
+      "conclusion": "success",
+      "url": "https://github.com/Digidai/image-prompt/actions/runs/39406682431"
+    },
+    "deploy": {
+      "runId": 39406682296,
+      "conclusion": "success",
+      "url": "https://github.com/Digidai/image-prompt/actions/runs/39406682296",
+      "workerVersion": "fae76936-e223-4d5d-8cdd-f6faacb94d8c"
+    }
+  }
+}

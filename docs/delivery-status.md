@@ -2,10 +2,11 @@
 
 Launch date: **2026-10-20, Asia/Shanghai**. Public site: **https://prompt.genedai.me/**. Public repository: **https://github.com/Digidai/image-prompt**.
 
-## Restrained search promotion — implementation complete, release verification pending
+## Restrained search promotion — published and verified
 
 - Per the latest maintainer instruction, search promotion is restricted to **52 Chinese/English collection entrances**: homepage, prompt directory first page, category index and all 23 category first pages in each language. Detail pages, later pagination and utility documentation are excluded from sitemap/IndexNow inputs.
 - A shared allowlist, a hard 52-URL budget and pre-submission validation prevent bulk detail promotion. The full 37,804-route registry is kept separately for site/link verification. Existing details, language routes, prompts and agent access continue to work.
+- Production source commit `26499bf3fe60e9073fa6b71038498c8ad89bac6e` matches live build-info. [Validate](https://github.com/Digidai/image-prompt/actions/runs/39406682431) and [Deploy](https://github.com/Digidai/image-prompt/actions/runs/39406682296) succeeded; **18 tests and 52 production checks** passed. Live sitemap and submission list contain exactly 52 URLs, zero detail URLs and zero later pagination URLs; sitemap size is 15,307 bytes. Dry run found zero new approved URLs, so no IndexNow submission was sent. The dataset remains `465e0259274b1b15` with 17,892 cases. See `docs/evidence/search-promotion-policy.json`.
 - Historical IndexNow receipts for 37,804 URLs are preserved. Restricting promotion is not an index-removal request; no prior acceptance or actual indexing is rewritten. Already accepted collection entrances must not be resubmitted. The authorized homepage-only Google retry/Google-Bing monitor is unchanged.
 
 ## Chinese and English interface — historical release, published and verified
