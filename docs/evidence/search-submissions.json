@@ -103,5 +103,54 @@
     "urlListSha256": "8bd05d3b2cb718a0ef6a92c99671856cbb322fce15e1b53322724c0fe5faaf96",
     "message": "",
     "notEvidenceOf": "crawl, indexation, rank, traffic or AI citation"
+  },
+  {
+    "at": "2026-10-21T02:02:28.583573+00:00",
+    "provider": "Google Search Console",
+    "property": "sc-domain:genedai.me",
+    "url": "https://prompt.genedai.me/",
+    "sourceCommit": "26499bf3fe60e9073fa6b71038498c8ad89bac6e",
+    "kind": "url_inspection",
+    "status": "not_indexed",
+    "indexingReason": "Discovered - currently not indexed",
+    "lastCrawl": null,
+    "evidence": "Authenticated URL Inspection: URL is not on Google; Page is not indexed: Discovered - currently not indexed; last crawl N/A; discovery lists the site sitemap.",
+    "screenshotLocal": "output/index-monitor/2026-10-21/google-before-request.png",
+    "notEvidenceOf": "Crawl, indexation, ranking, traffic or AI citation"
+  },
+  {
+    "at": "2026-10-21T02:02:28.583573+00:00",
+    "provider": "Google Search Console",
+    "property": "sc-domain:genedai.me",
+    "url": "https://prompt.genedai.me/",
+    "sourceCommit": "26499bf3fe60e9073fa6b71038498c8ad89bac6e",
+    "kind": "url_indexing_request",
+    "status": "quota_exceeded",
+    "localDate": "2026-10-21",
+    "requestAttemptsToday": 1,
+    "evidence": "One native Request indexing action reached live-URL testing, then Quota Exceeded: daily quota exceeded; request could not be processed. No success receipt.",
+    "screenshotLocal": "output/index-monitor/2026-10-21/google-quota-exceeded.png",
+    "retryRule": "Do not retry again on 2026-10-21 Asia/Shanghai. Retry on a later day only if no successful requested receipt and homepage remains unindexed.",
+    "notEvidenceOf": "Successful indexing request or actual indexation, ranking, traffic or AI citation"
+  },
+  {
+    "at": "2026-10-21T02:05:20.880683+00:00",
+    "provider": "Bing Webmaster Tools",
+    "kind": "url_inspection_and_index_report",
+    "site": "https://prompt.genedai.me/",
+    "url": "https://prompt.genedai.me/",
+    "status": "inspection_service_error",
+    "inspectionAttempts": 2,
+    "homepageIndexed": null,
+    "siteIndexedPageCount": null,
+    "evidence": "Authenticated exact-site URL Inspection returned Error encountered while inspecting URL twice (one read-only retry). Home reports processing up to 48 hours. Site Explorer with Indexed URLs selected returned This might be a momentary issue, please try again or check back later. No actual indexed count was displayed.",
+    "screenshotLocal": [
+      "output/index-monitor/2026-10-21/bing-inspection-error.png",
+      "output/index-monitor/2026-10-21/bing-inspection-retry-error.png",
+      "output/index-monitor/2026-10-21/bing-site-explorer-error.png",
+      "output/index-monitor/2026-10-21/bing-report-processing.png"
+    ],
+    "notEvidenceOf": "Zero indexed pages, actual indexation, ranking, traffic or AI citation",
+    "submissionAction": "none"
   }
 ]

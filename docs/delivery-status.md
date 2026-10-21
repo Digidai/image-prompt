@@ -2,6 +2,13 @@
 
 Launch date: **2026-10-20, Asia/Shanghai**. Public site: **https://prompt.genedai.me/**. Public repository: **https://github.com/Digidai/image-prompt**.
 
+## Homepage index monitor — 2026-10-21 10:00 Asia/Shanghai
+
+- At the scheduled time, authenticated Google URL Inspection showed the exact homepage **not indexed: Discovered - currently not indexed**, with last crawl N/A. One native Request indexing action ran live-URL testing, then returned **Quota Exceeded**. There is no successful requested receipt. No more attempts on this local date; the existing daily 10:00 monitor will inspect first and retry on a later day only if still needed.
+- Bing URL Inspection failed with a provider error twice (one read-only retry). The exact site's Home report says data/reports are processing; Site Explorer with Indexed URLs selected returned a momentary-issue error. Homepage indexation and site indexed-page count remain **unknown**, not zero.
+- The Google domain Page indexing report was last updated 2026-10-12 and did not provide a segment for this new subdomain; its aggregate counts cannot establish this site's indexed count. Actual site-level Google count remains unknown.
+- No content, deployment, sitemap or IndexNow changes were made. Live source remains `26499bf3fe60e9073fa6b71038498c8ad89bac6e` and the 52-entrance promotion policy remains active. Receipts are appended to `docs/evidence/search-submissions.json`; the run record and local screenshot checksums are in `docs/evidence/index-monitor-2026-10-21.json`. Authenticated screenshots stay in ignored local `output/index-monitor/2026-10-21/` and are not uploaded to the public repository.
+
 ## Restrained search promotion — published and verified
 
 - Per the latest maintainer instruction, search promotion is restricted to **52 Chinese/English collection entrances**: homepage, prompt directory first page, category index and all 23 category first pages in each language. Detail pages, later pagination and utility documentation are excluded from sitemap/IndexNow inputs.

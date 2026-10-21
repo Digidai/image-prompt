@@ -1,0 +1,81 @@
+{
+  "status": "completed_with_provider_failures",
+  "scheduledNotBefore": "2026-10-21T10:00:00+08:00",
+  "canonicalUrl": "https://prompt.genedai.me/",
+  "scope": "Homepage inspection/request only; no content edits, deploys or sitemap/IndexNow submissions.",
+  "google": {
+    "inspection": "not_indexed",
+    "reason": "Discovered - currently not indexed",
+    "lastCrawl": null,
+    "request": "quota_exceeded",
+    "attempts": 1,
+    "retrySameDay": false,
+    "siteIndexedPageCount": null,
+    "siteCountLimitation": "The available genedai.me domain Page indexing report was last updated 2026-10-12, predating this site launch; it does not expose a prompt.genedai.me sitemap segment. Domain-wide totals must not be used as this subdomain count.",
+    "evidence": [
+      "output/index-monitor/2026-10-21/google-before-request.png",
+      "output/index-monitor/2026-10-21/google-quota-exceeded.png",
+      "output/index-monitor/2026-10-21/google-property-report.txt"
+    ]
+  },
+  "bing": {
+    "inspection": "service_error",
+    "inspectionAttempts": 2,
+    "homepageIndexed": null,
+    "siteIndexedPageCount": null,
+    "siteReport": "processing; Site Explorer Indexed URLs returned a momentary-issue error",
+    "submissionAction": "none",
+    "evidence": [
+      "output/index-monitor/2026-10-21/bing-inspection-error.png",
+      "output/index-monitor/2026-10-21/bing-inspection-retry-error.png",
+      "output/index-monitor/2026-10-21/bing-site-explorer-error.png",
+      "output/index-monitor/2026-10-21/bing-report-processing.png"
+    ]
+  },
+  "observedAt": "2026-10-21T02:05:56.124266+00:00",
+  "sourceCommit": "26499bf3fe60e9073fa6b71038498c8ad89bac6e",
+  "liveBuildInfo": {
+    "project": "image-prompt",
+    "commit": "26499bf3fe60e9073fa6b71038498c8ad89bac6e",
+    "sourceSha256": "1d21d434c78ad730b9b7fb9a52c8d87ab19db7dc60fb76989ed1b7498397196b",
+    "snapshotDate": "2026-10-20",
+    "contentUpdatedAt": "2026-10-20",
+    "catalogSnapshotDate": "2026-10-20",
+    "cases": 17892,
+    "originalCases": 474,
+    "opennanaCases": 17418,
+    "contentRelease": "465e0259274b1b15",
+    "categories": 23,
+    "canonicalOrigin": "https://prompt.genedai.me",
+    "interfaceLanguages": [
+      "zh-CN",
+      "en"
+    ],
+    "searchSubmissions": {
+      "policy": "listing-landings-v1",
+      "urlCount": 52
+    }
+  },
+  "nextAction": {
+    "automationId": "image-prompt",
+    "status": "ACTIVE",
+    "nextScheduledLocal": "2026-10-22 10:00 Asia/Shanghai",
+    "googleRule": "No further attempts on 2026-10-21. On a later day inspect the exact homepage first; request only if not indexed and no successful requested receipt.",
+    "bingRule": "Read-only homepage and actual indexed-page report checks. Never replace missing counts with zero or search-result counts."
+  },
+  "evidenceFiles": {
+    "output/index-monitor/2026-10-21/google-before-request.png": "ebff7601c098680f695dba931950847133b9f7fdaec821a9195cc8a92e013dc7",
+    "output/index-monitor/2026-10-21/google-quota-exceeded.png": "07ef20d8f80ecd1dcb28b7f40fbc3b5cba29bd1db646ce4d0149a922412fdc34",
+    "output/index-monitor/2026-10-21/google-property-report.txt": "cf8f27b689a19b470a2d1e0ca5c36db1df2b36cf9d985d567390a1849eee5890",
+    "output/index-monitor/2026-10-21/bing-inspection-error.png": "8ce70a46e4214378c1937aaa3d4c6f3dec4055f8b63c62262701d3b9b09cccfb",
+    "output/index-monitor/2026-10-21/bing-inspection-retry-error.png": "9e7b62d6340aade9e0b596f281e826574f715aff831777d645e50943966f0de2",
+    "output/index-monitor/2026-10-21/bing-site-explorer-error.png": "d6ed39c1a7acb8d59ad064f04f29e33a1fe53ad95a7464fa80922dfafa82425c",
+    "output/index-monitor/2026-10-21/bing-report-processing.png": "c53803a9b7f5a0c0e0f57c8eca50f7a69299d46fa3a639f2c92159229d0c38fc"
+  },
+  "notClaimed": [
+    "Successful Google requested receipt",
+    "Actual homepage indexation in either provider",
+    "Site-level indexed counts",
+    "Any new sitemap or IndexNow submission"
+  ]
+}
