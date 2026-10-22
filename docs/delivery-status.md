@@ -2,6 +2,14 @@
 
 Launch date: **2026-10-20, Asia/Shanghai**. Public site: **https://prompt.genedai.me/**. Public repository: **https://github.com/Digidai/image-prompt**.
 
+## Homepage index monitor — 2026-10-22 10:00 Asia/Shanghai
+
+- **Google homepage indexing request succeeded.** One native Request indexing action for `https://prompt.genedai.me/` was confirmed in the same authenticated session at **2026-10-22 10:01:57 Asia/Shanghai**. The UI showed **Indexing requested** and stated the URL was added to a priority crawl queue. A successful `requested` receipt is now in the ledger; never submit this homepage again.
+- Before the request, Google URL Inspection still showed **not indexed: URL is unknown to Google**, last crawl N/A, and no referring sitemap detected. This is the observed UI state, distinct from earlier successful sitemap processing and yesterday's discovered-but-not-indexed state. The request receipt does **not** establish subsequent crawling or actual indexation. The stale 2026-10-12 domain Page indexing report still does not provide a count for this subdomain.
+- Bing's exact-homepage **Bing Index** inspection now returns **Discovered but not crawled — URL cannot appear on Bing**, discovered on 2026-10-20. The exact site's Site Explorer with Indexed URLs selected says **No data available**, without a numeric count; site indexed-page count remains unknown, not zero. No Bing request was submitted.
+- The existing daily 10:00 heartbeat remains ACTIVE and has been changed to **read-only actual-indexation monitoring**. It explicitly prohibits further Google/Bing requests and Sitemap/IndexNow submissions, stays quiet for unchanged waiting states, and pauses after both providers confirm the exact homepage is indexed.
+- No content or deployment changes were made; live source remains `26499bf3fe60e9073fa6b71038498c8ad89bac6e`, with 52 promoted entrances. Historical receipts are preserved. See `docs/evidence/search-submissions.json` and `docs/evidence/index-monitor-2026-10-22.json`; authenticated screenshots remain local in ignored `output/index-monitor/2026-10-22/`.
+
 ## Homepage index monitor — 2026-10-21 10:00 Asia/Shanghai
 
 - At the scheduled time, authenticated Google URL Inspection showed the exact homepage **not indexed: Discovered - currently not indexed**, with last crawl N/A. One native Request indexing action ran live-URL testing, then returned **Quota Exceeded**. There is no successful requested receipt. No more attempts on this local date; the existing daily 10:00 monitor will inspect first and retry on a later day only if still needed.

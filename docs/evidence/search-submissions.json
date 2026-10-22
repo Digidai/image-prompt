@@ -152,5 +152,56 @@
     ],
     "notEvidenceOf": "Zero indexed pages, actual indexation, ranking, traffic or AI citation",
     "submissionAction": "none"
+  },
+  {
+    "at": "2026-10-22T02:00:56.710Z",
+    "observedAt": "2026-10-22T02:01:57.444Z",
+    "provider": "Google Search Console",
+    "kind": "url_inspection",
+    "property": "sc-domain:genedai.me",
+    "url": "https://prompt.genedai.me/",
+    "status": "not_indexed",
+    "indexingReason": "URL is unknown to Google",
+    "lastCrawl": null,
+    "referringSitemaps": "No referring sitemaps detected",
+    "sourceCommit": "26499bf3fe60e9073fa6b71038498c8ad89bac6e",
+    "evidence": "Authenticated URL Inspection before requesting: URL is not on Google; Page is not indexed: URL is unknown to Google; last crawl N/A.",
+    "screenshotLocal": "output/index-monitor/2026-10-22/google-before-request.png",
+    "notEvidenceOf": "Actual indexation, ranking, traffic or AI citation"
+  },
+  {
+    "at": "2026-10-22T02:01:57.444Z",
+    "attemptedAt": "2026-10-22T02:00:56.710Z",
+    "provider": "Google Search Console",
+    "kind": "url_indexing_request",
+    "property": "sc-domain:genedai.me",
+    "url": "https://prompt.genedai.me/",
+    "status": "requested",
+    "localDate": "2026-10-22",
+    "requestAttemptsToday": 1,
+    "sourceCommit": "26499bf3fe60e9073fa6b71038498c8ad89bac6e",
+    "evidence": "Authenticated UI in the same session: Indexing requested. URL was added to a priority crawl queue. Submitting a page multiple times will not change its queue position or priority.",
+    "screenshotLocal": "output/index-monitor/2026-10-22/google-indexing-requested.png",
+    "textEvidenceLocal": "output/index-monitor/2026-10-22/google-indexing-requested.txt",
+    "retryRule": "Successful requested receipt exists for the exact homepage. Do not request it again; all future runs are read-only index monitoring.",
+    "notEvidenceOf": "Actual crawl, indexation, ranking, traffic or AI citation"
+  },
+  {
+    "at": "2026-10-22T02:02:16.514370+00:00",
+    "provider": "Bing Webmaster Tools",
+    "kind": "url_inspection_and_index_report",
+    "site": "https://prompt.genedai.me/",
+    "url": "https://prompt.genedai.me/",
+    "status": "discovered_not_crawled",
+    "homepageIndexed": false,
+    "discoveredOn": "2026-10-20",
+    "siteIndexedPageCount": null,
+    "evidence": "Authenticated Bing Index tab: Discovered but not crawled; URL cannot appear on Bing; Discovered on 20 Oct 2026. Exact-site Site Explorer with Indexed URLs selected displays No data available, without a numeric indexed-page count.",
+    "screenshotLocal": [
+      "output/index-monitor/2026-10-22/bing-homepage-inspection.png",
+      "output/index-monitor/2026-10-22/bing-indexed-urls-report.png"
+    ],
+    "submissionAction": "none",
+    "notEvidenceOf": "Zero site indexed pages, actual indexation, ranking, traffic or AI citation"
   }
 ]

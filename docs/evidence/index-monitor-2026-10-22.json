@@ -1,0 +1,76 @@
+{
+  "status": "google_requested_confirmed_monitoring_continues",
+  "observedAt": "2026-10-22T02:03:38.617190+00:00",
+  "canonicalUrl": "https://prompt.genedai.me/",
+  "liveBuildInfo": {
+    "project": "image-prompt",
+    "commit": "26499bf3fe60e9073fa6b71038498c8ad89bac6e",
+    "sourceSha256": "1d21d434c78ad730b9b7fb9a52c8d87ab19db7dc60fb76989ed1b7498397196b",
+    "snapshotDate": "2026-10-20",
+    "contentUpdatedAt": "2026-10-20",
+    "catalogSnapshotDate": "2026-10-20",
+    "cases": 17892,
+    "originalCases": 474,
+    "opennanaCases": 17418,
+    "contentRelease": "465e0259274b1b15",
+    "categories": 23,
+    "canonicalOrigin": "https://prompt.genedai.me",
+    "interfaceLanguages": [
+      "zh-CN",
+      "en"
+    ],
+    "searchSubmissions": {
+      "policy": "listing-landings-v1",
+      "urlCount": 52
+    }
+  },
+  "scope": "Homepage only; no content edits, deploys, sitemap or IndexNow submissions.",
+  "google": {
+    "inspectionBeforeRequest": "not_indexed",
+    "reasonBeforeRequest": "URL is unknown to Google",
+    "lastCrawl": null,
+    "referringSitemapsBeforeRequest": "No referring sitemaps detected",
+    "request": "requested",
+    "attemptedAt": "2026-10-22T02:00:56.710Z",
+    "confirmedAt": "2026-10-22T02:01:57.444Z",
+    "requestAttemptsToday": 1,
+    "successEvidence": "Authenticated UI: Indexing requested; URL was added to a priority crawl queue.",
+    "actualIndexationAfterRequest": "not_yet_confirmed",
+    "siteIndexedPageCount": null,
+    "siteCountLimitation": "Domain Page indexing report last updated 2026-10-12; no prompt.genedai.me sitemap segment. Its domain totals are not this site count.",
+    "retryRule": "Successful requested receipt exists. Never submit this homepage again; read-only monitoring only."
+  },
+  "bing": {
+    "inspection": "discovered_not_crawled",
+    "homepageIndexed": false,
+    "discoveredOn": "2026-10-20",
+    "siteIndexedPageCount": null,
+    "siteCountLimitation": "Exact-site Site Explorer with Indexed URLs selected returned No data available, without a numeric count.",
+    "submissionAction": "none"
+  },
+  "automation": {
+    "id": "image-prompt",
+    "status": "ACTIVE",
+    "phase": "read_only_actual_indexation_monitor",
+    "nextScheduledLocal": "2026-10-23 10:00 Asia/Shanghai",
+    "stopCondition": "Pause this heartbeat only once both providers confirm the exact homepage is indexed."
+  },
+  "localEvidenceSha256": {
+    "output/index-monitor/2026-10-22/google-before-request.png": "109c392e04f163542cc35d5851d9d0946a19eef75ccb34233d8a4b7643c54057",
+    "output/index-monitor/2026-10-22/google-before-request.txt": "6af4241794437f00111ecb84b666eb9547b2e57b72c2dced8a0b6d70d9daa0ab",
+    "output/index-monitor/2026-10-22/google-indexing-requested.png": "d359e3b3f66cff2fe21137800658f3259307db5d1078f5008d923f38590eff8b",
+    "output/index-monitor/2026-10-22/google-indexing-requested.txt": "fbcab253f46c0c797e0938d5f25948d478074207236d2e3a2945605418aac880",
+    "output/index-monitor/2026-10-22/google-request-attempt.json": "02a8050a89780dabdbb1c9fa114f727d7a95efd62a3982f24c032adcf957cdf8",
+    "output/index-monitor/2026-10-22/google-property-report.txt": "1da1b76ebbb1473f13254c4bf9f9025e71df98f60f0f4d9fba6d2fdd05082da2",
+    "output/index-monitor/2026-10-22/bing-homepage-inspection.png": "23ad87490c7b61dd01abd03a5df2a5791221bcef2d8a12542914b94bdc521bd5",
+    "output/index-monitor/2026-10-22/bing-homepage-inspection.txt": "d0def88b7b12a12b29d948cda1524ffe9e0e6918299dd3691275ec982cbf0265",
+    "output/index-monitor/2026-10-22/bing-indexed-urls-report.png": "2e8dda4340b8a4fa1d131f5f351d70d7387cac84fca8e1c416d7c0b83bda90b2",
+    "output/index-monitor/2026-10-22/bing-indexed-urls-report.txt": "f8af93903d77cf725d30e24ff3cb434cd1de6ef02d4bbf2c6152c81d0fbb7677"
+  },
+  "notClaimed": [
+    "Actual Google crawl or indexation following this request",
+    "Any site-level indexed-page count",
+    "Ranking, traffic or AI citation results",
+    "Any new sitemap or IndexNow submission"
+  ]
+}
