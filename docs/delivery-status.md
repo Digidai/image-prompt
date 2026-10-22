@@ -2,6 +2,12 @@
 
 Launch date: **2026-10-20, Asia/Shanghai**. Public site: **https://prompt.genedai.me/**. Public repository: **https://github.com/Digidai/image-prompt**.
 
+## Cloudflare build migration — in progress, 2026-10-22
+
+- Latest maintainer instruction: stop GitHub CI and move build/test/deploy to Cloudflare Workers Builds. Repository GitHub Actions was disabled and there were no running GitHub jobs. Old workflow definitions are removed; historical failures remain documented in `docs/ci-audit.md`.
+- Prepared `ci:build` and `ci:deploy`, pinned Node.js 22, added 13 real local hosting checks and an exact-source production gate. Existing local validation passed all 18 tests; the hosting gate also rejected an injected empty English 404 asset, which was restored byte-for-byte.
+- Cloudflare repository connection and first native build are pending live verification. Search submissions are unchanged; the existing homepage indexing monitor remains read-only.
+
 ## Homepage index monitor — 2026-10-22 10:00 Asia/Shanghai
 
 - **Google homepage indexing request succeeded.** One native Request indexing action for `https://prompt.genedai.me/` was confirmed in the same authenticated session at **2026-10-22 10:01:57 Asia/Shanghai**. The UI showed **Indexing requested** and stated the URL was added to a priority crawl queue. A successful `requested` receipt is now in the ledger; never submit this homepage again.
@@ -54,7 +60,7 @@ Launch date: **2026-10-20, Asia/Shanghai**. Public site: **https://prompt.geneda
 
 - Cloudflare Worker `image-prompt`, custom domain `prompt.genedai.me`, HTTPS and lowercase canonical host. HTTP redirects to HTTPS; workers.dev redirects to the canonical; unknown pages return real 404s.
 - Content-hashed WebP previews, cached assets, security headers, strict script CSP, bounded read-only CORS API, security alerts and updates, secret-scanning push protection and private vulnerability reporting.
-- Tooling is locked; official GitHub actions are pinned to verified release commits; the runner is pinned to Ubuntu 24.04. GitHub Actions validates and deploys production using the verified repository secret.
+- Tooling is locked; official GitHub actions are pinned to verified release commits; the runner is pinned to Ubuntu 24.04. Cloudflare Workers Builds is the selected build/deploy provider; GitHub Actions is disabled.
 - Output validation: 516 pages, 1,540 JSON-LD blocks, 20,078 internal links, 474 complete prompts and image attributions. Homepage HTML is about 59 KiB.
 - Six API/Worker tests passed. Desktop/mobile tests covered search, empty state, reset, favorites, modal, Escape, workbench, list/grid, progressive loading, and no-JavaScript HTML. Production overflow checks passed at 320, 390, 768 and 1440 px.
 - 24 live checks passed. Googlebot, bingbot, GPTBot, OAI-SearchBot, ChatGPT-User, Claude-SearchBot and PerplexityBot user-agent smoke requests returned 200 without a challenge. These are access tests, not independent crawler visits.

@@ -11,9 +11,12 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "check": "node scripts/check.mjs",
+    "check:hosting": "node scripts/check-hosting.mjs",
+    "ci:build": "npm run build && npm run check && npm test && npm run check:hosting && node scripts/check-release-ready.mjs",
+    "ci:deploy": "wrangler deploy && npm run verify:live",
     "test": "node --test",
     "dev": "npm run catalog:prepare && npm run build && npm run preview",
-    "deploy": "npm run build && npm run check && npm test && wrangler deploy",
+    "deploy": "npm run build && npm run check && npm test && npm run check:hosting && wrangler deploy",
     "submit:indexnow": "node scripts/submit-indexnow.mjs",
     "verify:live": "node scripts/verify-live.mjs",
     "preview": "node scripts/preview.mjs",

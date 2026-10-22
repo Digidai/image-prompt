@@ -26,7 +26,7 @@ Switch between 中文 and English from the header. The switch keeps the current 
 - `llms.txt`, streamed complete JSON/text exports, OpenAPI 3.1 and an agent manifest.
 - GET/HEAD/OPTIONS only, public CORS, input validation and strict script CSP.
 - Versioned D1 search metadata and private R2 content shards; content snapshots and digests committed in Git.
-- CI validation, deployment, live checks and separate search-submission receipts.
+- Cloudflare-native build/test/deploy gates, pre-deploy hosting checks, exact-commit live verification and separate search-submission receipts.
 
 ## Local development
 
@@ -44,6 +44,7 @@ Open `http://localhost:8787`. The preview loads committed snapshots into an in-m
 ```sh
 npm run check        # Static pages, dynamic routes, attribution, scope and reconciliation
 npm test             # Real SQLite FTS, Chinese search, filtering, API and escaping
+npm run check:hosting # Local Workers/Static Assets routing, localized 404s, HEAD and Markdown
 npm run verify:live  # Production scope, prompts, Markdown, pagination, exports and errors
 ```
 
@@ -73,7 +74,7 @@ npm run deploy                     # Deploy code only after storage is complete
 
 Raw checkpoints stay under ignored `.cache/`. Normalized `.json.gz` shards, their manifest and reconciliation are public. Storage is versioned: import new R2/D1 data before switching the Worker. Existing case IDs remain stable. See [operations](docs/operations.md), [delivery status](docs/delivery-status.md) and [content rights](THIRD_PARTY_NOTICES.md).
 
-Production uses Cloudflare Workers/Static Assets, D1 and R2. `CLOUDFLARE_API_TOKEN` in GitHub Actions is scoped to this account/Worker; do not store local short-lived OAuth credentials in CI. Serving uses resource bindings and no runtime API credential. Forks must provision their own database/bucket and seed the committed snapshot before deploying.
+Production uses Cloudflare Workers/Static Assets, D1 and R2. **GitHub Actions is disabled**; GitHub hosts source only. Cloudflare Workers Builds runs `npm ci && npm run ci:build` on `main`, then `npm run ci:deploy`, using an existing Cloudflare-managed build token. Node.js 22 is selected by `.node-version`; the live commit must match `WORKERS_CI_COMMIT_SHA`. See [operations](docs/operations.md) for the build settings. Do not store local short-lived OAuth credentials in a hosted build environment. Serving uses resource bindings and no runtime API credential. Forks must provision their own resources, seed the snapshot and connect their Worker to their own source repository.
 
 ## Search submissions
 

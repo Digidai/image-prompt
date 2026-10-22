@@ -11,6 +11,8 @@ assertSearchSubmissionUrls(sitemapUrls,meta.categories);
 const submittedUrls=await(await fetch(origin+'/url-list.json')).json();assertSearchSubmissionUrls(submittedUrls,meta.categories);
 assert.deepEqual(sitemapUrls,submittedUrls);
 const build=await(await fetch(origin+'/build-info.json')).json();assert.equal(build.searchSubmissions.policy,SEARCH_POLICY);assert.equal(build.searchSubmissions.urlCount,sitemapUrls.length);
+const expectedCommit=process.env.EXPECTED_COMMIT||process.env.WORKERS_CI_COMMIT_SHA;
+if(expectedCommit){assert.equal(build.commit,expectedCommit,'Live deployment does not match the intended Git commit');console.log('Verified live source commit: '+build.commit);}
 count+=3;
 const ready=await(await fetch(origin+'/api/v1/releases/'+meta.releaseId)).json();assert.equal(ready.status,'ready');assert.equal(ready.caseCount,meta.total);
 const all=await(await fetch(origin+'/api/v1/prompts?limit=1')).json();assert.equal(all.total,meta.total);assert.equal(all.releaseId,meta.releaseId);

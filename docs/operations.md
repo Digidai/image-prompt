@@ -1,16 +1,17 @@
 # Operations
 
-## Release
+## Cloudflare release pipeline
 
-1. Edit source/data and preserve case IDs, original text and attribution.
-2. Run `npm ci && npm run build && npm run check && npm test`.
-3. Check desktop and mobile gallery, search, modal, workbench, a static detail and a category.
-4. Commit and push; the Validate workflow must succeed.
-5. Deploy with `npm run deploy`, or the Deploy Cloudflare workflow with the scoped `CLOUDFLARE_API_TOKEN` secret.
-6. Check `https://prompt.genedai.me/build-info.json` against the intended commit and run `npm run verify:live`.
-7. Run the IndexNow dry run against the approved listing entrances only. Submit only newly approved entrances without prior acceptance receipts, preserve the receipt, and use the existing Google/Bing sitemap registration. Never turn the full route registry into a submission queue.
+GitHub stores the source. Repository GitHub Actions is disabled and the old workflow files are removed. Cloudflare Workers Builds is the production build/deploy provider for `Digidai/image-prompt`, branch `main`, existing Worker `image-prompt` in the Gene Dai account.
 
-Cloudflare credentials are required only for deployment. They are not runtime application secrets. A short-lived local OAuth token must not be stored in GitHub Actions. The canonical site is lowercase HTTPS; workers.dev redirects to it. Preview URLs are disabled. `404.html` must stay a genuine 404.
+1. Edit source/data and preserve IDs, complete source text and attribution. Seed and verify any new D1/R2 content release first.
+2. Validate locally with `npm run ci:build`. It runs build/output validation, unit/API tests, real local Workers/Static Assets checks and remote dataset readiness. The hosting check itself uses isolated local storage and no production data or credentials.
+3. Push source changes to `main`. Cloudflare uses Node.js 22 from `.node-version`, runs build command `npm ci && npm run ci:build`, then deploy command `npm run ci:deploy` using an existing Cloudflare-managed build token. `SKIP_DEPENDENCY_INSTALL=1` avoids a separate automatic dependency install before `npm ci`.
+4. The deploy command publishes with Wrangler and runs production checks. `WORKERS_CI_COMMIT_SHA` is embedded in `build-info.json` and compared with the live source commit. A healthy older deployment cannot satisfy the release check. Do not report queued/running builds as published.
+5. Check the Cloudflare build log, active Worker version, live `build-info.json` and sitemap independently. Documentation/evidence-only commits can be excluded from build watch paths and remain ahead of the live source SHA.
+6. Search promotion uses only the 52 approved collection entrances. Do not repeat accepted submissions for an infrastructure-only release. The homepage already has a successful Google `requested` receipt; its daily monitor is now read-only.
+
+Local manual publication remains available via `npm run deploy`, using the existing local Wrangler login, followed by `npm run verify:live`. Never copy short-lived OAuth credentials into hosted build environments. Resource bindings serve production D1/R2; the build token is not a runtime application secret. The canonical site is lowercase HTTPS; workers.dev redirects to it, preview builds are disabled and unknown URLs must return genuine localized 404 bodies. See [the CI audit](ci-audit.md) for historical causes and the provider migration receipt.
 
 ## Search and agent discovery
 
@@ -32,9 +33,9 @@ Historical collection values are fixed snapshot data. Serving health, CI, deploy
 
 Only free, unlocked full prompts with attributed public original sources are in scope. Never add paid metadata-only placeholders or use unlock endpoints. The source importer uses public GET requests with bounded concurrency, retries and resumable private checkpoints. `source:prepare` requires the complete free manifest; an explicitly partial local development snapshot cannot pass the normal release gate.
 
-Committed compressed snapshots are verified against SHA-256 digests. `catalog:prepare` generates the matching metadata and SQLite import. Seed private R2 content shards and D1 search rows for the new release before pushing/deploying code. The active release ID is embedded in the Worker; the deploy workflow checks `/api/v1/releases/{releaseId}` before switching code, and the seeder writes its ready marker only after verifying D1/FTS counts and completing content uploads. The first migration uses the committed verified storage receipt because the previous static Worker has no readiness endpoint; search and content keys are version-specific. Old versions retain their content for rollback. Do not delete old data until its rollback retention is deliberately retired.
+Committed compressed snapshots are verified against SHA-256 digests. `catalog:prepare` generates the matching metadata and SQLite import. Seed private R2 content shards and D1 search rows for the new release before pushing/deploying code. The active release ID is embedded in the Worker; the Cloudflare build pipeline checks `/api/v1/releases/{releaseId}` before switching code, and the seeder writes its ready marker only after verifying D1/FTS counts and completing content uploads. The first migration uses the committed verified storage receipt because the previous static Worker has no readiness endpoint; search and content keys are version-specific. Old versions retain their content for rollback. Do not delete old data until its rollback retention is deliberately retired.
 
-`node scripts/seed-catalog.mjs` requires an authorized Cloudflare API token with D1 write/import and R2 object write access. Local Wrangler OAuth may be used within its existing local session, never copied into GitHub Actions. The deployment token can bind existing D1/R2 resources without database management privileges; actual Worker version upload was tested separately from production publication. Production serving uses the bindings, not that token.
+`node scripts/seed-catalog.mjs` requires an authorized Cloudflare API token with D1 write/import and R2 object write access. Local Wrangler OAuth may be used within its existing local session, never copied into a hosted build environment. The deployment token can bind existing D1/R2 resources without database management privileges; actual Worker version upload was tested separately from production publication. Production serving uses the bindings, not that token.
 
 For local UI testing, `npm run catalog:prepare && npm run build && npm run preview` uses in-memory SQLite and committed content with no Cloudflare credential. `wrangler dev` instead requires locally populated D1/R2 resources. The original static pages remain available, but the expansion, global directory, search and complete streamed exports need the catalog bindings.
 
