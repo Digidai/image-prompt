@@ -2,11 +2,13 @@
 
 Launch date: **2026-10-20, Asia/Shanghai**. Public site: **https://prompt.genedai.me/**. Public repository: **https://github.com/Digidai/image-prompt**.
 
-## Cloudflare build migration — in progress, 2026-10-22
+## Cloudflare build migration — published and verified, 2026-10-22
 
 - Latest maintainer instruction: stop GitHub CI and move build/test/deploy to Cloudflare Workers Builds. Repository GitHub Actions was disabled and there were no running GitHub jobs. Old workflow definitions are removed; historical failures remain documented in `docs/ci-audit.md`.
-- Prepared `ci:build` and `ci:deploy`, pinned Node.js 22, added 13 real local hosting checks and an exact-source production gate. Existing local validation passed all 18 tests; the hosting gate also rejected an injected empty English 404 asset, which was restored byte-for-byte.
-- Cloudflare repository connection and first native build are pending live verification. Search submissions are unchanged; the existing homepage indexing monitor remains read-only.
+- Cloudflare Workers Builds is connected to `Digidai/image-prompt`, production branch `main`, with preview builds disabled. It runs `npm ci && npm run ci:build`, then `npm run ci:deploy`, on Node.js 22.23.2. Build watch paths exclude documentation and evidence changes, so those updates do not republish the site.
+- Added 13 real local hosting checks and an exact-source production gate. The hosting gate also rejected an injected empty English 404 asset during local regression verification; the asset was restored byte-for-byte.
+- Native Cloudflare build [0426d031-b4c0-4dd2-90d9-b107cc066126](https://dash.cloudflare.com/48d9ccaf5ee7914c803b5d0656462848/workers/services/view/image-prompt/production/builds/0426d031-b4c0-4dd2-90d9-b107cc066126) succeeded on source `e019b63561651cc2c6240b40d02f59c0e674c435`: **18 tests, 13 hosting checks, D1/R2 readiness and 52 production checks** passed. Live build-info matches that exact commit. Worker version `d3dd496c-ce28-4141-a782-a80b1a65d9f5` receives 100% of production traffic. No new GitHub Actions runs were created.
+- Dataset remains `465e0259274b1b15`, 17,892 cases, with 52 promoted collection entrances. Search submissions are unchanged; the existing homepage indexing monitor remains read-only. See `docs/evidence/cloudflare-builds-migration.json` for the final receipt; authenticated dashboard captures remain local under ignored `output/cloudflare-builds/`.
 
 ## Homepage index monitor — 2026-10-22 10:00 Asia/Shanghai
 
@@ -60,7 +62,7 @@ Launch date: **2026-10-20, Asia/Shanghai**. Public site: **https://prompt.geneda
 
 - Cloudflare Worker `image-prompt`, custom domain `prompt.genedai.me`, HTTPS and lowercase canonical host. HTTP redirects to HTTPS; workers.dev redirects to the canonical; unknown pages return real 404s.
 - Content-hashed WebP previews, cached assets, security headers, strict script CSP, bounded read-only CORS API, security alerts and updates, secret-scanning push protection and private vulnerability reporting.
-- Tooling is locked; official GitHub actions are pinned to verified release commits; the runner is pinned to Ubuntu 24.04. Cloudflare Workers Builds is the selected build/deploy provider; GitHub Actions is disabled.
+- Tooling and the Node.js runtime are pinned. Cloudflare Workers Builds executes the build, tests and deployment; GitHub Actions is disabled and its workflow definitions are removed.
 - Output validation: 516 pages, 1,540 JSON-LD blocks, 20,078 internal links, 474 complete prompts and image attributions. Homepage HTML is about 59 KiB.
 - Six API/Worker tests passed. Desktop/mobile tests covered search, empty state, reset, favorites, modal, Escape, workbench, list/grid, progressive loading, and no-JavaScript HTML. Production overflow checks passed at 320, 390, 768 and 1440 px.
 - 24 live checks passed. Googlebot, bingbot, GPTBot, OAI-SearchBot, ChatGPT-User, Claude-SearchBot and PerplexityBot user-agent smoke requests returned 200 without a challenge. These are access tests, not independent crawler visits.

@@ -14,12 +14,17 @@ The older Node.js deprecation messages were warnings, not the failure cause. His
 
 ## Provider migration
 
-At the maintainer's request, GitHub Actions was disabled at repository level before any new commit was pushed. Neither historical runs nor new GitHub CI were rerun. The two workflow files are removed; GitHub retains source and historical evidence. Cloudflare Workers Builds will execute the build, tests and deployment for production `main`.
+At the maintainer's request, GitHub Actions was disabled at repository level before any new commit was pushed. Neither historical runs nor new GitHub CI were rerun. The two workflow files are removed; GitHub retains source and historical evidence. Cloudflare Workers Builds executes the build, tests and deployment for production `main`.
 
 - `ci:build` runs build/output checks, all unit/API tests, 13 real local Workers/Static Assets routing checks and D1/R2 release readiness. This catches empty localized 404 bodies before publication.
 - `ci:deploy` publishes through Wrangler and runs production checks. The live source commit must match Cloudflare's `WORKERS_CI_COMMIT_SHA`.
-- Node.js 22 is selected by `.node-version`. Preview builds are disabled. An existing Cloudflare-managed build credential is reused; local OAuth is never copied into the build environment.
+- Node.js 22.23.2 is selected by `.node-version`. Preview builds are disabled. An existing Cloudflare-managed build credential is reused; local OAuth is never copied into the build environment.
+- Build watch paths include `*`, excluding `docs/*`, `*.md` and `.github/*`, to avoid publishing documentation/evidence-only updates.
 
 ## Verification
 
-Local build/output validation, all 18 tests and 13 hosting checks passed. A negative regression check temporarily emptied only the generated English 404 asset: the hosting gate rejected it before deployment, and the exact original bytes were restored. The Cloudflare connection and first native build are being completed; their final receipt is recorded after verification.
+Local build/output validation, all 18 tests and 13 hosting checks passed. A negative regression check temporarily emptied only the generated English 404 asset: the hosting gate rejected it before deployment, and the exact original bytes were restored.
+
+Cloudflare native build [0426d031](https://dash.cloudflare.com/48d9ccaf5ee7914c803b5d0656462848/workers/services/view/image-prompt/production/builds/0426d031-b4c0-4dd2-90d9-b107cc066126) succeeded in 64 seconds on source `e019b63561651cc2c6240b40d02f59c0e674c435`. Its logs confirm 18 tests, 13 hosting checks, release readiness and 52 live checks passed, including exact source equality. A separate local read-only production verification also passed. Cloudflare's deployment API confirms Worker version `d3dd496c-ce28-4141-a782-a80b1a65d9f5` at 100% traffic. The GitHub Actions enabled flag remains false and its latest recorded run is still the pre-migration `39406682431`.
+
+The machine-readable receipt is `docs/evidence/cloudflare-builds-migration.json`. Dashboard captures and log excerpts remain local under ignored `output/cloudflare-builds/`; no credentials are stored in the receipt. This migration performed no search submissions.

@@ -1,0 +1,131 @@
+{
+  "observedAt": "2026-10-22T10:09:30.853Z",
+  "repository": "https://github.com/Digidai/image-prompt",
+  "site": "https://prompt.genedai.me/",
+  "provider": "Cloudflare Workers Builds",
+  "status": "verified",
+  "githubActions": {
+    "enabled": false,
+    "workflowFilesRemoved": [
+      ".github/workflows/ci.yml",
+      ".github/workflows/deploy.yml"
+    ],
+    "historicalRuns": 15,
+    "historicalFailures": 3,
+    "newRunsTriggered": 0,
+    "latestHistoricalRun": {
+      "id": 39406682431,
+      "createdAt": "2026-10-20T10:15:46Z",
+      "commit": "26499bf3fe60e9073fa6b71038498c8ad89bac6e"
+    }
+  },
+  "configuration": {
+    "worker": "image-prompt",
+    "productionBranch": "main",
+    "previewBuilds": false,
+    "buildCommand": "npm ci && npm run ci:build",
+    "deployCommand": "npm run ci:deploy",
+    "rootDirectory": "/",
+    "nodeVersion": "22.23.2",
+    "environment": {
+      "SKIP_DEPENDENCY_INSTALL": "1"
+    },
+    "includePaths": [
+      "*"
+    ],
+    "excludePaths": [
+      "docs/*",
+      "*.md",
+      ".github/*"
+    ],
+    "credential": "Existing Cloudflare-managed build token; no local OAuth copied"
+  },
+  "nativeBuild": {
+    "id": "0426d031-b4c0-4dd2-90d9-b107cc066126",
+    "url": "https://dash.cloudflare.com/48d9ccaf5ee7914c803b5d0656462848/workers/services/view/image-prompt/production/builds/0426d031-b4c0-4dd2-90d9-b107cc066126",
+    "commit": "e019b63561651cc2c6240b40d02f59c0e674c435",
+    "status": "success",
+    "durationSecondsDisplayed": 64,
+    "initializedAt": "2026-10-22T18:05:10.912+08:00",
+    "completedAt": "2026-10-22T18:06:13.715+08:00",
+    "validation": {
+      "unitAndApi": {
+        "passed": 18,
+        "failed": 0
+      },
+      "localHosting": {
+        "passed": 13
+      },
+      "releaseReadiness": "465e0259274b1b15",
+      "liveChecks": {
+        "passed": 52
+      },
+      "exactLiveCommitVerified": true
+    }
+  },
+  "deployment": {
+    "id": "22c636cc-e72e-467a-8a4e-09da9b9b689f",
+    "createdAt": "2026-10-22T10:06:05.39762Z",
+    "version": "d3dd496c-ce28-4141-a782-a80b1a65d9f5",
+    "trafficPercent": 100
+  },
+  "independentProductionVerification": {
+    "passed": 52,
+    "expectedCommit": "e019b63561651cc2c6240b40d02f59c0e674c435",
+    "observedCommit": "e019b63561651cc2c6240b40d02f59c0e674c435"
+  },
+  "localNegativeRegression": {
+    "result": "correctly rejected",
+    "input": "temporarily empty generated English 404 HTML",
+    "restoredByteForByte": true
+  },
+  "liveBuildInfo": {
+    "project": "image-prompt",
+    "commit": "e019b63561651cc2c6240b40d02f59c0e674c435",
+    "sourceSha256": "1d21d434c78ad730b9b7fb9a52c8d87ab19db7dc60fb76989ed1b7498397196b",
+    "snapshotDate": "2026-10-20",
+    "contentUpdatedAt": "2026-10-20",
+    "catalogSnapshotDate": "2026-10-20",
+    "cases": 17892,
+    "originalCases": 474,
+    "opennanaCases": 17418,
+    "contentRelease": "465e0259274b1b15",
+    "categories": 23,
+    "canonicalOrigin": "https://prompt.genedai.me",
+    "interfaceLanguages": [
+      "zh-CN",
+      "en"
+    ],
+    "searchSubmissions": {
+      "policy": "listing-landings-v1",
+      "urlCount": 52
+    }
+  },
+  "searchSubmissions": {
+    "performed": 0,
+    "policy": "listing-landings-v1",
+    "urlCount": 52
+  },
+  "localEvidence": [
+    {
+      "path": "output/cloudflare-builds/0426d031-success.png",
+      "sha256": "7a552134f81f7433314fa58d70ec61423caaff4794653e629ee7a5cafea71c38",
+      "bytes": 109348
+    },
+    {
+      "path": "output/cloudflare-builds/0426d031-tests.txt",
+      "sha256": "f2ae8a793920cad61f28f604e64b79b1890fdd34a5a32e2460938bc250f05643",
+      "bytes": 5817
+    },
+    {
+      "path": "output/cloudflare-builds/0426d031-hosting.txt",
+      "sha256": "8d7715087af751b226e0dcee5a0c69f800a0423d92ca6be077ae94ff0f5d7986",
+      "bytes": 6143
+    },
+    {
+      "path": "output/cloudflare-builds/0426d031-deploy.txt",
+      "sha256": "921c43a50cdbd861114cae76294f06f5688c65b19e05744c6dd54335011b2bc2",
+      "bytes": 5782
+    }
+  ]
+}
