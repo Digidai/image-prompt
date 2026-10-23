@@ -2,6 +2,13 @@
 
 Launch date: **2026-10-20, Asia/Shanghai**. Public site: **https://prompt.genedai.me/**. Public repository: **https://github.com/Digidai/image-prompt**.
 
+## Homepage index monitor — 2026-10-23 10:00 Asia/Shanghai
+
+- **Google actual homepage indexation confirmed.** Authenticated URL Inspection for the exact `https://prompt.genedai.me/` homepage now shows **URL is on Google / Page is indexed**. Last crawl is displayed as **Oct 22, 2026, 10:01:32 AM** (the captured UI does not specify its timezone), crawled as Googlebot smartphone, successful fetch, crawling/indexing allowed. User-declared canonical is the exact homepage; Google-selected canonical is the inspected URL. No further indexing request was made.
+- Bing's exact-homepage **Bing Index** inspection remains **Discovered but not crawled — URL cannot appear on Bing**, discovered on 2026-10-20. Exact-site Site Explorer with **Indexed URLs** selected still says **No data available**; the numeric indexed-page count remains unknown, not zero.
+- Google site-wide indexed count also remains unknown: the domain Page indexing report was last updated 2026-10-16, before this subdomain launched, and its sitemap segments do not include `prompt.genedai.me`. Domain totals cannot be used as this site's indexed-page count.
+- The daily monitor remains ACTIVE until both exact homepages are confirmed indexed. This run was read-only: zero Google/Bing requests, Sitemap/IndexNow submissions, content edits or deployments. Live source is `e019b63561651cc2c6240b40d02f59c0e674c435`, release `465e0259274b1b15`, with 52 search entrances. Ledger observations are appended; run receipt is `docs/evidence/index-monitor-2026-10-23.json`. Authenticated captures stay local under ignored `output/index-monitor/2026-10-23/`.
+
 ## Cloudflare build migration — published and verified, 2026-10-22
 
 - Latest maintainer instruction: stop GitHub CI and move build/test/deploy to Cloudflare Workers Builds. Repository GitHub Actions was disabled and there were no running GitHub jobs. Old workflow definitions are removed; historical failures remain documented in `docs/ci-audit.md`.
