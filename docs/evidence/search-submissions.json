@@ -252,5 +252,55 @@
     ],
     "submissionAction": "none",
     "notEvidenceOf": "Zero site indexed pages, ranking, traffic or AI citation"
+  },
+  {
+    "at": "2026-10-24T01:58:01.706Z",
+    "provider": "Google Search Console",
+    "kind": "url_inspection",
+    "property": "sc-domain:genedai.me",
+    "url": "https://prompt.genedai.me/",
+    "status": "indexed",
+    "homepageIndexed": true,
+    "indexingReason": "Page is indexed",
+    "lastCrawlDisplayed": "Oct 22, 2026, 10:01:32 AM",
+    "lastCrawlTimezone": "Not specified in captured UI; display time preserved without conversion",
+    "crawledAs": "Googlebot smartphone",
+    "crawlAllowed": true,
+    "pageFetch": "Successful",
+    "indexingAllowed": true,
+    "userDeclaredCanonical": "https://prompt.genedai.me/",
+    "googleSelectedCanonical": "Inspected URL",
+    "referringSitemaps": [
+      "https://prompt.genedai.me/sitemap.xml"
+    ],
+    "siteIndexedPageCount": null,
+    "siteCountLimitation": "Domain Page indexing report last updated 2026-10-16. The available sitemap segments do not include prompt.genedai.me; domain totals cannot establish this subdomain count.",
+    "sourceCommit": "e019b63561651cc2c6240b40d02f59c0e674c435",
+    "evidence": "Authenticated exact-homepage URL Inspection still shows URL is on Google / Page is indexed. Last crawl and canonical match the previous observation.",
+    "screenshotLocal": "output/index-monitor/2026-10-24/google-homepage-indexed.png",
+    "textEvidenceLocal": "output/index-monitor/2026-10-24/google-homepage-indexed.txt",
+    "submissionAction": "none; previous successful requested receipt preserved",
+    "notEvidenceOf": "Site-wide indexed count, ranking, traffic or AI citation"
+  },
+  {
+    "at": "2026-10-24T01:58:10.772Z",
+    "provider": "Bing Webmaster Tools",
+    "kind": "url_inspection_and_index_report",
+    "site": "https://prompt.genedai.me/",
+    "url": "https://prompt.genedai.me/",
+    "status": "discovered_not_crawled",
+    "homepageIndexed": false,
+    "discoveredOn": "2026-10-20",
+    "lastCrawl": null,
+    "siteIndexedPageCount": null,
+    "siteReportObservedAt": "2026-10-24T01:58:38.123Z",
+    "evidence": "Authenticated Bing Index inspection remains Discovered but not crawled / URL cannot appear on Bing, discovered on 20 Oct 2026. Exact-site Site Explorer with Indexed URLs selected still shows No data available, without a numeric count.",
+    "sourceCommit": "e019b63561651cc2c6240b40d02f59c0e674c435",
+    "screenshotLocal": [
+      "output/index-monitor/2026-10-24/bing-homepage-inspection.png",
+      "output/index-monitor/2026-10-24/bing-indexed-urls-report.png"
+    ],
+    "submissionAction": "none",
+    "notEvidenceOf": "Zero site indexed pages, ranking, traffic or AI citation"
   }
 ]

@@ -1,0 +1,109 @@
+{
+  "status": "unchanged_google_indexed_bing_waiting",
+  "observedAt": "2026-10-24T01:59:00.813Z",
+  "canonicalUrl": "https://prompt.genedai.me/",
+  "liveBuildInfo": {
+    "project": "image-prompt",
+    "commit": "e019b63561651cc2c6240b40d02f59c0e674c435",
+    "sourceSha256": "1d21d434c78ad730b9b7fb9a52c8d87ab19db7dc60fb76989ed1b7498397196b",
+    "snapshotDate": "2026-10-20",
+    "contentUpdatedAt": "2026-10-20",
+    "catalogSnapshotDate": "2026-10-20",
+    "cases": 17892,
+    "originalCases": 474,
+    "opennanaCases": 17418,
+    "contentRelease": "465e0259274b1b15",
+    "categories": 23,
+    "canonicalOrigin": "https://prompt.genedai.me",
+    "interfaceLanguages": [
+      "zh-CN",
+      "en"
+    ],
+    "searchSubmissions": {
+      "policy": "listing-landings-v1",
+      "urlCount": 52
+    }
+  },
+  "scope": "Read-only actual-indexation monitoring; zero Google/Bing requests, Sitemap/IndexNow submissions, site-content edits or deployment.",
+  "google": {
+    "at": "2026-10-24T01:58:01.706Z",
+    "provider": "Google Search Console",
+    "kind": "url_inspection",
+    "property": "sc-domain:genedai.me",
+    "url": "https://prompt.genedai.me/",
+    "status": "indexed",
+    "homepageIndexed": true,
+    "indexingReason": "Page is indexed",
+    "lastCrawlDisplayed": "Oct 22, 2026, 10:01:32 AM",
+    "lastCrawlTimezone": "Not specified in captured UI; display time preserved without conversion",
+    "crawledAs": "Googlebot smartphone",
+    "crawlAllowed": true,
+    "pageFetch": "Successful",
+    "indexingAllowed": true,
+    "userDeclaredCanonical": "https://prompt.genedai.me/",
+    "googleSelectedCanonical": "Inspected URL",
+    "referringSitemaps": [
+      "https://prompt.genedai.me/sitemap.xml"
+    ],
+    "siteIndexedPageCount": null,
+    "siteCountLimitation": "Domain Page indexing report last updated 2026-10-16. The available sitemap segments do not include prompt.genedai.me; domain totals cannot establish this subdomain count.",
+    "sourceCommit": "e019b63561651cc2c6240b40d02f59c0e674c435",
+    "evidence": "Authenticated exact-homepage URL Inspection still shows URL is on Google / Page is indexed. Last crawl and canonical match the previous observation.",
+    "screenshotLocal": "output/index-monitor/2026-10-24/google-homepage-indexed.png",
+    "textEvidenceLocal": "output/index-monitor/2026-10-24/google-homepage-indexed.txt",
+    "submissionAction": "none; previous successful requested receipt preserved",
+    "notEvidenceOf": "Site-wide indexed count, ranking, traffic or AI citation"
+  },
+  "bing": {
+    "at": "2026-10-24T01:58:10.772Z",
+    "provider": "Bing Webmaster Tools",
+    "kind": "url_inspection_and_index_report",
+    "site": "https://prompt.genedai.me/",
+    "url": "https://prompt.genedai.me/",
+    "status": "discovered_not_crawled",
+    "homepageIndexed": false,
+    "discoveredOn": "2026-10-20",
+    "lastCrawl": null,
+    "siteIndexedPageCount": null,
+    "siteReportObservedAt": "2026-10-24T01:58:38.123Z",
+    "evidence": "Authenticated Bing Index inspection remains Discovered but not crawled / URL cannot appear on Bing, discovered on 20 Oct 2026. Exact-site Site Explorer with Indexed URLs selected still shows No data available, without a numeric count.",
+    "sourceCommit": "e019b63561651cc2c6240b40d02f59c0e674c435",
+    "screenshotLocal": [
+      "output/index-monitor/2026-10-24/bing-homepage-inspection.png",
+      "output/index-monitor/2026-10-24/bing-indexed-urls-report.png"
+    ],
+    "submissionAction": "none",
+    "notEvidenceOf": "Zero site indexed pages, ranking, traffic or AI citation"
+  },
+  "comparison": {
+    "previousReceipt": "docs/evidence/index-monitor-2026-10-23.json",
+    "googleHomepageIndexationChanged": false,
+    "bingHomepageIndexationChanged": false,
+    "googleLastCrawlChanged": false,
+    "siteIndexedCountsRemainUnknown": true,
+    "liveSourceChanged": false,
+    "notificationRequired": false
+  },
+  "automation": {
+    "id": "image-prompt",
+    "status": "ACTIVE",
+    "phase": "read_only_actual_indexation_monitor",
+    "remainingCondition": "Bing exact-homepage actual indexation; verify both providers before ending monitoring"
+  },
+  "localEvidenceSha256": {
+    "output/index-monitor/2026-10-24/bing-homepage-inspection.png": "dd36d72321e7fe47563b8aeb2b83a782cd21ecd92f108d410952c232c30ef0a9",
+    "output/index-monitor/2026-10-24/bing-homepage-inspection.txt": "2cdc27db6684e53fff4bfba41251603adf6179c73656522a722ecfd7f0bfa824",
+    "output/index-monitor/2026-10-24/bing-indexed-urls-report.png": "2e8dda4340b8a4fa1d131f5f351d70d7387cac84fca8e1c416d7c0b83bda90b2",
+    "output/index-monitor/2026-10-24/bing-indexed-urls-report.txt": "ff58309633ce4c1bcf497eb7adeb8feb30c583b8d3558710a5146b6d5ddbc255",
+    "output/index-monitor/2026-10-24/google-homepage-indexed.png": "609f277496bfe1e0b5e3e436933fcaedf2109fa0666bd58434d90614b17394b3",
+    "output/index-monitor/2026-10-24/google-homepage-indexed.txt": "ad4f3f33ba72fb0b236690d3914e56535025d31569cf572ee5e707e6687a47d8",
+    "output/index-monitor/2026-10-24/google-property-report.txt": "2307381878914aa189ae12d3eee61634c614c3e7c2144431a05b242c07b8e9f1",
+    "output/index-monitor/2026-10-24/live-build-info.json": "901fe181ddb5e528c930b4b4077ecbaaabb9d0a4e4d8f0c577cf8da0342dea4d"
+  },
+  "notClaimed": [
+    "Site-wide indexed-page count for either provider",
+    "Bing homepage indexation",
+    "Ranking, traffic or AI citation",
+    "Any new indexing request, Sitemap or IndexNow submission"
+  ]
+}
