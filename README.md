@@ -46,6 +46,7 @@ npm run check        # Static pages, dynamic routes, attribution, scope and reco
 npm test             # Real SQLite FTS, Chinese search, filtering, API and escaping
 npm run check:hosting # Local Workers/Static Assets routing, localized 404s, HEAD and Markdown
 npm run verify:live  # Production scope, prompts, Markdown, pagination, exports and errors
+npm run audit:crawl  # Read-only crawler/robots/canonical/sitemap/health report; no submissions
 ```
 
 ## Agent access
@@ -85,7 +86,7 @@ npm run submit:indexnow -- --execute
 
 **Only 52 collection entrances are promoted** across Chinese and English: homepage, prompt directory first page, category overview and each category first page. Detail pages, later pagination and utility documentation are excluded from both the sitemap and IndexNow. The same allowlist is exported as `url-list.json`; the complete `route-list.json` is for route/link validation. A hard URL budget and submission guard prevent accidental bulk detail promotion. Details remain available for browsing, sharing and agents; historical receipts are retained, without repeating previously accepted URLs.
 
-The [public IndexNow key](https://prompt.genedai.me/d46f8c2a59eb4dcab314f45a8efbe85e.txt) validates the domain. The script checks the live sitemap and submits at most 10,000 URLs per batch, preserving URL coverage and receipts. Existing Google/Bing sitemap registrations use the same sitemap URL. Sitemap discovery, IndexNow acceptance, Google indexing requests and actual indexation are separate states. The authorized thread monitor retries the homepage request from 2026-10-21 10:00 Beijing time, then checks actual Google/Bing indexing; see the evidence ledger for observed results.
+The [public IndexNow key](https://prompt.genedai.me/d46f8c2a59eb4dcab314f45a8efbe85e.txt) validates the domain. The script checks the live sitemap and submits at most 10,000 URLs per batch, preserving URL coverage and receipts. Existing Google/Bing sitemap registrations use the same sitemap URL. Sitemap discovery, IndexNow acceptance, Google indexing requests and actual indexation are separate states. The homepage already has a successful Google request and confirmed Google indexation; recurring index checks are read-only. The existing daily 10:00 Asia/Shanghai automation now also maintains health, repairs, eligible content updates and measured growth under [operations](docs/operations.md); it never repeats indexing submissions.
 
 ## Contributing and rights
 

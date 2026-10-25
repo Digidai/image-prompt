@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {setTimeout as delay} from 'node:timers/promises';
+import {detailCacheFresh} from './source-freshness.mjs';
 
 const cache=path.resolve(import.meta.dirname,'../.cache/opennana');
 const api='https://api.opennana.com/api/prompts';
@@ -43,7 +44,7 @@ const fields=['id','slug','title','description','source_name','source_url','mode
 await pool(free,6,async item=>{
  const dest=path.join(detailDir,`${item.id}.json`);
  try{
-  try{const v=await read(dest);if(v.id===item.id&&v.slug===item.slug){cached++;completed++;return;}}catch{}
+  try{const v=await read(dest),stat=await fs.stat(dest);if(detailCacheFresh(v,item,stat.mtimeMs)){cached++;completed++;return;}}catch{}
   const d=await get(`${api}/${encodeURIComponent(item.slug)}`);
   // Never attempt to unlock, buy, log in or read a hidden paid prompt.
   const clean=Object.fromEntries(fields.filter(k=>k in d).map(k=>[k,d[k]]));

@@ -6,6 +6,7 @@
   "compatibility_date": "2026-10-19",
   "workers_dev": true,
   "preview_urls": false,
+  "version_metadata": { "binding": "CF_VERSION_METADATA" },
   "d1_databases": [{ "binding": "CATALOG", "database_name": "image-prompt-catalog", "database_id": "9b0a5ffa-353e-426f-bdcc-47b9065c222f", "migrations_dir": "migrations" }],
   "r2_buckets": [{ "binding": "CONTENT", "bucket_name": "image-prompt-content" }],
   "routes": [{ "pattern": "prompt.genedai.me", "custom_domain": true }],

@@ -36,3 +36,9 @@ test('Markdown negotiation and filter URLs preserve cache/index boundaries',asyn
  const html=await worker.fetch(new Request(origin+'/?category=product'),env);assert.equal(html.headers.get('x-robots-tag'),'noindex, follow');assert(html.headers.get('content-security-policy').includes("script-src 'self'"));
 });
 test('English missing pages retain a localized body and genuine 404 status',async()=>{const env={ASSETS:{async fetch(req){const p=new URL(req.url).pathname;return p==='/en/404/'?new Response('<html lang="en"><h1>Page not found</h1></html>',{headers:{'content-type':'text/html'}}):new Response('<html lang="zh-CN">missing</html>',{status:404,headers:{'content-type':'text/html'}});}}};const r=await worker.fetch(new Request(origin+'/en/missing-page'),env);assert.equal(r.status,404);assert((await r.text()).includes('<html lang="en">'));assert.equal(r.headers.get('location'),null);});
+test('Cloudflare analytics can load without enabling arbitrary inline scripts',async()=>{
+ const env={ASSETS:{fetch:async()=>new Response('HTML',{headers:{'content-type':'text/html'}})}};
+ const r=await worker.fetch(new Request(origin+'/'),env),policy=r.headers.get('content-security-policy');
+ const script=policy.split(';').find(x=>x.trim().startsWith('script-src')),connect=policy.split(';').find(x=>x.trim().startsWith('connect-src'));
+ assert(script.includes('https://static.cloudflareinsights.com'));assert(!script.includes('unsafe-inline'));assert(!script.includes('unsafe-eval'));assert(connect.includes('https://cloudflareinsights.com'));
+});

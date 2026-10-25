@@ -3,9 +3,10 @@ import {catalogApi,meta} from './catalog-api.js';
 import {dynamicResponse} from './render-catalog.js';
 import {language,stripLocale} from './i18n.js';
 import { ORIGIN, apiResponse, cors, json } from './api.js';
+import {cachedListing} from './listing-cache.js';
 
 export default {
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
     const url = new URL(request.url),locale=language(url.pathname),normalized=new URL(url);normalized.pathname=stripLocale(url.pathname);
     // Keep preview and workers.dev hosts out of the canonical search index.
     if (!['localhost','127.0.0.1','prompt.genedai.me'].includes(url.hostname)) {
@@ -19,7 +20,7 @@ export default {
       try{response=env.CATALOG?await catalogApi(url,env):apiResponse(url);}catch{response=json({error:'Catalog temporarily unavailable. Please retry.'},503,{'retry-after':'30'});}
     } else {
       if (!['GET','HEAD'].includes(request.method)) return new Response('Method not allowed',{status:405,headers:{allow:'GET, HEAD'}});
-      if(env.CATALOG&&env.CONTENT){try{response=await dynamicResponse(new Request(normalized,request),env,locale);}catch{response=new Response('Catalog temporarily unavailable',{status:503,headers:{'retry-after':'30'}});}}
+      if(env.CATALOG&&env.CONTENT){try{response=await cachedListing(request,env,ctx,()=>dynamicResponse(new Request(normalized,request),env,locale),meta.releaseId);}catch{response=new Response('Catalog temporarily unavailable',{status:503,headers:{'retry-after':'30'}});}}
       // Optional content negotiation complements permanent .md and JSON links.
       if(!response&&locale==='en'&&normalized.pathname.endsWith('/index.md'))response=await env.ASSETS.fetch(new Request(normalized,request));
       if (!response && request.headers.get('accept')?.includes('text/markdown') && /^\/prompts\/[a-zA-Z0-9-]+\/$/.test(normalized.pathname)) {
@@ -38,7 +39,7 @@ export default {
     headers.set('x-content-snapshot',env.CATALOG?meta.snapshotDate:catalog.snapshotDate);
     if(env.CATALOG)headers.set('x-content-release',meta.releaseId);
     if (headers.get('content-type')?.includes('text/html')) {
-      headers.set('content-security-policy',"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; media-src 'self' https:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'");
+      headers.set('content-security-policy',"default-src 'self'; script-src 'self' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://cloudflareinsights.com; media-src 'self' https:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'");
       headers.append('link',`<${ORIGIN}/llms.txt>; rel="describedby"; type="text/plain"`);
       // Filter/sort URLs are useful to humans but do not create new index targets.
       if (url.search) headers.set('x-robots-tag','noindex, follow');
