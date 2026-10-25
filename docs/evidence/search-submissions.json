@@ -352,5 +352,26 @@
     ],
     "submissionAction": "none",
     "notEvidenceOf": "Zero site indexed pages, ranking, traffic or AI citation"
+  },
+  {
+    "at": "2026-10-25T03:12:26.650Z",
+    "provider": "Bing Webmaster Tools",
+    "kind": "live_url_test",
+    "site": "https://prompt.genedai.me/",
+    "url": "https://prompt.genedai.me/",
+    "status": "indexable",
+    "httpStatus": 200,
+    "testedAtDisplayed": "Today at 11:12 (2026-10-25 Asia/Shanghai)",
+    "testedResponseDate": "Sun, 25 Oct 2026 03:11:54 GMT",
+    "actualIndexStatus": "discovered_not_crawled",
+    "homepageIndexed": false,
+    "siteIndexedPageCount": null,
+    "evidence": "Authenticated native Live URL: URL can be indexed by Bing; No SEO/GEO issues found. View Tested page shows HTTP 200 and the full server-rendered homepage. The separate Bing Index state remains discovered/not crawled.",
+    "markupInsights": "Failed to load insights; structured-data verdict unknown",
+    "screenshotLocal": "output/bing-audit/2026-10-25/bing-live-test.png",
+    "textEvidenceLocal": "output/bing-audit/2026-10-25/bing-live-test.txt",
+    "testedResponseLocal": "output/bing-audit/2026-10-25/bing-tested-response.txt",
+    "submissionAction": "none; read-only diagnostic, no Request indexing click",
+    "notEvidenceOf": "Actual indexation, zero site indexed pages, ranking, traffic or AI citation"
   }
 ]

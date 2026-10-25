@@ -1,0 +1,278 @@
+{
+  "at": "2026-10-25T03:46:51.594Z",
+  "status": "repairs_published_bing_actual_indexation_pending",
+  "canonicalUrl": "https://prompt.genedai.me/",
+  "authorization": "Maintainer authorized diagnosis, direct repairs, verified Cloudflare publication and ongoing autonomous maintenance/content/growth on 2026-10-25; Cloudflare CLI/API preferred over dashboard.",
+  "baseline": {
+    "checkout": "0560fb6ddd9df6a613b65d5ab865a8a2a02ee2f9",
+    "liveSource": "e019b63561651cc2c6240b40d02f59c0e674c435",
+    "dirty": false
+  },
+  "bing": {
+    "liveDiagnostic": {
+      "at": "2026-10-25T03:12:26.650Z",
+      "provider": "Bing Webmaster Tools",
+      "kind": "live_url_test",
+      "site": "https://prompt.genedai.me/",
+      "url": "https://prompt.genedai.me/",
+      "status": "indexable",
+      "httpStatus": 200,
+      "testedAtDisplayed": "Today at 11:12 (2026-10-25 Asia/Shanghai)",
+      "testedResponseDate": "Sun, 25 Oct 2026 03:11:54 GMT",
+      "actualIndexStatus": "discovered_not_crawled",
+      "homepageIndexed": false,
+      "siteIndexedPageCount": null,
+      "evidence": "Authenticated native Live URL: URL can be indexed by Bing; No SEO/GEO issues found. View Tested page shows HTTP 200 and the full server-rendered homepage. The separate Bing Index state remains discovered/not crawled.",
+      "markupInsights": "Failed to load insights; structured-data verdict unknown",
+      "screenshotLocal": "output/bing-audit/2026-10-25/bing-live-test.png",
+      "textEvidenceLocal": "output/bing-audit/2026-10-25/bing-live-test.txt",
+      "testedResponseLocal": "output/bing-audit/2026-10-25/bing-tested-response.txt",
+      "submissionAction": "none; read-only diagnostic, no Request indexing click",
+      "notEvidenceOf": "Actual indexation, zero site indexed pages, ranking, traffic or AI citation"
+    },
+    "specificSchedulingOrQualityReason": "unknown; not exposed by provider",
+    "currentHomepageBlockerDemonstrated": false,
+    "historicalFirewallInterception": "unverified; existing OAuth cannot read zone settings/custom rules, permissions were not widened"
+  },
+  "google": {
+    "lastOfficialObservationAt": "2026-10-25T03:03:59.979Z",
+    "homepageIndexed": true,
+    "siteIndexedPageCount": null,
+    "receipt": "docs/evidence/index-monitor-2026-10-25.json",
+    "furtherRequestPerformed": false
+  },
+  "publication": {
+    "sourceCommit": "2b3ed991bc740b651aa8cd56053cf14cd7f819fa",
+    "commits": [
+      "fdf15094cdd6eef49abed8efcf37eb7df0022a00",
+      "f49c260d9db4774089d0a6c5ad806d5f72d0c900",
+      "2b3ed991bc740b651aa8cd56053cf14cd7f819fa"
+    ],
+    "provider": "Cloudflare Workers Builds",
+    "buildId": "3be7b217-75fd-4cbf-a544-83c46859a2b3",
+    "conclusion": "success",
+    "url": "https://dash.cloudflare.com/48d9ccaf5ee7914c803b5d0656462848/workers/services/view/image-prompt/production/builds/3be7b217-75fd-4cbf-a544-83c46859a2b3",
+    "checkCompletedAt": "2026-10-25T03:41:41Z",
+    "deploymentId": "7dacd0a9-80a2-4aa6-9336-4bd470053395",
+    "createdAt": "2026-10-25T03:41:29.096874Z",
+    "versions": [
+      {
+        "version_id": "3d74bdb7-484e-434e-9572-5049fc6223f6",
+        "percentage": 100
+      }
+    ],
+    "liveBuildInfo": {
+      "project": "image-prompt",
+      "commit": "2b3ed991bc740b651aa8cd56053cf14cd7f819fa",
+      "sourceSha256": "1d21d434c78ad730b9b7fb9a52c8d87ab19db7dc60fb76989ed1b7498397196b",
+      "snapshotDate": "2026-10-20",
+      "contentUpdatedAt": "2026-10-20",
+      "catalogSnapshotDate": "2026-10-20",
+      "cases": 17892,
+      "originalCases": 474,
+      "opennanaCases": 17418,
+      "contentRelease": "465e0259274b1b15",
+      "categories": 23,
+      "canonicalOrigin": "https://prompt.genedai.me",
+      "interfaceLanguages": [
+        "zh-CN",
+        "en"
+      ],
+      "searchSubmissions": {
+        "policy": "listing-landings-v1",
+        "urlCount": 52
+      }
+    },
+    "githubActionsEnabled": false
+  },
+  "verification": {
+    "unitAndApiTests": 25,
+    "localHostingChecks": 13,
+    "remoteReleaseReadiness": "passed",
+    "independentLiveChecks": 52,
+    "crawlerHealthProbes": 12,
+    "crawlerHealthAt": "2026-10-25T03:42:45.679Z",
+    "failures": [],
+    "warnings": [],
+    "exactLiveSource": "2b3ed991bc740b651aa8cd56053cf14cd7f819fa"
+  },
+  "repairs": {
+    "analytics": {
+      "observedFailure": "Actual browser beacon request blocked by CSP",
+      "repair": "Permit documented Cloudflare Analytics script and connect HTTPS origins; retain inline-script prohibition; disclose in both privacy notices",
+      "configurationGate": "passed",
+      "actualPostRepairVisitorCollection": "not yet observed"
+    },
+    "listingCache": {
+      "ttlSeconds": 300,
+      "isolation": [
+        "Worker version",
+        "data release",
+        "locale"
+      ],
+      "samples": {
+        "at": "2026-10-25T03:33:44.986Z",
+        "samples": [
+          {
+            "path": "/prompts/page/2/",
+            "status": 200,
+            "cache": "MISS",
+            "ms": 757,
+            "locale": "zh-CN",
+            "canonical": "https://prompt.genedai.me/prompts/page/2/",
+            "colo": "SJC"
+          },
+          {
+            "path": "/prompts/page/2/",
+            "status": 200,
+            "cache": "HIT",
+            "ms": 222,
+            "locale": "zh-CN",
+            "canonical": "https://prompt.genedai.me/prompts/page/2/",
+            "colo": "SJC"
+          },
+          {
+            "path": "/en/prompts/page/2/",
+            "status": 200,
+            "cache": "MISS",
+            "ms": 253,
+            "locale": "en",
+            "canonical": "https://prompt.genedai.me/en/prompts/page/2/",
+            "colo": "SJC"
+          },
+          {
+            "path": "/en/prompts/page/2/",
+            "status": 200,
+            "cache": "HIT",
+            "ms": 209,
+            "locale": "en",
+            "canonical": "https://prompt.genedai.me/en/prompts/page/2/",
+            "colo": "SJC"
+          }
+        ],
+        "limitations": "Synthetic samples from this client/edge location, not field Core Web Vitals or a traffic-growth claim."
+      }
+    },
+    "sourceDetailFreshness": {
+      "maxAgeDays": 7,
+      "optionalSourceMarkers": true,
+      "fullCatalogRefreshedToday": false,
+      "upstreamTotalObserved": 23954,
+      "importedSourceManifestTotal": 23657,
+      "eligibleFreeAdditionCount": null
+    },
+    "dependency": {
+      "package": "undici",
+      "version": "7.30.1",
+      "wranglerVersion": "4.151.1",
+      "npmAuditVulnerabilities": 0,
+      "githubAlert": 3,
+      "githubAlertState": "fixed",
+      "fixedAt": "2026-10-25T03:31:28Z"
+    }
+  },
+  "cliOperations": {
+    "dashboardLoginRequired": false,
+    "credentialSource": "Existing token or official wrangler auth token --json with refresh; token kept in memory, not logged or persisted",
+    "metrics": {
+      "output": "output/metrics/cloudflare-2026-10-24-2026-10-25T03-40-39.645Z.json",
+      "at": "2026-10-25T03:40:39.645Z",
+      "window": {
+        "since": "2026-10-23T16:00:00.000Z",
+        "until": "2026-10-24T16:00:00.000Z",
+        "timezone": "Asia/Shanghai",
+        "description": "Previous complete Beijing calendar day"
+      },
+      "workerName": "image-prompt",
+      "rumHostname": "prompt.genedai.me",
+      "workerInvocations": {
+        "errors": 0,
+        "requests": 647
+      },
+      "rum": {
+        "state": "no_recorded_beacons",
+        "visits": null,
+        "pageLoads": null
+      },
+      "errors": [],
+      "limitations": [
+        "Worker requests include bots, probes, APIs, assets and alternate hosts. They are not PV, UV or organic visitors.",
+        "Empty RUM data does not establish zero visitors.",
+        "Bing/Google actual indexation and search performance require separate provider evidence."
+      ]
+    },
+    "storageCapability": {
+      "at": "2026-10-25T03:38:54.477Z",
+      "credentialSource": "existing Wrangler CLI session; credential not persisted",
+      "r2Key": "maintenance/probes/c28e7626-069b-4ae6-bc51-fa374c5fdcb1.json",
+      "r2Put": 200,
+      "r2Read": 200,
+      "contentSha256": "a5c975adb058a906bd37fb455190c5fbe41c62d69c9cd209401659b9fea5cac1",
+      "r2Delete": 200,
+      "d1Read": 200,
+      "datasetModified": false
+    }
+  },
+  "automation": {
+    "id": "image-prompt",
+    "name": "Image Prompt 自主维护与增长",
+    "status": "ACTIVE",
+    "schedule": "10:00 Asia/Shanghai daily",
+    "daily": [
+      "read-only health",
+      "evidence-backed direct repairs and verified releases",
+      "actual index monitoring without submissions"
+    ],
+    "weekly": [
+      "Monday eligible free/public-source reconciliation, catch up if missed",
+      "dependency review",
+      "scoped search/Cloudflare CLI metrics and measured improvements"
+    ],
+    "quietWhen": "healthy, unchanged or normal indexing wait",
+    "continueAfterBothIndexed": true,
+    "operations": "docs/operations.md",
+    "backlog": "docs/maintenance-backlog.md"
+  },
+  "boundaries": {
+    "searchPolicy": "listing-landings-v1",
+    "searchUrlCount": 52,
+    "datasetRelease": "465e0259274b1b15",
+    "catalogCases": 17892,
+    "catalogModified": false,
+    "googleIndexingRequests": 0,
+    "bingIndexingRequests": 0,
+    "sitemapSubmissions": 0,
+    "indexNowSubmissions": 0
+  },
+  "limitations": [
+    "Bing actual indexation remains pending; no repair is claimed to have caused indexation.",
+    "Native indexability is distinct from the Bing quality/scheduling decision.",
+    "Synthetic response timings are not field Core Web Vitals.",
+    "Worker invocations are not human PV/UV; empty RUM groups do not establish zero visitors.",
+    "No organic traffic, ranking, AI citation or model reproduction improvement is claimed.",
+    "Content refresh must complete free/public-source reconciliation and storage readiness before publication."
+  ],
+  "rollback": {
+    "priorVerifiedSource": "e019b63561651cc2c6240b40d02f59c0e674c435",
+    "datasetUnchanged": true,
+    "procedure": "Use a previously validated Cloudflare Worker version or redeploy its exact source; verify live commit and health before declaring recovery."
+  },
+  "localEvidenceSha256": {
+    "output/bing-audit/2026-10-25/bing-live-test.png": "1ee6526f947dc32c434c127b85f2d22f59a504e40d36b8b6013c5e47fc10d378",
+    "output/bing-audit/2026-10-25/bing-live-test.txt": "94a34f96773f404aacc4fcb83b53261d3c1b6a147b1b9026f4e32f53f03550ea",
+    "output/bing-audit/2026-10-25/bing-tested-response.txt": "2d9290ab5e459266e459ac1c28d7bdf742affec51bbb95b478a4df526da9b021",
+    "output/bing-audit/2026-10-25/http-probes.json": "f030bac1f14d36732c574e276be5d26e137a705c6177e782ed74856a301e31e0",
+    "output/bing-audit/2026-10-25/beacon-before.json": "83eda3c70b7a3c7953c2a9bd3d90a6b80d10c833e4759ab43351f33b0c56c8a4",
+    "output/bing-audit/2026-10-25/health-csp-regression-before.json": "f8021fbe534d159b490fc444c9903f495263588974dfd5e8a17cf1a1fccbaabe",
+    "output/bing-audit/2026-10-25/health-verified.json": "0f8d2885cbafb759e12393b2da479ed24674c8fc8ecb40e8d05fdfdfa6b6bfb8",
+    "output/bing-audit/2026-10-25/ci-build-cli-auth.log": "abd7881623642f5b338eadafc5de0457a2eaeffc6fc8cc795c8feb4accf48598",
+    "output/bing-audit/2026-10-25/verify-live-final.log": "44a23bf1ebd84fa724b42a89215b45e1bbef5460fd82fa56d65f01a7ef537a94",
+    "output/bing-audit/2026-10-25/provider-checks-final.json": "08884b4adb44505f09b4a2bae85aa32beb2066eba8e0628d600c31b330a11329",
+    "output/bing-audit/2026-10-25/deployment-verified.json": "ebd5f4c1f6697b765fee248ec03f8d27a8dd86e2c0b21a7e36f217781b5fe413",
+    "output/bing-audit/2026-10-25/npm-audit-after.json": "2ba174dba3d8660de1a3e9a147662992d51b4bc841e9925a8bae9db587d58f6e",
+    "output/bing-audit/2026-10-25/dependabot-fixed.json": "70ce5bf3980ebeecdc29bd2ad167b27cfabfc49d02b833753804a5e6ee4d702d",
+    "output/bing-audit/2026-10-25/cache-samples.json": "3b60bb44e30a9f7f4acdff0706dcd2f9994e8a25d063b5ee3a2cc2e1a3d165f0",
+    "output/bing-audit/2026-10-25/cli-metrics-helper-final.txt": "4d8dafa5d0380398b960230d422c9ef66ef53594931f787396701ad0419683ad",
+    "output/bing-audit/2026-10-25/storage-cli-capability.json": "f75a58f3a73f8298c11b646a495d8ef357483cdbdb48465a213a54ad8e47eea5"
+  }
+}
