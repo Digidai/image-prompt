@@ -2,14 +2,11 @@
 // never prints a credential or copies it into a browser/build environment.
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import os from 'node:os';
+import {cloudflareToken} from '../../scripts/cloudflare-auth.mjs';
 
 const dateFormat=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}),localDay=dateFormat.format(new Date());
 const until=new Date(localDay+'T00:00:00+08:00'),since=new Date(until.getTime()-86400000),at=new Date().toISOString();
-const config=process.env.WRANGLER_CONFIG_PATH||path.join(os.homedir(),'Library/Preferences/.wrangler/config/default.toml');
-let token=process.env.CLOUDFLARE_API_TOKEN;
-if(!token)token=(await fs.readFile(config,'utf8')).match(/^oauth_token\s*=\s*"([^"]+)"/m)?.[1];
-if(!token)throw Error('Existing Wrangler session unavailable; run wrangler whoami.');
+const token=cloudflareToken();
 const query=`{viewer{accounts(filter:{accountTag:"48d9ccaf5ee7914c803b5d0656462848"}){workersInvocationsAdaptive(limit:1,filter:{scriptName:"image-prompt",datetime_geq:"${since.toISOString()}",datetime_lt:"${until.toISOString()}"}){sum{requests errors}} rumPageloadEventsAdaptiveGroups(limit:10,filter:{datetime_geq:"${since.toISOString()}",datetime_lt:"${until.toISOString()}",requestHost:"prompt.genedai.me"}){count sum{visits}}}}}`;
 const response=await fetch('https://api.cloudflare.com/client/v4/graphql',{method:'POST',headers:{authorization:'Bearer '+token,'content-type':'application/json'},body:JSON.stringify({query}),signal:AbortSignal.timeout(20000)});
 if(!response.ok)throw Error('Analytics API HTTP '+response.status);

@@ -4,6 +4,7 @@ import {execFileSync} from 'node:child_process';
 import {data,meta,original,expansion,root} from './catalog-data.mjs';
 import {indexText} from '../src/catalog-search.js';
 import {caseMarkdown} from '../src/catalog-markdown.js';
+import {cloudflareToken} from './cloudflare-auth.mjs';
 const account='48d9ccaf5ee7914c803b5d0656462848',bucket='image-prompt-content';
 const args=new Set(process.argv.slice(2));
 const quote=s=>s===null||s===undefined?'NULL':typeof s==='number'?String(s):"'"+String(s).replaceAll("'","''")+"'";
@@ -26,7 +27,7 @@ const oversized=sql.filter(s=>Buffer.byteLength(s)>100000);if(oversized.length)t
 const batches=[];for(let i=0;i<sql.length;i+=300){const file=path.join(dir,'seed-'+String(batches.length).padStart(3,'0')+'.sql');await fs.writeFile(file,sql.slice(i,i+300).join('\n')+'\n');batches.push(file);}
 console.log(`Prepared ${data.cases.length} rows in ${keyed.size} R2 shards and ${batches.length} SQL batches, release ${meta.releaseId}.`);
 if(args.has('--prepare-only'))process.exit(0);
-const token=process.env.CLOUDFLARE_API_TOKEN;if(!token)throw Error('CLOUDFLARE_API_TOKEN required; use a scoped authorized token.');
+const token=cloudflareToken();
 const uploads=new Map([...keyed].map(([key,rows])=>[key,JSON.stringify(rows)]));
 uploads.set(`catalog/${meta.releaseId}/catalog.json`,JSON.stringify({...data,releaseId:meta.releaseId}));
 uploads.set(`catalog/${meta.releaseId}/llms-full.txt`,'# Image Prompt / Full source-attributed catalog\n\n'+data.cases.map(c=>caseMarkdown(c,meta.snapshotDate)).join('\n---\n'));
