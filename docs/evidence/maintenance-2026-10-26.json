@@ -1,0 +1,349 @@
+{
+  "at": "2026-10-26T02:21:08.193Z",
+  "status": "published_verified",
+  "scope": "Authorized daily health and first Monday source refresh; no search submissions.",
+  "baseline": {
+    "checkout": "e9c17aba80ead5a0b49e45219526e1a78863e156",
+    "liveSource": "2b3ed991bc740b651aa8cd56053cf14cd7f819fa",
+    "releaseId": "465e0259274b1b15",
+    "cases": 17892,
+    "dirty": false
+  },
+  "sourceAcquisition": {
+    "at": "2026-10-26T02:01:16.270Z",
+    "reportedTotal": 24023,
+    "manifestCount": 24023,
+    "publicDetailCount": 18396,
+    "paidExcludedCount": 5627,
+    "cached": 18142,
+    "failed": [],
+    "authorization": "Project maintainer confirmed full redistribution authorization on 2026-10-20. This does not bypass source access controls."
+  },
+  "catalogDelta": {
+    "at": "2026-10-26T02:03:48.643Z",
+    "before": 17892,
+    "after": 18142,
+    "releaseId": "ea7708682eb63dd8",
+    "added": 250,
+    "removed": [],
+    "originalPromptCitationAuthorOrOrderChanges": [],
+    "reconciliation": {
+      "free": 18396,
+      "imported": 17668,
+      "duplicates": 691,
+      "excluded": 37,
+      "missing": 0,
+      "exclusionReasons": {
+        "profile_only_no_original_post": 1,
+        "no_public_original_source": 36
+      }
+    }
+  },
+  "newCaseScope": {
+    "at": "2026-10-26T02:06:46.263Z",
+    "count": 250,
+    "allHaveFullPromptAndPublicHttpsCitation": true,
+    "mediaCounts": {
+      "image": 250,
+      "video": 0
+    },
+    "sourceDomains": [
+      "x.com"
+    ],
+    "citationAvailability": "References supplied by public source; not independently verified authorship or current link availability"
+  },
+  "canonicalRepair": {
+    "trigger": "Source review ordering changed, allowing duplicate entries to win before six published records during initial local preparation.",
+    "initialCandidate": "ed4507088263ae31; never seeded or deployed",
+    "publishedCandidate": "ea7708682eb63dd8",
+    "repair": "Read digest-verified previous shards; prioritize published source IDs before new duplicate candidates; preserve original records and source order for additions.",
+    "regressionTests": 2,
+    "removedPublishedIds": 0,
+    "changedOriginalPromptsTranslationsCitationsAuthorsOrOrder": 0,
+    "liveRetainedCanonicalIds": [
+      "opennana-28373",
+      "opennana-16300",
+      "opennana-9775",
+      "opennana-10096",
+      "opennana-10386",
+      "opennana-6976"
+    ]
+  },
+  "storage": {
+    "receipt": {
+      "at": "2026-10-26T02:07:15.694Z",
+      "releaseId": "ea7708682eb63dd8",
+      "caseCount": 18142,
+      "objectCount": 48,
+      "remoteCount": 18142,
+      "indexedCount": 18142
+    },
+    "readiness": {
+      "at": "2026-10-26T02:07:15.698Z",
+      "httpStatus": 200,
+      "status": "ready",
+      "releaseId": "ea7708682eb63dd8",
+      "caseCount": 18142,
+      "objectCount": 48,
+      "remoteCount": 18142,
+      "indexedCount": 18142
+    },
+    "rollbackReadiness": {
+      "at": "2026-10-20T09:13:26.665Z",
+      "httpStatus": 200,
+      "status": "ready",
+      "releaseId": "465e0259274b1b15",
+      "caseCount": 17892,
+      "objectCount": 47,
+      "remoteCount": 17892,
+      "indexedCount": 17892
+    },
+    "oldDatasetRetained": true
+  },
+  "publication": {
+    "sourceCommit": "c3e71959fb3e49fc501d32f9ee55f1ccd300807e",
+    "provider": "Cloudflare Workers Builds",
+    "buildUrl": "https://dash.cloudflare.com/48d9ccaf5ee7914c803b5d0656462848/workers/services/view/image-prompt/production/builds/b1411fb3-32ea-4e45-8076-e25588f6c8b0",
+    "conclusion": "success",
+    "checkCompletedAt": "2026-10-26T02:18:05Z",
+    "deployment": {
+      "at": "2026-10-26T02:19:03.977Z",
+      "id": "878d3ea2-650d-4a57-85cc-5a3a2debac43",
+      "createdAt": "2026-10-26T02:17:42.775955Z",
+      "versions": [
+        {
+          "version_id": "8e50e1c1-6ca9-4055-952f-8ad8cc5a0523",
+          "percentage": 100
+        }
+      ]
+    },
+    "liveBuildInfo": {
+      "project": "image-prompt",
+      "commit": "c3e71959fb3e49fc501d32f9ee55f1ccd300807e",
+      "sourceSha256": "1d21d434c78ad730b9b7fb9a52c8d87ab19db7dc60fb76989ed1b7498397196b",
+      "snapshotDate": "2026-10-26",
+      "contentUpdatedAt": "2026-10-26",
+      "catalogSnapshotDate": "2026-10-26",
+      "cases": 18142,
+      "originalCases": 474,
+      "opennanaCases": 17668,
+      "contentRelease": "ea7708682eb63dd8",
+      "categories": 23,
+      "canonicalOrigin": "https://prompt.genedai.me",
+      "interfaceLanguages": [
+        "zh-CN",
+        "en"
+      ],
+      "searchSubmissions": {
+        "policy": "listing-landings-v1",
+        "urlCount": 52
+      }
+    },
+    "githubActionsEnabled": false
+  },
+  "verification": {
+    "unitAndApiTests": 27,
+    "realLocalHostingChecks": 13,
+    "remoteReadiness": "passed",
+    "independentLiveChecks": 52,
+    "targetedChecks": 33,
+    "targetedNewCases": [
+      "opennana-28696",
+      "opennana-28713",
+      "opennana-28708"
+    ],
+    "targetedRetainedCanonicalIds": [
+      "opennana-28373",
+      "opennana-16300",
+      "opennana-9775",
+      "opennana-10096",
+      "opennana-10386",
+      "opennana-6976"
+    ],
+    "healthProbes": 12,
+    "failures": [],
+    "warnings": [
+      {
+        "path": "/prompts/",
+        "message": "Synthetic response exceeded 2500 ms; compare repeated samples, not field Core Web Vitals.",
+        "ms": 4191
+      }
+    ],
+    "npmAuditVulnerabilities": 0,
+    "listingWarmRecheck": [
+      {
+        "at": "2026-10-26T02:20:31.956Z",
+        "status": 200,
+        "ms": 1083,
+        "cache": "MISS",
+        "ray": "a505fb78693a6af7-SJC"
+      },
+      {
+        "at": "2026-10-26T02:20:32.559Z",
+        "status": 200,
+        "ms": 602,
+        "cache": "HIT",
+        "ray": "a505fb7c9ba76af7-SJC"
+      }
+    ]
+  },
+  "actualIndexation": {
+    "google": {
+      "at": "2026-10-26T02:01:06.180Z",
+      "url": "https://prompt.genedai.me/",
+      "status": "indexed",
+      "homepageIndexed": true,
+      "lastCrawlDisplayed": "Oct 22, 2026, 10:01:32 AM",
+      "lastCrawlTimezone": "Not specified in UI",
+      "crawledAs": "Googlebot smartphone",
+      "crawlAllowed": true,
+      "pageFetch": "Successful",
+      "indexingAllowed": true,
+      "userDeclaredCanonical": "https://prompt.genedai.me/",
+      "googleSelectedCanonical": "Inspected URL",
+      "sitemapDiscovery": "Temporary processing error",
+      "siteIndexedPageCount": null
+    },
+    "bing": {
+      "at": "2026-10-26T02:02:45.749Z",
+      "url": "https://prompt.genedai.me/",
+      "status": "discovered_not_crawled",
+      "homepageIndexed": false,
+      "discoveredOn": "2026-10-20",
+      "siteIndexedPageCount": null,
+      "siteExplorer": "Indexed URLs selected; No data available"
+    },
+    "changed": false,
+    "siteCountsUnknown": true
+  },
+  "growthReview": {
+    "google": {
+      "at": "2026-10-26T02:06:04.875Z",
+      "property": "sc-domain:genedai.me",
+      "pageRegex": "^https://prompt\\.genedai\\.me/",
+      "dateRangeDisplayed": [
+        "2026-10-17",
+        "2026-10-23"
+      ],
+      "searchType": "Web",
+      "clicks": 0,
+      "impressions": 2,
+      "ctrPercent": 0,
+      "averagePosition": 1.5,
+      "queryTable": "No data",
+      "lastUpdateDisplayed": "3 hours ago",
+      "limitation": "Filtered totals may be partial; reports lag; no query topics available"
+    },
+    "bing": {
+      "site": "https://prompt.genedai.me/",
+      "dateRangeDisplayed": [
+        "2026-10-19",
+        "2026-10-25"
+      ],
+      "dailyTableDates": [
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23"
+      ],
+      "filter": "All",
+      "clicks": 0,
+      "impressions": 0,
+      "keywordTable": "No data available",
+      "limitation": "Reported zero performance does not establish indexed-page count; data may lag"
+    },
+    "cloudflare": {
+      "at": "2026-10-26T01:59:18.453Z",
+      "window": {
+        "since": "2026-10-24T16:00:00.000Z",
+        "until": "2026-10-25T16:00:00.000Z",
+        "timezone": "Asia/Shanghai",
+        "description": "Previous complete Beijing calendar day"
+      },
+      "workerName": "image-prompt",
+      "rumHostname": "prompt.genedai.me",
+      "workerInvocations": {
+        "errors": 0,
+        "requests": 1418
+      },
+      "rum": {
+        "state": "recorded_beacons",
+        "groups": [
+          {
+            "count": 16,
+            "sum": {
+              "visits": 2
+            }
+          }
+        ]
+      },
+      "errors": [],
+      "limitations": [
+        "Worker requests include bots, probes, APIs, assets and alternate hosts. They are not PV, UV or organic visitors.",
+        "Empty RUM data does not establish zero visitors.",
+        "Bing/Google actual indexation and search performance require separate provider evidence."
+      ]
+    },
+    "decision": "Sparse and lagged search data does not justify query-driven title/page expansion. Shipped useful public-source additions and canonical preservation. Continue complete-day metrics before making growth claims.",
+    "notClaimed": [
+      "Human unique visitors",
+      "Organic traffic growth",
+      "Conversions",
+      "Bing indexation",
+      "AI citations",
+      "Field Core Web Vitals improvement"
+    ]
+  },
+  "boundaries": {
+    "promotedSearchUrls": 52,
+    "policy": "listing-landings-v1",
+    "googleIndexingRequests": 0,
+    "bingIndexingRequests": 0,
+    "sitemapSubmissions": 0,
+    "indexNowSubmissions": 0,
+    "paidImported": 0,
+    "missingPublicOriginalSourceImported": 0,
+    "newLicensedSources": 0,
+    "cloudflareDashboardUsed": false
+  },
+  "automation": {
+    "id": "image-prompt",
+    "status": "ACTIVE",
+    "daily": "10:00 Asia/Shanghai",
+    "lastSuccessfulWeeklyRefresh": "2026-10-26",
+    "nextScheduledWeeklyRefresh": "2026-11-02",
+    "notifyReason": "250 eligible public prompts and canonical-preservation fix genuinely published; routine index waiting alone is not a notification reason"
+  },
+  "localEvidenceSha256": {
+    "output/maintenance/2026-10-26/health-before.json": "52f2bfcd0aa7e80d0961b55f89b13ff8073364b3ca14cc56ec62d0f85c603318",
+    "output/maintenance/2026-10-26/health-after.json": "fde1ce2b46f752a23c64e4c3666416e640e15af6566638628d703c1bd0709a59",
+    "output/maintenance/2026-10-26/ci-build.log": "eb8d79971b30ec3afc638afb00b382108485cb7d6128587688ea6e7d71f5248b",
+    "output/maintenance/2026-10-26/verify-live.log": "7cd85f2cfa173478c275ee9197d182e2ee813281d3648de73a7c8ff403ec81e8",
+    "output/maintenance/2026-10-26/source-sync.log": "d44d7641be01cb06039966ea8cd36f9f993171947d3c10b26ee6b5e80772b68a",
+    "output/maintenance/2026-10-26/source-prepare-stable.log": "869177f0be1f83f41f9e7545b337b6e5bc8959ac00f0bf49e763941e91ce3cc5",
+    "output/maintenance/2026-10-26/catalog-delta.json": "4d9be561fe149c7b91249fe40a15f2498ab8e6279d16014a9b1ea214cf369bca",
+    "output/maintenance/2026-10-26/catalog-delta-stable.json": "1fedcabb589ecf77cd1a3d1d9d627f409169dd573039a6942fd34f49f3599991",
+    "output/maintenance/2026-10-26/new-case-scope.json": "c3e2fa74c08c1aae6f94286069b7f55bfd128bafaf09ef89eba5c4bc438c2ed9",
+    "output/maintenance/2026-10-26/storage-receipt.json": "6c8bfb0d96007464c6aabf472f8a9c22109056d938d7b3f2cad0ce1dc909c3d0",
+    "output/maintenance/2026-10-26/remote-readiness.json": "9fd6f0ca56fdd44013ccb781e0d4f4405900069c8baadd39bdc69de5a388e0e0",
+    "output/maintenance/2026-10-26/rollback-readiness.json": "d4da9b84aac06c1b8add5006993f644963ecf4687ba89b99f53b3566dbbf528d",
+    "output/maintenance/2026-10-26/seed-catalog.log": "b6b7b7a76791c0324900ab400197b69a20a2b083c7a5c6cd4d25132f34c7101c",
+    "output/maintenance/2026-10-26/provider-checks.json": "0e2ed91c067c0951de27d42baa7ac82fb68432d379d9973ed0cd7917faf598c6",
+    "output/maintenance/2026-10-26/deployment.json": "c6696f843498c3aeefd34220e580c29ccca8aa9805a779f3873da9aacb6c16a9",
+    "output/maintenance/2026-10-26/targeted-live.json": "3f7a786b75c897bd6406590d780cf5d9b5d3919d2c9ced07b4bee5ddc3aaf66d",
+    "output/maintenance/2026-10-26/listing-recheck.json": "84a742defa5230883380a86a46ff7bc095a5b1731287a7f9a10788127baa7bd0",
+    "output/maintenance/2026-10-26/listing-after.json": "bff329223528c8c5e3723028066bd6d15840a4b2e1b74c246e3dc9427cc85afc",
+    "output/maintenance/2026-10-26/provider-observations.json": "ac4a149b7b14c7fcd2830616a50c29a75a942b407d087935b6f77b3f44d45f68",
+    "output/maintenance/2026-10-26/google-indexed.png": "ef2edeca8bff6ca0dd2cd27e07a5b9ac8759780d61c3e0dc8ddd50929785d78a",
+    "output/maintenance/2026-10-26/google-indexed.txt": "2b2085f38b8083a19118b7c4b3865699856a40737b5b33694a000a27b69d13c8",
+    "output/maintenance/2026-10-26/bing-homepage-inspection.png": "23ad87490c7b61dd01abd03a5df2a5791221bcef2d8a12542914b94bdc521bd5",
+    "output/maintenance/2026-10-26/bing-homepage-inspection.txt": "2cdc27db6684e53fff4bfba41251603adf6179c73656522a722ecfd7f0bfa824",
+    "output/maintenance/2026-10-26/bing-indexed-urls-report.png": "2e8dda4340b8a4fa1d131f5f351d70d7387cac84fca8e1c416d7c0b83bda90b2",
+    "output/maintenance/2026-10-26/bing-indexed-urls-report.txt": "dbb90928b7e1174de73ada6fbf4911f738fc4a4c872e00b097204bcc812e00c3",
+    "output/maintenance/2026-10-26/google-search-performance.png": "41c76f39149725b15711a2500c305bb668459782d4172f340b2bc5d814c2ad49",
+    "output/maintenance/2026-10-26/google-search-performance.txt": "b36647c09ad70f50cd6b7ae7ab7f10eeaa5856dcf70a12f9618ff8687f33de28",
+    "output/maintenance/2026-10-26/bing-search-performance.png": "4b441012704554945da155207aa3b6cab5bf493dedc7aff19f7cd808b2d90841",
+    "output/maintenance/2026-10-26/bing-search-performance.txt": "2defaac19421b09aeef363d916bd46c5b108aecd8e77df691334b6a8c50bc9af",
+    "output/maintenance/2026-10-26/npm-audit.json": "2ba174dba3d8660de1a3e9a147662992d51b4bc841e9925a8bae9db587d58f6e"
+  }
+}
