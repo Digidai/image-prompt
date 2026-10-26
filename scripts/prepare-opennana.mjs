@@ -1,19 +1,30 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {createHash} from 'node:crypto';
-import {gzipSync} from 'node:zlib';
+import {gzipSync,gunzipSync} from 'node:zlib';
+import {prioritizePublishedItems} from './source-order.mjs';
 const root=path.resolve(import.meta.dirname,'..'), cache=path.join(root,'.cache/opennana'), out=path.join(root,'data/opennana');
 const original=JSON.parse(await fs.readFile(path.join(root,'data/catalog.json'),'utf8'));
 const manifest=JSON.parse(await fs.readFile(path.join(cache,'manifest.json'),'utf8'));
 const snapshotDate=manifest.fetchedAt.slice(0,10),recentCutoff=new Date(new Date(snapshotDate+'T00:00:00Z').getTime()-90*86400000).toISOString().slice(0,10);
 let acquisitionCompletedAt=null;try{acquisitionCompletedAt=JSON.parse(await fs.readFile(path.join(cache,'sync-summary.json'),'utf8')).at;}catch{}
 const hash=s=>createHash('sha256').update(s).digest('hex');
+if(manifest.items.length!==manifest.reportedTotal||new Set(manifest.items.map(item=>item.id)).size!==manifest.items.length)throw Error('Source manifest is incomplete or contains duplicate IDs; refresh before preparing a release.');
+let previous=null;
+try{previous=JSON.parse(await fs.readFile(path.join(out,'manifest.json'),'utf8'));}catch(error){if(error.code!=='ENOENT')throw error;}
+const publishedIds=[];
+for(const shard of previous?.shards||[]){
+ const body=gunzipSync(await fs.readFile(path.join(out,shard.file))).toString();
+ if(hash(body)!==shard.sha256)throw Error('Previous catalog digest mismatch: '+shard.file);
+ const priorRows=JSON.parse(body);if(priorRows.length!==shard.count)throw Error('Previous catalog count mismatch: '+shard.file);
+ publishedIds.push(...priorRows.map(row=>row.sourceId));
+}
 const normalize=s=>String(s||'').normalize('NFKC').replace(/\s+/g,' ').trim().toLowerCase();
 const publicUrl=s=>{try{let value=String(s||'').trim();const embedded=value.match(/https?:\/\/[^\s<>)\]]+/);if(embedded)value=embedded[0];else if(/^(?:www\.)?(?:x\.com|twitter\.com|threads\.(?:com|net))\//i.test(value))value='https://'+value;const u=new URL(value);if(u.protocol==='http:'&&['x.com','twitter.com','threads.com','threads.net'].includes(u.hostname))u.protocol='https:';if(u.protocol!=='https:'||u.username||u.password)return null;const h=u.hostname.toLowerCase();if(!h.includes('.')||/^(localhost|127\.|10\.|192\.168\.|172\.(1[6-9]|2\d|3[01])\.)/.test(h)||h.endsWith('.local'))return null;if(h==='opennana.com'||h.endsWith('.opennana.com'))return null;return u.href;}catch{return null}};
 const safeMedia=s=>{try{const u=new URL(s);return u.protocol==='https:'?u.href:null}catch{return null}};
 const seen=new Map(original.cases.filter(c=>normalize(c.prompt).length>=120).map(c=>[hash(normalize(c.prompt)),c]));
 const rows=[],duplicates=[],excluded=[],missing=[];
-for(const item of manifest.items){
+for(const item of prioritizePublishedItems(manifest.items,publishedIds)){
  if(item.access_type!==0)continue;
  let d;try{d=JSON.parse(await fs.readFile(path.join(cache,'details',item.id+'.json'),'utf8'));}catch{missing.push(item.id);continue;}
  if(d.access_type!==0||!d.is_unlocked){excluded.push({id:item.id,reason:'not_free_or_locked'});continue;}

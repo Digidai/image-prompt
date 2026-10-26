@@ -373,5 +373,49 @@
     "testedResponseLocal": "output/bing-audit/2026-10-25/bing-tested-response.txt",
     "submissionAction": "none; read-only diagnostic, no Request indexing click",
     "notEvidenceOf": "Actual indexation, zero site indexed pages, ranking, traffic or AI citation"
+  },
+  {
+    "at": "2026-10-26T02:01:06.180Z",
+    "url": "https://prompt.genedai.me/",
+    "status": "indexed",
+    "homepageIndexed": true,
+    "lastCrawlDisplayed": "Oct 22, 2026, 10:01:32 AM",
+    "lastCrawlTimezone": "Not specified in UI",
+    "crawledAs": "Googlebot smartphone",
+    "crawlAllowed": true,
+    "pageFetch": "Successful",
+    "indexingAllowed": true,
+    "userDeclaredCanonical": "https://prompt.genedai.me/",
+    "googleSelectedCanonical": "Inspected URL",
+    "sitemapDiscovery": "Temporary processing error",
+    "siteIndexedPageCount": null,
+    "provider": "Google Search Console",
+    "property": "sc-domain:genedai.me",
+    "kind": "url_inspection",
+    "evidence": "Authenticated exact-homepage URL Inspection: URL is on Google / Page is indexed. Last crawl, successful fetch and canonical remain unchanged. Sitemap discovery field separately shows Temporary processing error.",
+    "screenshotLocal": "output/maintenance/2026-10-26/google-indexed.png",
+    "textEvidenceLocal": "output/maintenance/2026-10-26/google-indexed.txt",
+    "submissionAction": "none; successful October 22 requested receipt preserved",
+    "notEvidenceOf": "Site-wide indexed count, ranking or visitor growth"
+  },
+  {
+    "at": "2026-10-26T02:02:45.749Z",
+    "url": "https://prompt.genedai.me/",
+    "status": "discovered_not_crawled",
+    "homepageIndexed": false,
+    "discoveredOn": "2026-10-20",
+    "siteIndexedPageCount": null,
+    "siteExplorer": "Indexed URLs selected; No data available",
+    "provider": "Bing Webmaster Tools",
+    "site": "https://prompt.genedai.me/",
+    "kind": "url_inspection_and_index_report",
+    "evidence": "Authenticated Bing Index remains Discovered but not crawled / URL cannot appear on Bing. Exact-site Site Explorer with Indexed URLs selected shows No data available; numeric site count is unknown.",
+    "screenshotLocal": [
+      "output/maintenance/2026-10-26/bing-homepage-inspection.png",
+      "output/maintenance/2026-10-26/bing-indexed-urls-report.png"
+    ],
+    "textEvidenceLocal": "output/maintenance/2026-10-26/bing-homepage-inspection.txt",
+    "submissionAction": "none",
+    "notEvidenceOf": "Zero indexed site pages, ranking or visitor growth"
   }
 ]

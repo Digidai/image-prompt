@@ -1,20 +1,20 @@
 {
-  "snapshotDate": "2026-10-20",
-  "acquisitionCompletedAt": "2026-10-20T09:07:34.112Z",
-  "releaseId": "465e0259274b1b15",
+  "snapshotDate": "2026-10-26",
+  "acquisitionCompletedAt": "2026-10-26T02:01:16.270Z",
+  "releaseId": "ea7708682eb63dd8",
   "source": "https://opennana.com/awesome-prompt-gallery",
-  "fetchedAt": "2026-10-20T08:39:22.176Z",
-  "reportedTotal": 23657,
-  "manifestCount": 23657,
-  "freeCount": 18142,
-  "paidExcluded": 5515,
-  "downloadedFree": 18142,
-  "imported": 17418,
-  "duplicates": 687,
+  "fetchedAt": "2026-10-26T02:00:51.425Z",
+  "reportedTotal": 24023,
+  "manifestCount": 24023,
+  "freeCount": 18396,
+  "paidExcluded": 5627,
+  "downloadedFree": 18396,
+  "imported": 17668,
+  "duplicates": 691,
   "excluded": 37,
   "missing": 0,
   "mediaCounts": {
-    "image": 16826,
+    "image": 17076,
     "video": 592
   },
   "sourceDomains": [
@@ -30,267 +30,273 @@
   "shards": [
     {
       "file": "part-000.json.gz",
-      "key": "catalog/465e0259274b1b15/part-000.json",
+      "key": "catalog/ea7708682eb63dd8/part-000.json",
       "count": 400,
-      "sha256": "843174ae4cd33471c689e3630e4be4e713cb1167be262f294bdd762c612f6869"
+      "sha256": "9cbed9a89e1fd8e9e33073f475c9ed9c95f69eef88ee99fc9a3291886edb2bea"
     },
     {
       "file": "part-001.json.gz",
-      "key": "catalog/465e0259274b1b15/part-001.json",
+      "key": "catalog/ea7708682eb63dd8/part-001.json",
       "count": 400,
       "sha256": "a11438ace27dab960397235fb1dc2310c422540c8aea43fcc345d05495d19aa9"
     },
     {
       "file": "part-002.json.gz",
-      "key": "catalog/465e0259274b1b15/part-002.json",
+      "key": "catalog/ea7708682eb63dd8/part-002.json",
       "count": 400,
       "sha256": "207e2d2b4e0e1b28fbd2f301b33fb6904d9cfb45aff44fcd074c5ae8920dd126"
     },
     {
       "file": "part-003.json.gz",
-      "key": "catalog/465e0259274b1b15/part-003.json",
+      "key": "catalog/ea7708682eb63dd8/part-003.json",
       "count": 400,
       "sha256": "8b8e1b342ace70375dca976f4a2c6eb3059181e318d9139bfabc3d1055a9499d"
     },
     {
       "file": "part-004.json.gz",
-      "key": "catalog/465e0259274b1b15/part-004.json",
+      "key": "catalog/ea7708682eb63dd8/part-004.json",
       "count": 400,
       "sha256": "ece41739101954865b140ec4b9be22474eb927570eb3dc3a005a56f151cd358d"
     },
     {
       "file": "part-005.json.gz",
-      "key": "catalog/465e0259274b1b15/part-005.json",
+      "key": "catalog/ea7708682eb63dd8/part-005.json",
       "count": 400,
       "sha256": "da8ea80536a706597afbf32b631b6fd266ec76999c85193798fd838b0aa3db3a"
     },
     {
       "file": "part-006.json.gz",
-      "key": "catalog/465e0259274b1b15/part-006.json",
+      "key": "catalog/ea7708682eb63dd8/part-006.json",
       "count": 400,
       "sha256": "34ac1991604b5644d63cc5a60a441db88e1f899b85d5d98fa8ba7bc02faa0cea"
     },
     {
       "file": "part-007.json.gz",
-      "key": "catalog/465e0259274b1b15/part-007.json",
+      "key": "catalog/ea7708682eb63dd8/part-007.json",
       "count": 400,
       "sha256": "45f4510d2f197149dc4f330caaad06191b829d27566e752537bbd4934de10a10"
     },
     {
       "file": "part-008.json.gz",
-      "key": "catalog/465e0259274b1b15/part-008.json",
+      "key": "catalog/ea7708682eb63dd8/part-008.json",
       "count": 400,
-      "sha256": "7029d5909acd8d304cd5e3bb412fc7f2bc52872427c5572af19091582a2f5ce2"
+      "sha256": "94239d00184407851fddcdd4152241bda21f781ec4af4553709e35ecd7aafab8"
     },
     {
       "file": "part-009.json.gz",
-      "key": "catalog/465e0259274b1b15/part-009.json",
+      "key": "catalog/ea7708682eb63dd8/part-009.json",
       "count": 400,
-      "sha256": "e0962a19b6e9d2ff9eaacf3b19570d227c300218e91b449f3e9cadde51039a26"
+      "sha256": "361a54bd4df72bcadc1964309120ce921d0c4fd7bd49cb1be8e9ea43830b8492"
     },
     {
       "file": "part-010.json.gz",
-      "key": "catalog/465e0259274b1b15/part-010.json",
+      "key": "catalog/ea7708682eb63dd8/part-010.json",
       "count": 400,
-      "sha256": "2b779ffbb27dd994688a2d01b8f5ce7aec428e5630e41cf08b6a54ab59f49884"
+      "sha256": "7e6304cdea67a4f9d2c3999d6184242d39473c496060c7e37f10cb806c637fa1"
     },
     {
       "file": "part-011.json.gz",
-      "key": "catalog/465e0259274b1b15/part-011.json",
+      "key": "catalog/ea7708682eb63dd8/part-011.json",
       "count": 400,
-      "sha256": "83632e2a4a2e32ba3ec1447fb8e53826609028eee948dfbcf94578a54f858803"
+      "sha256": "2b80e0fd65685aef575d50c579a167406e1d83976d9cdbecc03b2fccc6a5a5f5"
     },
     {
       "file": "part-012.json.gz",
-      "key": "catalog/465e0259274b1b15/part-012.json",
+      "key": "catalog/ea7708682eb63dd8/part-012.json",
       "count": 400,
       "sha256": "a950bfb95879f01b3d08478ea820c0072acef78dc2f6cde8c43a15f9a6517015"
     },
     {
       "file": "part-013.json.gz",
-      "key": "catalog/465e0259274b1b15/part-013.json",
+      "key": "catalog/ea7708682eb63dd8/part-013.json",
       "count": 400,
       "sha256": "b311e7874d33acd3f7e63485429bf5786f120901f7b3af0b8ba387f645cd8d9b"
     },
     {
       "file": "part-014.json.gz",
-      "key": "catalog/465e0259274b1b15/part-014.json",
+      "key": "catalog/ea7708682eb63dd8/part-014.json",
       "count": 400,
       "sha256": "5475d236ea9e9385cb73f5f2fa9668ef8977d346995613408be99149346e02d3"
     },
     {
       "file": "part-015.json.gz",
-      "key": "catalog/465e0259274b1b15/part-015.json",
+      "key": "catalog/ea7708682eb63dd8/part-015.json",
       "count": 400,
       "sha256": "a011833204769a7aa5f50da0b2d9d3ae31bffa6425eee3569d6ad87c214631f5"
     },
     {
       "file": "part-016.json.gz",
-      "key": "catalog/465e0259274b1b15/part-016.json",
+      "key": "catalog/ea7708682eb63dd8/part-016.json",
       "count": 400,
       "sha256": "29633b87d619c45103bb6f3e8e0a7cbf38095d36a649564e83c438e2652ee4bb"
     },
     {
       "file": "part-017.json.gz",
-      "key": "catalog/465e0259274b1b15/part-017.json",
+      "key": "catalog/ea7708682eb63dd8/part-017.json",
       "count": 400,
-      "sha256": "c1e97fb86384a2427e3bf49ca396c66081296134b7870060d497c5b010cda00b"
+      "sha256": "dd3ea70c6d7be1a02b85698c4105620d039275634772a7050b50b6bb19adf566"
     },
     {
       "file": "part-018.json.gz",
-      "key": "catalog/465e0259274b1b15/part-018.json",
+      "key": "catalog/ea7708682eb63dd8/part-018.json",
       "count": 400,
       "sha256": "0742a783ce3c28ee6270faa8d177aa0a2fe420a8b50b5bb85cdf82ea701f18f7"
     },
     {
       "file": "part-019.json.gz",
-      "key": "catalog/465e0259274b1b15/part-019.json",
+      "key": "catalog/ea7708682eb63dd8/part-019.json",
       "count": 400,
       "sha256": "c5e0cd86d04d49ffbf43b611a2b3cabcd6fcf68613f85ae5a0e91d126e82a9d9"
     },
     {
       "file": "part-020.json.gz",
-      "key": "catalog/465e0259274b1b15/part-020.json",
+      "key": "catalog/ea7708682eb63dd8/part-020.json",
       "count": 400,
       "sha256": "888efdfe6eb90005b673e01179f1be83e4174e529b222dcfb1f9ec8c01256ef5"
     },
     {
       "file": "part-021.json.gz",
-      "key": "catalog/465e0259274b1b15/part-021.json",
+      "key": "catalog/ea7708682eb63dd8/part-021.json",
       "count": 400,
       "sha256": "c02b957f7e1cdf08c1b73581c789477e02b95605d27fad13b012a6bfa85a2632"
     },
     {
       "file": "part-022.json.gz",
-      "key": "catalog/465e0259274b1b15/part-022.json",
+      "key": "catalog/ea7708682eb63dd8/part-022.json",
       "count": 400,
       "sha256": "f8b8d92249bf31ed0204675845bc8220733ed9f529e2b15c0ab4f26e7d763c73"
     },
     {
       "file": "part-023.json.gz",
-      "key": "catalog/465e0259274b1b15/part-023.json",
+      "key": "catalog/ea7708682eb63dd8/part-023.json",
       "count": 400,
       "sha256": "ec5f3d2012392017a523f6159d0fe47bc747fe0533b4dffe93d0a6aca9743df7"
     },
     {
       "file": "part-024.json.gz",
-      "key": "catalog/465e0259274b1b15/part-024.json",
+      "key": "catalog/ea7708682eb63dd8/part-024.json",
       "count": 400,
       "sha256": "48b7e36fc3f912ca1f762ec502dace90c2fbf4f4fb71899ac5d2e10bd6fafef0"
     },
     {
       "file": "part-025.json.gz",
-      "key": "catalog/465e0259274b1b15/part-025.json",
+      "key": "catalog/ea7708682eb63dd8/part-025.json",
       "count": 400,
       "sha256": "4b0822e372ce5383f1fef3b2663f11e25c0533f7eeb4fe1f768b3ca699515b6d"
     },
     {
       "file": "part-026.json.gz",
-      "key": "catalog/465e0259274b1b15/part-026.json",
+      "key": "catalog/ea7708682eb63dd8/part-026.json",
       "count": 400,
-      "sha256": "1d8ff94c5756ab6290c25a81d94b8d2f5248b2010b1b9de380ad3b71c5ca2792"
+      "sha256": "42a0be87f586c68bc20b7d4680c88f445661ab89fca406319bb0863ed8e87769"
     },
     {
       "file": "part-027.json.gz",
-      "key": "catalog/465e0259274b1b15/part-027.json",
+      "key": "catalog/ea7708682eb63dd8/part-027.json",
       "count": 400,
       "sha256": "1f3e9beaa1083bd987a6da15a554e02fffaba90b42f7675d77972db064698f08"
     },
     {
       "file": "part-028.json.gz",
-      "key": "catalog/465e0259274b1b15/part-028.json",
+      "key": "catalog/ea7708682eb63dd8/part-028.json",
       "count": 400,
       "sha256": "54f7b2260cad03c9ad4d5d07540711801db148d9ba1919000ab5251bc3b04468"
     },
     {
       "file": "part-029.json.gz",
-      "key": "catalog/465e0259274b1b15/part-029.json",
+      "key": "catalog/ea7708682eb63dd8/part-029.json",
       "count": 400,
       "sha256": "cb404835a46ec836c1e070c9277dd7ab66284f48dfc070f7df5666c1b90f0cd4"
     },
     {
       "file": "part-030.json.gz",
-      "key": "catalog/465e0259274b1b15/part-030.json",
+      "key": "catalog/ea7708682eb63dd8/part-030.json",
       "count": 400,
       "sha256": "91daef5a91b9d101eb2554fab56d8dd88fc631396e5e9ddbf3447911a6bb1250"
     },
     {
       "file": "part-031.json.gz",
-      "key": "catalog/465e0259274b1b15/part-031.json",
+      "key": "catalog/ea7708682eb63dd8/part-031.json",
       "count": 400,
       "sha256": "1ac3d0f0c4c4bd54699446f8dab5d51c077cdac22990ab0406bdd1723bee6503"
     },
     {
       "file": "part-032.json.gz",
-      "key": "catalog/465e0259274b1b15/part-032.json",
+      "key": "catalog/ea7708682eb63dd8/part-032.json",
       "count": 400,
       "sha256": "7b08007d93efc9adf6b0cb620273446b8321a9c912593cf1062405db6db73509"
     },
     {
       "file": "part-033.json.gz",
-      "key": "catalog/465e0259274b1b15/part-033.json",
+      "key": "catalog/ea7708682eb63dd8/part-033.json",
       "count": 400,
       "sha256": "ce9b86ae996766bc846ff940c18a9dbd20aad49430d86759c034d080e874498a"
     },
     {
       "file": "part-034.json.gz",
-      "key": "catalog/465e0259274b1b15/part-034.json",
+      "key": "catalog/ea7708682eb63dd8/part-034.json",
       "count": 400,
       "sha256": "440d5fb208d871232caa04bf7671fc45b1a1f2541d84b77fb9e62f8b47abf4c6"
     },
     {
       "file": "part-035.json.gz",
-      "key": "catalog/465e0259274b1b15/part-035.json",
+      "key": "catalog/ea7708682eb63dd8/part-035.json",
       "count": 400,
       "sha256": "ebdd1625821ea0cdfce048371e94f205ee02fb9d38da83b78fa23c535676b7e0"
     },
     {
       "file": "part-036.json.gz",
-      "key": "catalog/465e0259274b1b15/part-036.json",
+      "key": "catalog/ea7708682eb63dd8/part-036.json",
       "count": 400,
-      "sha256": "2d417095115924762ac528dd254b19e71dcf172c36e1e2f70eb4f95ee0cbee01"
+      "sha256": "d8c77e829001c4ac010edafa447f4878c16fd397faa490093e2652616fddf116"
     },
     {
       "file": "part-037.json.gz",
-      "key": "catalog/465e0259274b1b15/part-037.json",
+      "key": "catalog/ea7708682eb63dd8/part-037.json",
       "count": 400,
       "sha256": "3b1c69a6b1a0d7a643dad812faff3856639e72831becdde519b31180fdc2881c"
     },
     {
       "file": "part-038.json.gz",
-      "key": "catalog/465e0259274b1b15/part-038.json",
+      "key": "catalog/ea7708682eb63dd8/part-038.json",
       "count": 400,
       "sha256": "e35500600946b3a42d1f385b8da666d30d05ffb42d1e19ac7eb3a3eeed808e56"
     },
     {
       "file": "part-039.json.gz",
-      "key": "catalog/465e0259274b1b15/part-039.json",
+      "key": "catalog/ea7708682eb63dd8/part-039.json",
       "count": 400,
       "sha256": "fd97609a59e0ef190c7ff8ba0412df5a63340a4befc934c63ff49475274a2355"
     },
     {
       "file": "part-040.json.gz",
-      "key": "catalog/465e0259274b1b15/part-040.json",
+      "key": "catalog/ea7708682eb63dd8/part-040.json",
       "count": 400,
       "sha256": "6ffa22047114afd5fba675399f9ef0b0802e0e70479251cc569d97b7aa5683e3"
     },
     {
       "file": "part-041.json.gz",
-      "key": "catalog/465e0259274b1b15/part-041.json",
+      "key": "catalog/ea7708682eb63dd8/part-041.json",
       "count": 400,
       "sha256": "df0c3b849ba6aa66cc6220a9f5969a2e843ad3ac25aa246b2c92649b47797fa7"
     },
     {
       "file": "part-042.json.gz",
-      "key": "catalog/465e0259274b1b15/part-042.json",
+      "key": "catalog/ea7708682eb63dd8/part-042.json",
       "count": 400,
       "sha256": "0c8b7efd6272f5e51ded3109b3a811fd83081f48e486586fee8e953407a6f1a4"
     },
     {
       "file": "part-043.json.gz",
-      "key": "catalog/465e0259274b1b15/part-043.json",
-      "count": 218,
-      "sha256": "da50f88d5a5235147426a3295bb8e029b45acc0b1e4a60c7262e85a30d655ea6"
+      "key": "catalog/ea7708682eb63dd8/part-043.json",
+      "count": 400,
+      "sha256": "7e47ab13f4be2dccd6021b20fda5f3add5895099fb85ef51541d884e2750f999"
+    },
+    {
+      "file": "part-044.json.gz",
+      "key": "catalog/ea7708682eb63dd8/part-044.json",
+      "count": 68,
+      "sha256": "6302f294e4f6221338c9db7168db64c3cc2de824208461d9472633933851af83"
     }
   ]
 }
