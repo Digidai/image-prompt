@@ -5,6 +5,7 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {spawn} from 'node:child_process';
 import {createServer} from 'node:net';
+import meta from '../src/catalog-meta.json' with {type:'json'};
 
 // Exercise the real Static Assets HTML routing, which unit-test ASSETS stubs
 // cannot reproduce. Local mode disables remote D1/R2 and needs no credentials.
@@ -33,9 +34,11 @@ try{
     if(Date.now()>deadline)throw new Error('Local Workers runtime did not become ready');
     await pause(150);
   }
-  for(const pathname of ['/','/categories/','/categories/product/','/guide/','/en/','/en/categories/','/en/categories/product/','/en/guide/']){
+  for(const pathname of ['/','/categories/','/categories/product/','/guide/','/en/','/en/categories/','/en/categories/product/','/en/guide/','/prompts/','/en/prompts/','/categories/opennana/','/en/categories/opennana/']){
     const response=await request(pathname),html=await response.text(),locale=pathname.startsWith('/en/')?'en':'zh-CN';
-    assert.equal(response.status,200,pathname);assert(html.includes(`<html lang="${locale}">`),`Locale missing: ${pathname}`);assert(html.includes(`rel="canonical" href="https://prompt.genedai.me${pathname}"`),`Canonical missing: ${pathname}`);checks++;
+    assert.equal(response.status,200,pathname);assert(html.includes(`<html lang="${locale}">`),`Locale missing: ${pathname}`);assert(html.includes(`rel="canonical" href="https://prompt.genedai.me${pathname}"`),`Canonical missing: ${pathname}`);
+    if(/\/(?:prompts|categories\/opennana)\/$/.test(pathname)){assert.equal(response.headers.get('x-catalog-cache'),'STATIC',`First page must work without seeded D1/R2: ${pathname}`);assert(html.includes((pathname.includes('opennana')?meta.opennana.imported:meta.total).toLocaleString('en-US')),`Snapshot count missing: ${pathname}`);assert(html.includes(pathname+'page/2/'),`Next-page route missing: ${pathname}`);}
+    checks++;
   }
   for(const pathname of ['/not-a-real-page-hosting-check','/en/not-a-real-page-hosting-check']){
     const response=await request(pathname),html=await response.text(),locale=pathname.startsWith('/en/')?'en':'zh-CN';

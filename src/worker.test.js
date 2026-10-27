@@ -2,6 +2,8 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import worker from './worker.js';
 import {apiResponse} from './api.js';
+import catalog from '../data/catalog.json' with {type:'json'};
+import meta from './catalog-meta.json' with {type:'json'};
 const origin='https://prompt.genedai.me';
 const api=p=>apiResponse(new URL(origin+p));
 test('pagination preserves ordering, total and source attribution',async()=>{
@@ -41,4 +43,20 @@ test('Cloudflare analytics can load without enabling arbitrary inline scripts',a
  const r=await worker.fetch(new Request(origin+'/'),env),policy=r.headers.get('content-security-policy');
  const script=policy.split(';').find(x=>x.trim().startsWith('script-src')),connect=policy.split(';').find(x=>x.trim().startsWith('connect-src'));
  assert(script.includes('https://static.cloudflareinsights.com'));assert(!script.includes('unsafe-inline'));assert(!script.includes('unsafe-eval'));assert(connect.includes('https://cloudflareinsights.com'));
+});
+test('primary collection entrances remain readable when catalog storage is unavailable',async()=>{
+ const env={CATALOG:{prepare(){throw Error('D1 unavailable');}},CONTENT:{get(){throw Error('R2 unavailable');}},ASSETS:{async fetch(req){const p=new URL(req.url).pathname;return req.headers.has('if-none-match')?new Response(null,{status:304,headers:{etag:'snapshot'}}):new Response(`<html><h1>${p}</h1></html>`,{headers:{'content-type':'text/html'}});}}};
+ for(const p of ['/prompts/','/en/prompts/','/categories/opennana/','/en/categories/opennana/']){
+  const r=await worker.fetch(new Request(origin+p),env);assert.equal(r.status,200);assert.equal(r.headers.get('x-catalog-cache'),'STATIC');assert((await r.text()).includes(p));assert(r.headers.has('content-security-policy'));
+ }
+ const head=await worker.fetch(new Request(origin+'/en/prompts/',{method:'HEAD'}),env);assert.equal(head.status,200);assert.equal(await head.text(),'');
+ const filtered=await worker.fetch(new Request(origin+'/prompts/?q=test'),env);assert.equal(filtered.headers.get('x-robots-tag'),'noindex, follow');
+ const unchanged=await worker.fetch(new Request(origin+'/prompts/',{headers:{'if-none-match':'snapshot'}}),env);assert.equal(unchanged.status,304);assert.equal(unchanged.headers.get('x-catalog-cache'),'STATIC');assert.equal(await unchanged.text(),'');
+});
+test('a missing first-page asset can still fall back to the complete catalog renderer',async()=>{
+ const c=catalog.cases[0],key=meta.shards[0].key;
+ const env={ASSETS:{async fetch(req){return new URL(req.url).pathname==='/asset-manifest.json'?Response.json({css:'/site.css',localeJS:'/locale.js'}):new Response('missing',{status:404});}},
+  CATALOG:{prepare(){return {bind(){return {async first(){return {total:1};},async all(){return {results:[{id:c.id,record_key:key}]};}};}};}},
+  CONTENT:{async get(){return {async json(){return [c];}};}}};
+ const r=await worker.fetch(new Request(origin+'/prompts/'),env);assert.equal(r.status,200);assert.notEqual(r.headers.get('x-catalog-cache'),'STATIC');assert((await r.text()).includes(c.titleZh));
 });

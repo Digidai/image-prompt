@@ -4,6 +4,7 @@ import {dynamicResponse} from './render-catalog.js';
 import {language,stripLocale} from './i18n.js';
 import { ORIGIN, apiResponse, cors, json } from './api.js';
 import {cachedListing} from './listing-cache.js';
+const prebuiltListings=new Set(['/prompts/','/en/prompts/','/categories/opennana/','/en/categories/opennana/']);
 
 export default {
   async fetch(request, env, ctx) {
@@ -20,7 +21,13 @@ export default {
       try{response=env.CATALOG?await catalogApi(url,env):apiResponse(url);}catch{response=json({error:'Catalog temporarily unavailable. Please retry.'},503,{'retry-after':'30'});}
     } else {
       if (!['GET','HEAD'].includes(request.method)) return new Response('Method not allowed',{status:405,headers:{allow:'GET, HEAD'}});
-      if(env.CATALOG&&env.CONTENT){try{response=await cachedListing(request,env,ctx,()=>dynamicResponse(new Request(normalized,request),env,locale),meta.releaseId);}catch{response=new Response('Catalog temporarily unavailable',{status:503,headers:{'retry-after':'30'}});}}
+      if(prebuiltListings.has(url.pathname)){
+        try{const built=await env.ASSETS.fetch(request);
+          if((built.status===200&&built.headers.get('content-type')?.includes('text/html'))||built.status===304){const h=new Headers(built.headers);h.set('x-catalog-cache','STATIC');h.set('cache-control','public, max-age=300');response=new Response(built.body,{status:built.status,headers:h});}
+          else await built.body?.cancel();
+        }catch{} // Keep the existing dynamic path available if an asset is missing.
+      }
+      if(!response&&env.CATALOG&&env.CONTENT){try{response=await cachedListing(request,env,ctx,()=>dynamicResponse(new Request(normalized,request),env,locale),meta.releaseId);}catch{response=new Response('Catalog temporarily unavailable',{status:503,headers:{'retry-after':'30'}});}}
       // Optional content negotiation complements permanent .md and JSON links.
       if(!response&&locale==='en'&&normalized.pathname.endsWith('/index.md'))response=await env.ASSETS.fetch(new Request(normalized,request));
       if (!response && request.headers.get('accept')?.includes('text/markdown') && /^\/prompts\/[a-zA-Z0-9-]+\/$/.test(normalized.pathname)) {

@@ -95,10 +95,22 @@ const initialIds=new Set([...original.cases.slice(0,36).map(c=>c.id),...original
 await write('data/site.json',JSON.stringify({...data,cases:original.cases.filter(c=>initialIds.has(c.id)),total,categories:meta.categories,measuredCount:original.cases.filter(c=>c.evidenceType==='post_archive').length,opennanaCount:extra.length}));
 const chineseStatic=[...urls];
 for(const pathname of chineseStatic){let html=await fs.readFile(path.join(out,pathname,'index.html'),'utf8');const english=englishPage(pathname,combined,meta);if(pathname==='/')html=html.replace(/<section id="screen-guide"[\s\S]*?<\/main>/,'<section id="screen-guide" class="hidden"><div id="modelGuide"></div><div id="categoryGuide"></div></section><section id="screen-sources" class="hidden"><div id="sourceCards"></div><div id="selectionNote"></div><div id="referenceLinks"></div></section></main>');if(english)html=html.replace(/<main\b[^>]*>[\s\S]*?<\/main>/,`<main class="static-shell" id="main-content">${english}</main>`);else if(/^\/prompts\/(?!page\/)[^/]+\/$/.test(pathname))html=html.replace(/<p class="lead">[\s\S]*?<\/p>/,'<p class="lead">Read the complete source prompt and attribution. Source titles and prompt text retain their original language.</p>');const en='/en'+pathname;await write(en.slice(1)+'index.html',localizeHtml(html,'en',pathname,{localeJS}));urls.push(en);}
+// These snapshot-fixed first pages do not need D1/R2 reads on a cold visit.
+// Use the runtime renderer so visible cards, totals and locales stay consistent.
+const {renderDirectory}=await import('../src/render-catalog.js');
+for(const [pathname,category] of [['/prompts/',null],['/categories/opennana/','opennana']]){
+ const entries=category?allCases.filter(c=>c.category===category):allCases;
+ const result={total:entries.length,limit:36,offset:0,data:entries.slice(0,36).map(c=>({...c,preview:new URL(c.preview,origin).href}))};
+ const html=renderDirectory(result,pathname,category,{css,detailJS,localeJS});
+ for(const [prefix,locale] of [['','zh'],['/en','en']]){
+  const address=prefix+pathname;await write(address.slice(1)+'index.html',localizeHtml(html,locale,pathname,{css,detailJS,localeJS}));
+  if(!urls.includes(address))urls.push(address);
+ }
+}
 await write('static-url-list.json',JSON.stringify(urls.map(url)));
 for(const c of extra)urls.push(promptUrl(c));
 for(let n=1;n<=Math.ceil(total/36);n++){const p=n===1?'/prompts/':`/prompts/page/${n}/`;if(!urls.includes(p))urls.push(p);}
-for(let n=1;n<=Math.ceil(extra.length/36);n++)urls.push(n===1?'/categories/opennana/':`/categories/opennana/page/${n}/`);
+for(let n=1;n<=Math.ceil(extra.length/36);n++){const p=n===1?'/categories/opennana/':`/categories/opennana/page/${n}/`;if(!urls.includes(p))urls.push(p);}
 
 await write('robots.txt',`User-agent: *\nAllow: /\n\nSitemap: ${origin}/sitemap.xml\n`);
 for(const p of [...urls])if(!p.startsWith('/en/')&&!urls.includes('/en'+p))urls.push('/en'+p);
