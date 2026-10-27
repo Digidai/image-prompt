@@ -1,0 +1,457 @@
+{
+  "at": "2026-10-27T02:43:35.689Z",
+  "status": "published_verified",
+  "scope": "Authorized daily maintenance and one measured primary-listing performance improvement; no weekly content refresh needed today.",
+  "baseline": {
+    "checkout": "54806f1f02162c77c4b536c7078259869cd6ac37",
+    "liveSource": "c3e71959fb3e49fc501d32f9ee55f1ccd300807e",
+    "releaseId": "ea7708682eb63dd8",
+    "dirty": false
+  },
+  "observation": {
+    "coldListingWarning": [
+      {
+        "path": "/prompts/",
+        "message": "Synthetic response exceeded 2500 ms; compare repeated samples, not field Core Web Vitals.",
+        "ms": 6686
+      }
+    ],
+    "oldDelivery": "D1 count, D1 page query, R2 full-record shard hydration and directory rendering on an uncached first visit.",
+    "originalShardBytes": 2632560,
+    "firstExpansionShardBytes": 4856722,
+    "causalLimitation": "The old path requires storage reads, but client timing alone does not isolate how much each stage contributed."
+  },
+  "change": {
+    "paths": [
+      "/prompts/",
+      "/en/prompts/",
+      "/categories/opennana/",
+      "/en/categories/opennana/"
+    ],
+    "delivery": "Build-time snapshot HTML through existing Static Assets, using the same directory renderer, total, case order and locale transformation.",
+    "runtimeStorageReadsForNormalFirstPage": 0,
+    "dynamicFallbackWhenAssetMissing": true,
+    "laterPaginationApiDetailsAndExports": "Existing dynamic paths retained",
+    "snapshotDateUnchanged": "2026-10-26",
+    "datasetUnchanged": "ea7708682eb63dd8",
+    "catalogCasesUnchanged": 18142,
+    "visibleContentComparison": {
+      "at": "2026-10-27T02:34:52.052Z",
+      "comparisons": [
+        {
+          "path": "/prompts/",
+          "visibleMainUnchanged": true,
+          "cardOrderUnchanged": true,
+          "cardCount": 36
+        },
+        {
+          "path": "/en/prompts/",
+          "visibleMainUnchanged": true,
+          "cardOrderUnchanged": true,
+          "cardCount": 36
+        },
+        {
+          "path": "/categories/opennana/",
+          "visibleMainUnchanged": true,
+          "cardOrderUnchanged": true,
+          "cardCount": 36
+        },
+        {
+          "path": "/en/categories/opennana/",
+          "visibleMainUnchanged": true,
+          "cardOrderUnchanged": true,
+          "cardCount": 36
+        }
+      ]
+    },
+    "sitemap": {
+      "at": "2026-10-27T02:36:07.459Z",
+      "sha256": "22bf29b340613f1571fc8db6a7a7a61e4108cf85193844df15cec0bc4de4bb99",
+      "urls": 52,
+      "exactBytesUnchanged": true
+    }
+  },
+  "publication": {
+    "sourceCommit": "8dc0b84a645dfc1ba98da379179c81c86fb2ac6e",
+    "provider": "Cloudflare Workers Builds",
+    "url": "https://dash.cloudflare.com/48d9ccaf5ee7914c803b5d0656462848/workers/services/view/image-prompt/production/builds/4bc525ba-30ad-4f78-ab4d-5c13c3804279",
+    "conclusion": "success",
+    "completedAt": "2026-10-27T02:38:58Z",
+    "deployment": {
+      "at": "2026-10-27T02:39:37.754Z",
+      "id": "078b0037-25df-449a-9856-d270f5b2d396",
+      "createdAt": "2026-10-27T02:38:42.901624Z",
+      "versions": [
+        {
+          "version_id": "2f7c9e54-0b38-4e99-98df-c32643cd8ead",
+          "percentage": 100
+        }
+      ]
+    },
+    "liveBuildInfo": {
+      "project": "image-prompt",
+      "commit": "8dc0b84a645dfc1ba98da379179c81c86fb2ac6e",
+      "sourceSha256": "1d21d434c78ad730b9b7fb9a52c8d87ab19db7dc60fb76989ed1b7498397196b",
+      "snapshotDate": "2026-10-26",
+      "contentUpdatedAt": "2026-10-26",
+      "catalogSnapshotDate": "2026-10-26",
+      "cases": 18142,
+      "originalCases": 474,
+      "opennanaCases": 17668,
+      "contentRelease": "ea7708682eb63dd8",
+      "categories": 23,
+      "canonicalOrigin": "https://prompt.genedai.me",
+      "interfaceLanguages": [
+        "zh-CN",
+        "en"
+      ],
+      "searchSubmissions": {
+        "policy": "listing-landings-v1",
+        "urlCount": 52
+      }
+    },
+    "githubActionsEnabled": false
+  },
+  "verification": {
+    "unitAndApiTests": 29,
+    "realLocalHostingChecks": 17,
+    "localResourceIsolation": "All four primary entrances pass in a real local Worker with unseeded isolated D1/R2; unit tests also inject storage outages and verify dynamic asset fallback.",
+    "remoteDatasetReadiness": "passed; unchanged existing dataset",
+    "independentLiveChecks": 52,
+    "targetedLiveChecks": 12,
+    "targetedEvidence": {
+      "at": "2026-10-27T02:40:52.406Z",
+      "status": "passed",
+      "checks": 12,
+      "results": [
+        {
+          "path": "/prompts/",
+          "type": "GET",
+          "status": 200,
+          "ms": 471,
+          "cache": "STATIC",
+          "ray": "a50e56927a3bce70-SJC",
+          "etag": null,
+          "visibleMainUnchanged": true
+        },
+        {
+          "path": "/prompts/",
+          "type": "HEAD",
+          "status": 200
+        },
+        {
+          "path": "/prompts/",
+          "type": "query",
+          "status": 200
+        },
+        {
+          "path": "/en/prompts/",
+          "type": "GET",
+          "status": 200,
+          "ms": 390,
+          "cache": "STATIC",
+          "ray": "a50e56997d187ac8-SJC",
+          "etag": null,
+          "visibleMainUnchanged": true
+        },
+        {
+          "path": "/en/prompts/",
+          "type": "HEAD",
+          "status": 200
+        },
+        {
+          "path": "/en/prompts/",
+          "type": "query",
+          "status": 200
+        },
+        {
+          "path": "/categories/opennana/",
+          "type": "GET",
+          "status": 200,
+          "ms": 393,
+          "cache": "STATIC",
+          "ray": "a50e569e5d9be19d-SJC",
+          "etag": null,
+          "visibleMainUnchanged": true
+        },
+        {
+          "path": "/categories/opennana/",
+          "type": "HEAD",
+          "status": 200
+        },
+        {
+          "path": "/categories/opennana/",
+          "type": "query",
+          "status": 200
+        },
+        {
+          "path": "/en/categories/opennana/",
+          "type": "GET",
+          "status": 200,
+          "ms": 452,
+          "cache": "STATIC",
+          "ray": "a50e56a38a3d944c-SJC",
+          "etag": null,
+          "visibleMainUnchanged": true
+        },
+        {
+          "path": "/en/categories/opennana/",
+          "type": "HEAD",
+          "status": 200
+        },
+        {
+          "path": "/en/categories/opennana/",
+          "type": "query",
+          "status": 200
+        }
+      ],
+      "validatorLimitations": [
+        {
+          "path": "/prompts/",
+          "conditional304": "unknown; public HTML response does not expose an ETag. Unit coverage exists; no production 304 claim."
+        },
+        {
+          "path": "/en/prompts/",
+          "conditional304": "unknown; public HTML response does not expose an ETag. Unit coverage exists; no production 304 claim."
+        },
+        {
+          "path": "/categories/opennana/",
+          "conditional304": "unknown; public HTML response does not expose an ETag. Unit coverage exists; no production 304 claim."
+        },
+        {
+          "path": "/en/categories/opennana/",
+          "conditional304": "unknown; public HTML response does not expose an ETag. Unit coverage exists; no production 304 claim."
+        }
+      ],
+      "initialVerificationCorrection": "The first optional conditional-response probe incorrectly assumed public HTML always exposes ETag. Its assertion failure was a probe precondition issue, not a serving failure; raw output is retained separately."
+    },
+    "healthProbes": 12,
+    "failures": [],
+    "warnings": [],
+    "conditional304": "Unit-tested. Public HTML did not expose an ETag, so production 304 behavior remains unobserved; the initial optional validator assumption was corrected without a site change."
+  },
+  "timingEvidence": {
+    "before": {
+      "at": "2026-10-27T02:33:04.698Z",
+      "results": [
+        {
+          "path": "/prompts/",
+          "status": 200,
+          "ms": 808,
+          "cache": "MISS",
+          "ray": "a50e4b303c201f2f-SJC",
+          "bytes": 37646,
+          "canonical": "https://prompt.genedai.me/prompts/"
+        },
+        {
+          "path": "/en/prompts/",
+          "status": 200,
+          "ms": 289,
+          "cache": "MISS",
+          "ray": "a50e4b3258711f2f-SJC",
+          "bytes": 33347,
+          "canonical": "https://prompt.genedai.me/en/prompts/"
+        },
+        {
+          "path": "/categories/opennana/",
+          "status": 200,
+          "ms": 1134,
+          "cache": "MISS",
+          "ray": "a50e4b342c941f2f-SJC",
+          "bytes": 33723,
+          "canonical": "https://prompt.genedai.me/categories/opennana/"
+        },
+        {
+          "path": "/en/categories/opennana/",
+          "status": 200,
+          "ms": 286,
+          "cache": "MISS",
+          "ray": "a50e4b3b4aed1f2f-SJC",
+          "bytes": 34175,
+          "canonical": "https://prompt.genedai.me/en/categories/opennana/"
+        }
+      ]
+    },
+    "after": [
+      {
+        "path": "/prompts/",
+        "type": "GET",
+        "status": 200,
+        "ms": 471,
+        "cache": "STATIC",
+        "ray": "a50e56927a3bce70-SJC",
+        "etag": null,
+        "visibleMainUnchanged": true
+      },
+      {
+        "path": "/en/prompts/",
+        "type": "GET",
+        "status": 200,
+        "ms": 390,
+        "cache": "STATIC",
+        "ray": "a50e56997d187ac8-SJC",
+        "etag": null,
+        "visibleMainUnchanged": true
+      },
+      {
+        "path": "/categories/opennana/",
+        "type": "GET",
+        "status": 200,
+        "ms": 393,
+        "cache": "STATIC",
+        "ray": "a50e569e5d9be19d-SJC",
+        "etag": null,
+        "visibleMainUnchanged": true
+      },
+      {
+        "path": "/en/categories/opennana/",
+        "type": "GET",
+        "status": 200,
+        "ms": 452,
+        "cache": "STATIC",
+        "ray": "a50e56a38a3d944c-SJC",
+        "etag": null,
+        "visibleMainUnchanged": true
+      }
+    ],
+    "limitations": "Synthetic observations only. Earlier cold warnings and later same-edge samples are distinct observations; English warm-storage responses were already fast. Do not claim a universal speedup factor or field Core Web Vitals."
+  },
+  "actualIndexation": {
+    "google": {
+      "at": "2026-10-27T02:34:40.041Z",
+      "provider": "Google Search Console",
+      "property": "sc-domain:genedai.me",
+      "kind": "url_inspection",
+      "url": "https://prompt.genedai.me/",
+      "status": "indexed",
+      "homepageIndexed": true,
+      "lastCrawlDisplayed": "Oct 22, 2026, 10:01:32 AM",
+      "lastCrawlTimezone": "Not specified in captured UI",
+      "crawledAs": "Googlebot smartphone",
+      "crawlAllowed": true,
+      "pageFetch": "Successful",
+      "indexingAllowed": true,
+      "userDeclaredCanonical": "https://prompt.genedai.me/",
+      "googleSelectedCanonical": "Inspected URL",
+      "referringSitemaps": [
+        "https://prompt.genedai.me/sitemap.xml"
+      ],
+      "siteIndexedPageCount": null,
+      "evidence": "Authenticated exact-homepage URL Inspection remains URL is on Google / Page is indexed. The sitemap field again displays the canonical sitemap, rather than yesterday’s temporary processing error.",
+      "screenshotLocal": "output/maintenance/2026-10-27/google-indexed.png",
+      "textEvidenceLocal": "output/maintenance/2026-10-27/google-indexed.txt",
+      "submissionAction": "none; existing October 22 requested receipt preserved",
+      "notEvidenceOf": "Site-wide indexed count, ranking, traffic growth or AI citation"
+    },
+    "bing": {
+      "at": "2026-10-27T02:35:31.617Z",
+      "provider": "Bing Webmaster Tools",
+      "kind": "url_inspection_and_index_report",
+      "site": "https://prompt.genedai.me/",
+      "url": "https://prompt.genedai.me/",
+      "status": "discovered_not_crawled",
+      "homepageIndexed": false,
+      "discoveredOn": "2026-10-20",
+      "lastCrawl": null,
+      "siteIndexedPageCount": null,
+      "siteReportObservedAt": "2026-10-27T02:36:24.850Z",
+      "evidence": "Authenticated Bing Index remains Discovered but not crawled / URL cannot appear on Bing. Exact-site Site Explorer with Indexed URLs selected shows No data available; numeric indexed count is unknown.",
+      "screenshotLocal": [
+        "output/maintenance/2026-10-27/bing-homepage-inspection.png",
+        "output/maintenance/2026-10-27/bing-indexed-urls-report.png"
+      ],
+      "textEvidenceLocal": "output/maintenance/2026-10-27/bing-homepage-inspection.txt",
+      "submissionAction": "none",
+      "notEvidenceOf": "Zero indexed site pages, ranking, traffic growth or AI citation"
+    },
+    "homepageStatesChanged": false,
+    "sitemapDiscoveryFieldRecovered": true,
+    "siteIndexedPageCounts": "unknown; domain totals not used"
+  },
+  "growthMetrics": {
+    "at": "2026-10-27T02:28:02.362Z",
+    "window": {
+      "since": "2026-10-25T16:00:00.000Z",
+      "until": "2026-10-26T16:00:00.000Z",
+      "timezone": "Asia/Shanghai",
+      "description": "Previous complete Beijing calendar day"
+    },
+    "workerName": "image-prompt",
+    "rumHostname": "prompt.genedai.me",
+    "workerInvocations": {
+      "errors": 0,
+      "requests": 1162
+    },
+    "rum": {
+      "state": "recorded_beacons",
+      "groups": [
+        {
+          "count": 13,
+          "sum": {
+            "visits": 6
+          }
+        }
+      ]
+    },
+    "errors": [],
+    "limitations": [
+      "Worker requests include bots, probes, APIs, assets and alternate hosts. They are not PV, UV or organic visitors.",
+      "Empty RUM data does not establish zero visitors.",
+      "Bing/Google actual indexation and search performance require separate provider evidence."
+    ]
+  },
+  "boundaries": {
+    "searchPolicy": "listing-landings-v1",
+    "searchEntrances": 52,
+    "googleIndexingRequests": 0,
+    "bingIndexingRequests": 0,
+    "sitemapSubmissions": 0,
+    "indexNowSubmissions": 0,
+    "contentImports": 0,
+    "productionCatalogStorageWrites": 0,
+    "cloudflareDashboardUsed": false
+  },
+  "rollback": {
+    "sourceCommit": "c3e71959fb3e49fc501d32f9ee55f1ccd300807e",
+    "workerVersion": "8e50e1c1-6ca9-4055-952f-8ad8cc5a0523",
+    "dataset": "ea7708682eb63dd8",
+    "procedure": "Roll back to the previous validated Worker version and verify exact source plus live health; no dataset migration is needed."
+  },
+  "automation": {
+    "id": "image-prompt",
+    "status": "ACTIVE",
+    "daily": "10:00 Asia/Shanghai",
+    "lastSuccessfulWeeklyContentRefresh": "2026-10-26",
+    "nextWeeklyReview": "2026-11-02",
+    "notificationReason": "A reproducible cold first-page storage dependency was removed and the four existing bilingual collection entrances were published and independently verified."
+  },
+  "notClaimed": [
+    "Bing indexation",
+    "Site-wide indexed-page counts",
+    "Human unique visitors or organic traffic growth",
+    "Conversions or AI citations",
+    "Field Core Web Vitals improvement",
+    "Observed production 304 response"
+  ],
+  "localEvidenceSha256": {
+    "output/maintenance/2026-10-27/health-before.json": "33caf5b481e0de6a2bfc74a38ce4acdc22f9032e8a8ad5848a38e12ac4de3e59",
+    "output/maintenance/2026-10-27/health-after.json": "1b313e6228105f2932c30b6a96174ffb5ccda2135cc4557f8eaef39067e18474",
+    "output/maintenance/2026-10-27/primary-listings-before.json": "7515dda71251c9e743548da413bff283fcaed32c4fa001df7aae49ef0469d59c",
+    "output/maintenance/2026-10-27/primary-listings-after.json": "7adb57f6ceff8b28dd3d759ae24a124b2e9cf2420e615d1d547592f35cd50686",
+    "output/maintenance/2026-10-27/validator-assumption-before.json": "4361fcde170b4f337e11f1e1978a5b663846fc78ed67c00656ca03d2463e041f",
+    "output/maintenance/2026-10-27/prebuilt-comparison.json": "4bd9a1d040c5ce7ce53773b06dbee5c5340242e3b762dc1e0c4464840087641c",
+    "output/maintenance/2026-10-27/sitemap-preserved.json": "c0f05e4a83075763eb29c56725c5d7f413437198134cfe651a33165e147a066f",
+    "output/maintenance/2026-10-27/ci-build.log": "421815d0599726394f802466d0b9c4c48a04c23ea00255cde7e10bce318e67f8",
+    "output/maintenance/2026-10-27/verify-live.log": "9a5c99f6ba94fb5e22d6232b5383364742c60527aff3ac50d1f9c8ca7a4be4d6",
+    "output/maintenance/2026-10-27/provider-checks.json": "482f8c985b9d890508902b6be14d00a4340890c6f9762772ac654974484893e3",
+    "output/maintenance/2026-10-27/deployment.json": "67696a7f8d561fa7821ec79595e8bda009ca412ab6d81f1f0222e0f9d7a434ff",
+    "output/maintenance/2026-10-27/provider-observations.json": "86d8d33c951dd996613614957334c4a57e9e9efc5184c6cacecf35fa06fb7a37",
+    "output/maintenance/2026-10-27/google-indexed.png": "1f74a8c2b6b374a73d86e510d4f61f96526ac7fb3fa782b3e4820a88179293e7",
+    "output/maintenance/2026-10-27/google-indexed.txt": "77e37058882ec3b80ab1b5e8427c5a49b7a5f6a37fc1c5907c0785b60bc8700d",
+    "output/maintenance/2026-10-27/bing-homepage-inspection.png": "23ad87490c7b61dd01abd03a5df2a5791221bcef2d8a12542914b94bdc521bd5",
+    "output/maintenance/2026-10-27/bing-homepage-inspection.txt": "2cdc27db6684e53fff4bfba41251603adf6179c73656522a722ecfd7f0bfa824",
+    "output/maintenance/2026-10-27/bing-indexed-urls-report.png": "2e8dda4340b8a4fa1d131f5f351d70d7387cac84fca8e1c416d7c0b83bda90b2",
+    "output/maintenance/2026-10-27/bing-indexed-urls-report.txt": "dbb90928b7e1174de73ada6fbf4911f738fc4a4c872e00b097204bcc812e00c3",
+    "output/metrics/cloudflare-2026-10-26-2026-10-27T02-28-02.362Z.json": "0e02f54e6d903dcc47403c7b8387b2cabfc439d2749b1c02fda1007ac999e249"
+  }
+}
