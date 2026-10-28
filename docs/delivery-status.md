@@ -2,6 +2,13 @@
 
 Launch date: **2026-10-20, Asia/Shanghai**. Public site: **https://prompt.genedai.me/**. Public repository: **https://github.com/Digidai/image-prompt**.
 
+## Read-only daily maintenance — 2026-10-28
+
+- **12 health probes passed**, with zero failures and zero timing warnings. Live source remains `8dc0b84a645dfc1ba98da379179c81c86fb2ac6e`, dataset `ea7708682eb63dd8`, 18,142 cases and 52 collection entrances. Chinese/English prompt directories return STATIC, with synthetic response samples of 485/324 ms; no field-performance claim is made.
+- Official exact-homepage status is unchanged: **Google indexed**, with last crawl still displayed October 22, 10:01:32 AM (timezone unspecified), successful fetch and the inspected canonical; **Bing discovered/not crawled**, discovered October 20. Bing's exact-site Indexed URLs report still shows No data available; site-wide indexed counts remain unknown.
+- Cloudflare CLI metrics for the complete **October 27 Beijing day** show **835 Worker requests, zero script errors**, and exact-host RUM count 5 / summed visits 3. These are not unique humans or proven organic growth. Cloudflare dashboard access was not used.
+- No evidence justified another code/content change today. No deployment, content import, production catalog write, Google/Bing indexing request, Sitemap resubmission or IndexNow submission was requested. GitHub Actions remains disabled. Ongoing maintenance stays ACTIVE; the weekly source/growth review remains scheduled for November 2. Routine unchanged waiting remains quiet. Receipt: `docs/evidence/maintenance-2026-10-28.json`; official observations are appended to the historical ledger and authenticated captures remain ignored locally.
+
 ## Primary collection performance — published and verified, 2026-10-27
 
 - A daily probe reproduced a **6,686 ms cold `/prompts/` response**. The four existing Chinese/English first pages at `/prompts/` and `/categories/opennana/` now serve build-time HTML through Static Assets, avoiding D1 count/page queries and multi-megabyte R2 hydration during normal first-page delivery. They use the same directory renderer and localization. Their visible main content and 36-card order match the previous live pages exactly; counts, canonical URLs and source attribution are preserved. Missing assets can fall back to the dynamic renderer; later pagination, details, APIs and exports keep their existing paths.

@@ -466,5 +466,55 @@
     "submissionAction": "none",
     "notEvidenceOf": "Zero indexed site pages, ranking, traffic growth or AI citation",
     "sourceCommit": "c3e71959fb3e49fc501d32f9ee55f1ccd300807e"
+  },
+  {
+    "at": "2026-10-28T02:03:36.113Z",
+    "provider": "Google Search Console",
+    "property": "sc-domain:genedai.me",
+    "kind": "url_inspection",
+    "url": "https://prompt.genedai.me/",
+    "status": "indexed",
+    "homepageIndexed": true,
+    "lastCrawlDisplayed": "Oct 22, 2026, 10:01:32 AM",
+    "lastCrawlTimezone": "Not specified in captured UI",
+    "crawledAs": "Googlebot smartphone",
+    "crawlAllowed": true,
+    "pageFetch": "Successful",
+    "indexingAllowed": true,
+    "userDeclaredCanonical": "https://prompt.genedai.me/",
+    "googleSelectedCanonical": "Inspected URL",
+    "referringSitemaps": [
+      "https://prompt.genedai.me/sitemap.xml"
+    ],
+    "siteIndexedPageCount": null,
+    "siteCountLimitation": "Exact homepage inspected; domain-wide totals were not used for subdomain indexed-page counts.",
+    "evidence": "Authenticated exact-homepage URL Inspection remains URL is on Google / Page is indexed. Last crawl, successful fetch, allowed indexing and canonical are unchanged.",
+    "screenshotLocal": "output/maintenance/2026-10-28/google-indexed.png",
+    "textEvidenceLocal": "output/maintenance/2026-10-28/google-indexed.txt",
+    "submissionAction": "none; successful October 22 requested receipt preserved",
+    "notEvidenceOf": "Indexation of newly added cases, site-wide indexed count, ranking, traffic growth or AI citation",
+    "sourceCommit": "8dc0b84a645dfc1ba98da379179c81c86fb2ac6e"
+  },
+  {
+    "at": "2026-10-28T02:04:28.881Z",
+    "provider": "Bing Webmaster Tools",
+    "kind": "url_inspection_and_index_report",
+    "site": "https://prompt.genedai.me/",
+    "url": "https://prompt.genedai.me/",
+    "status": "discovered_not_crawled",
+    "homepageIndexed": false,
+    "discoveredOn": "2026-10-20",
+    "lastCrawl": null,
+    "siteIndexedPageCount": null,
+    "siteReportObservedAt": "2026-10-28T02:05:09.353Z",
+    "evidence": "Authenticated Bing Index remains Discovered but not crawled / URL cannot appear on Bing. Exact-site Site Explorer with Indexed URLs selected shows No data available; the numeric indexed-page count remains unknown.",
+    "screenshotLocal": [
+      "output/maintenance/2026-10-28/bing-homepage-inspection.png",
+      "output/maintenance/2026-10-28/bing-indexed-urls-report.png"
+    ],
+    "textEvidenceLocal": "output/maintenance/2026-10-28/bing-homepage-inspection.txt",
+    "submissionAction": "none",
+    "notEvidenceOf": "Zero indexed site pages, ranking, traffic growth or AI citation",
+    "sourceCommit": "8dc0b84a645dfc1ba98da379179c81c86fb2ac6e"
   }
 ]
