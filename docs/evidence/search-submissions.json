@@ -516,5 +516,104 @@
     "submissionAction": "none",
     "notEvidenceOf": "Zero indexed site pages, ranking, traffic growth or AI citation",
     "sourceCommit": "8dc0b84a645dfc1ba98da379179c81c86fb2ac6e"
+  },
+  {
+    "at": "2026-10-29T02:04:15.706Z",
+    "provider": "Google Search Console",
+    "property": "sc-domain:genedai.me",
+    "kind": "url_inspection",
+    "url": "https://prompt.genedai.me/",
+    "status": "indexed",
+    "homepageIndexed": true,
+    "lastCrawlDisplayed": "Oct 22, 2026, 10:01:32 AM",
+    "lastCrawlTimezone": "Not specified in captured UI",
+    "crawledAs": "Googlebot smartphone",
+    "crawlAllowed": true,
+    "pageFetch": "Successful",
+    "indexingAllowed": true,
+    "userDeclaredCanonical": "https://prompt.genedai.me/",
+    "googleSelectedCanonical": "Inspected URL",
+    "siteIndexedPageCount": null,
+    "siteCountLimitation": "Current exact-host total remains unknown. A separately captured sitemap-filtered report last updated October 23 shows 2 indexed / 50 discovered-not-indexed pages; this delayed submitted-URL snapshot is not a current site-wide count.",
+    "evidence": "Authenticated exact-homepage URL Inspection remains URL is on Google / Page is indexed. Last crawl, successful fetch, allowed indexing and canonical are unchanged. The sitemap discovery field separately shows Temporary processing error; the exact sitemap report was checked independently and shows successful processing.",
+    "screenshotLocal": "output/maintenance/2026-10-29/google-indexed.png",
+    "textEvidenceLocal": "output/maintenance/2026-10-29/google-indexed.txt",
+    "submissionAction": "none; successful October 22 requested receipt preserved",
+    "notEvidenceOf": "Indexation of newly added cases, site-wide indexed count, ranking, traffic growth or AI citation",
+    "sourceCommit": "8dc0b84a645dfc1ba98da379179c81c86fb2ac6e",
+    "sitemapDiscovery": "Temporary processing error"
+  },
+  {
+    "at": "2026-10-29T02:04:33.531Z",
+    "provider": "Bing Webmaster Tools",
+    "kind": "url_inspection_and_index_report",
+    "site": "https://prompt.genedai.me/",
+    "url": "https://prompt.genedai.me/",
+    "status": "discovered_not_crawled",
+    "homepageIndexed": false,
+    "discoveredOn": "2026-10-20",
+    "lastCrawl": null,
+    "siteIndexedPageCount": null,
+    "siteReportObservedAt": "2026-10-29T02:04:49.296Z",
+    "evidence": "Authenticated Bing Index remains Discovered but not crawled / URL cannot appear on Bing. Exact-site Site Explorer with Indexed URLs selected shows No data available; the numeric indexed-page count remains unknown.",
+    "screenshotLocal": [
+      "output/maintenance/2026-10-29/bing-homepage-inspection.png",
+      "output/maintenance/2026-10-29/bing-indexed-urls-report.png"
+    ],
+    "textEvidenceLocal": "output/maintenance/2026-10-29/bing-homepage-inspection.txt",
+    "submissionAction": "none",
+    "notEvidenceOf": "Zero indexed site pages, ranking, traffic growth or AI citation",
+    "sourceCommit": "8dc0b84a645dfc1ba98da379179c81c86fb2ac6e"
+  },
+  {
+    "at": "2026-10-29T02:05:34.461Z",
+    "provider": "Google Search Console",
+    "property": "sc-domain:genedai.me",
+    "kind": "sitemap_report_read_only",
+    "url": "https://prompt.genedai.me/sitemap.xml",
+    "status": "processed_successfully",
+    "lastReadDisplayed": "10/28/26",
+    "discoveredPages": 52,
+    "discoveredVideos": 0,
+    "evidence": "Authenticated exact-sitemap detail shows Sitemap processed successfully, last read 10/28/26, 52 discovered pages and 0 discovered videos. This is distinct from the temporary sitemap processing error in homepage URL Inspection.",
+    "screenshotLocal": "output/maintenance/2026-10-29/google-sitemap-report.png",
+    "textEvidenceLocal": "output/maintenance/2026-10-29/google-sitemap-report.txt",
+    "submissionAction": "none; read-only existing sitemap report",
+    "notEvidenceOf": "Actual indexation of 52 URLs, current site-wide indexed count, ranking or traffic growth"
+  },
+  {
+    "at": "2026-10-29T02:06:15.640Z",
+    "examplesObservedAt": "2026-10-29T02:06:34.014Z",
+    "provider": "Google Search Console",
+    "property": "sc-domain:genedai.me",
+    "kind": "sitemap_filtered_index_report",
+    "sitemap": "https://prompt.genedai.me/sitemap.xml",
+    "status": "delayed_report_observed",
+    "reportLastUpdatedDisplayed": "10/23/26",
+    "indexedPagesInReport": 2,
+    "notIndexedPagesInReport": 50,
+    "notIndexedReason": "Discovered - currently not indexed",
+    "indexedExamples": [
+      {
+        "url": "https://prompt.genedai.me/en/",
+        "lastCrawledDisplayed": "Oct 22, 2026"
+      },
+      {
+        "url": "https://prompt.genedai.me/",
+        "lastCrawledDisplayed": "Oct 22, 2026"
+      }
+    ],
+    "currentSiteIndexedPageCount": null,
+    "evidence": "The report explicitly selects https://prompt.genedai.me/sitemap.xml. It last updated 10/23/26, shows Indexed 2 / Not indexed 50, and lists Chinese/English homepages as indexed examples. This is a delayed submitted-URL snapshot; no domain totals were used.",
+    "screenshotLocal": [
+      "output/maintenance/2026-10-29/google-scoped-index-report.png",
+      "output/maintenance/2026-10-29/google-indexed-examples.png"
+    ],
+    "textEvidenceLocal": [
+      "output/maintenance/2026-10-29/google-scoped-index-report.txt",
+      "output/maintenance/2026-10-29/google-indexed-examples.txt"
+    ],
+    "submissionAction": "none",
+    "notEvidenceOf": "A new indexation event today, current whole-site indexed count, indexation of newly added prompts, ranking or visitor growth"
   }
 ]

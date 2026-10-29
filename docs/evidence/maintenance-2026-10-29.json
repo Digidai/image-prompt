@@ -1,0 +1,269 @@
+{
+  "at": "2026-10-29T02:07:30.995Z",
+  "status": "healthy_unchanged_google_indexed_bing_pending",
+  "scope": "Read-only daily maintenance, exact-homepage index monitoring and CLI metrics; evidence documentation only.",
+  "baseline": {
+    "checkout": "11fd469a669178f2edb123c4ce499f3f1312ebe5",
+    "originMainMatched": true,
+    "dirty": false
+  },
+  "liveBuildInfo": {
+    "project": "image-prompt",
+    "commit": "8dc0b84a645dfc1ba98da379179c81c86fb2ac6e",
+    "sourceSha256": "1d21d434c78ad730b9b7fb9a52c8d87ab19db7dc60fb76989ed1b7498397196b",
+    "snapshotDate": "2026-10-26",
+    "contentUpdatedAt": "2026-10-26",
+    "catalogSnapshotDate": "2026-10-26",
+    "cases": 18142,
+    "originalCases": 474,
+    "opennanaCases": 17668,
+    "contentRelease": "ea7708682eb63dd8",
+    "categories": 23,
+    "canonicalOrigin": "https://prompt.genedai.me",
+    "interfaceLanguages": [
+      "zh-CN",
+      "en"
+    ],
+    "searchSubmissions": {
+      "policy": "listing-landings-v1",
+      "urlCount": 52
+    }
+  },
+  "health": {
+    "at": "2026-10-29T02:03:17.891Z",
+    "status": "healthy",
+    "probes": 12,
+    "failures": [],
+    "warnings": [],
+    "promptDirectories": [
+      {
+        "path": "/prompts/",
+        "method": "GET",
+        "userAgent": "default",
+        "status": 200,
+        "ms": 276,
+        "bytes": 37646,
+        "contentType": "text/html",
+        "xRobots": null,
+        "mitigated": null,
+        "catalogCache": "STATIC"
+      },
+      {
+        "path": "/en/prompts/",
+        "method": "GET",
+        "userAgent": "default",
+        "status": 200,
+        "ms": 431,
+        "bytes": 33347,
+        "contentType": "text/html",
+        "xRobots": null,
+        "mitigated": null,
+        "catalogCache": "STATIC"
+      }
+    ]
+  },
+  "actualIndexation": {
+    "google": {
+      "at": "2026-10-29T02:04:15.706Z",
+      "provider": "Google Search Console",
+      "property": "sc-domain:genedai.me",
+      "kind": "url_inspection",
+      "url": "https://prompt.genedai.me/",
+      "status": "indexed",
+      "homepageIndexed": true,
+      "lastCrawlDisplayed": "Oct 22, 2026, 10:01:32 AM",
+      "lastCrawlTimezone": "Not specified in captured UI",
+      "crawledAs": "Googlebot smartphone",
+      "crawlAllowed": true,
+      "pageFetch": "Successful",
+      "indexingAllowed": true,
+      "userDeclaredCanonical": "https://prompt.genedai.me/",
+      "googleSelectedCanonical": "Inspected URL",
+      "siteIndexedPageCount": null,
+      "siteCountLimitation": "Current exact-host total remains unknown. A separately captured sitemap-filtered report last updated October 23 shows 2 indexed / 50 discovered-not-indexed pages; this delayed submitted-URL snapshot is not a current site-wide count.",
+      "evidence": "Authenticated exact-homepage URL Inspection remains URL is on Google / Page is indexed. Last crawl, successful fetch, allowed indexing and canonical are unchanged. The sitemap discovery field separately shows Temporary processing error; the exact sitemap report was checked independently and shows successful processing.",
+      "screenshotLocal": "output/maintenance/2026-10-29/google-indexed.png",
+      "textEvidenceLocal": "output/maintenance/2026-10-29/google-indexed.txt",
+      "submissionAction": "none; successful October 22 requested receipt preserved",
+      "notEvidenceOf": "Indexation of newly added cases, site-wide indexed count, ranking, traffic growth or AI citation",
+      "sourceCommit": "8dc0b84a645dfc1ba98da379179c81c86fb2ac6e",
+      "sitemapDiscovery": "Temporary processing error"
+    },
+    "bing": {
+      "at": "2026-10-29T02:04:33.531Z",
+      "provider": "Bing Webmaster Tools",
+      "kind": "url_inspection_and_index_report",
+      "site": "https://prompt.genedai.me/",
+      "url": "https://prompt.genedai.me/",
+      "status": "discovered_not_crawled",
+      "homepageIndexed": false,
+      "discoveredOn": "2026-10-20",
+      "lastCrawl": null,
+      "siteIndexedPageCount": null,
+      "siteReportObservedAt": "2026-10-29T02:04:49.296Z",
+      "evidence": "Authenticated Bing Index remains Discovered but not crawled / URL cannot appear on Bing. Exact-site Site Explorer with Indexed URLs selected shows No data available; the numeric indexed-page count remains unknown.",
+      "screenshotLocal": [
+        "output/maintenance/2026-10-29/bing-homepage-inspection.png",
+        "output/maintenance/2026-10-29/bing-indexed-urls-report.png"
+      ],
+      "textEvidenceLocal": "output/maintenance/2026-10-29/bing-homepage-inspection.txt",
+      "submissionAction": "none",
+      "notEvidenceOf": "Zero indexed site pages, ranking, traffic growth or AI citation",
+      "sourceCommit": "8dc0b84a645dfc1ba98da379179c81c86fb2ac6e"
+    }
+  },
+  "comparison": {
+    "previousReceipt": "docs/evidence/maintenance-2026-10-28.json",
+    "googleHomepageIndexationChanged": false,
+    "bingHomepageIndexationChanged": false,
+    "googleLastCrawlChanged": false,
+    "siteIndexedCountsRemainUnknown": true,
+    "liveSourceChanged": false,
+    "datasetChanged": false,
+    "googleSitemapDiscoveryFieldChanged": true,
+    "googleSitemapProcessingIndependentlySuccessful": true,
+    "newlyObservedHistoricalScopedReport": true
+  },
+  "cloudflareMetrics": {
+    "at": "2026-10-29T02:03:17.631Z",
+    "window": {
+      "since": "2026-10-27T16:00:00.000Z",
+      "until": "2026-10-28T16:00:00.000Z",
+      "timezone": "Asia/Shanghai",
+      "description": "Previous complete Beijing calendar day"
+    },
+    "workerName": "image-prompt",
+    "rumHostname": "prompt.genedai.me",
+    "workerInvocations": {
+      "errors": 0,
+      "requests": 306
+    },
+    "rum": {
+      "state": "recorded_beacons",
+      "groups": [
+        {
+          "count": 5,
+          "sum": {
+            "visits": 4
+          }
+        }
+      ]
+    },
+    "errors": [],
+    "limitations": [
+      "Worker requests include bots, probes, APIs, assets and alternate hosts. They are not PV, UV or organic visitors.",
+      "Empty RUM data does not establish zero visitors.",
+      "Bing/Google actual indexation and search performance require separate provider evidence."
+    ]
+  },
+  "maintenanceDecision": {
+    "sourceOrContentEdits": 0,
+    "deploymentsRequested": 0,
+    "productionCatalogWrites": 0,
+    "reason": "All 12 site probes are healthy and the static collection delivery remains active. The temporary URL Inspection sitemap field does not reproduce in the exact sitemap processing report, which is successful. A delayed October 23 scoped indexing snapshot is recorded separately; no present site failure or measured demand justifies another source/content change.",
+    "lastSuccessfulWeeklySourceRefresh": "2026-10-26",
+    "nextScheduledWeeklyReview": "2026-11-02",
+    "weeklyCatchupNeeded": false,
+    "validation": "Daily read-only crawl audit, authenticated official reports, CLI metrics and evidence/ledger consistency checks only. No source changes; full build/hosting tests were not rerun."
+  },
+  "boundaries": {
+    "githubActionsEnabled": false,
+    "cloudflareDashboardUsed": false,
+    "googleIndexingRequests": 0,
+    "bingIndexingRequests": 0,
+    "sitemapSubmissions": 0,
+    "indexNowSubmissions": 0,
+    "searchPolicy": "listing-landings-v1",
+    "searchEntrances": 52,
+    "catalogCases": 18142,
+    "catalogSnapshotDate": "2026-10-26"
+  },
+  "automation": {
+    "id": "image-prompt",
+    "status": "ACTIVE",
+    "ongoingProductMaintenance": true,
+    "indexWatch": "Read-only; Bing actual homepage indexation remains pending"
+  },
+  "notification": {
+    "decision": "DONT_NOTIFY",
+    "reason": "Healthy site and unchanged actual homepage indexation. The newly observed sitemap-filtered count is dated October 23, not evidence of an indexation change today; no user action is needed."
+  },
+  "notClaimed": [
+    "Bing actual indexation",
+    "Current site-wide indexed-page counts",
+    "Indexation of newly added cases",
+    "Human unique visitors or organic growth",
+    "Field Core Web Vitals improvement",
+    "Any new search submission or production release"
+  ],
+  "localEvidenceSha256": {
+    "output/maintenance/2026-10-29/bing-homepage-inspection.png": "23ad87490c7b61dd01abd03a5df2a5791221bcef2d8a12542914b94bdc521bd5",
+    "output/maintenance/2026-10-29/bing-homepage-inspection.txt": "2cdc27db6684e53fff4bfba41251603adf6179c73656522a722ecfd7f0bfa824",
+    "output/maintenance/2026-10-29/bing-indexed-urls-report.png": "2e8dda4340b8a4fa1d131f5f351d70d7387cac84fca8e1c416d7c0b83bda90b2",
+    "output/maintenance/2026-10-29/bing-indexed-urls-report.txt": "dbb90928b7e1174de73ada6fbf4911f738fc4a4c872e00b097204bcc812e00c3",
+    "output/maintenance/2026-10-29/google-indexed-examples.png": "30e13416248b62c8ea864a76c50bf1f7319350c9f09e0625907fb220c302f730",
+    "output/maintenance/2026-10-29/google-indexed-examples.txt": "bbc06fb829f9ba3cac24a053d85a7967fdbc562b71d8c4e3fb7ad5df6bcda550",
+    "output/maintenance/2026-10-29/google-indexed.png": "2a08bb2ddf767f6bfa61e460bc8cc8d06b6b540d764e8e9358a8e1e184be9718",
+    "output/maintenance/2026-10-29/google-indexed.txt": "4a85e35bbd252475bb9b164580bd74f61c939812e1121b593ecd16ed4081ee50",
+    "output/maintenance/2026-10-29/google-scoped-index-report.png": "5265b7acd2e34b3fa6bfd965462e080b611def6c44f1a215ed86c2f38048fc1f",
+    "output/maintenance/2026-10-29/google-scoped-index-report.txt": "5cc725014dbf8c30b33a66c705cc8013fe550efd029147c4197a60f9a6a51339",
+    "output/maintenance/2026-10-29/google-sitemap-report.png": "f47c3d7b882306ba93bf6568b9b5cd84999ec05c21b71676711a6c863f636f39",
+    "output/maintenance/2026-10-29/google-sitemap-report.txt": "8a0930a4966061e9128dfe89e81e16b8ac68f1553023930c2a2db08264c5dffd",
+    "output/maintenance/2026-10-29/health.json": "d588bce3385ad4813f7804ff552f26f2573500cbaa0b9b90703dce692eb9fce7",
+    "output/maintenance/2026-10-29/provider-observations.json": "18abdba128905e85ecaf2da2950a69a2493ae5fbb652ecfd00e05c940b06bb96",
+    "output/metrics/cloudflare-2026-10-28-2026-10-29T02-03-17.631Z.json": "6c5c6eba647d7eb0e466785c106ef83d78d8380a0446ab7cdd4ec501d690216d"
+  },
+  "searchReports": {
+    "googleSitemap": {
+      "at": "2026-10-29T02:05:34.461Z",
+      "provider": "Google Search Console",
+      "property": "sc-domain:genedai.me",
+      "kind": "sitemap_report_read_only",
+      "url": "https://prompt.genedai.me/sitemap.xml",
+      "status": "processed_successfully",
+      "lastReadDisplayed": "10/28/26",
+      "discoveredPages": 52,
+      "discoveredVideos": 0,
+      "evidence": "Authenticated exact-sitemap detail shows Sitemap processed successfully, last read 10/28/26, 52 discovered pages and 0 discovered videos. This is distinct from the temporary sitemap processing error in homepage URL Inspection.",
+      "screenshotLocal": "output/maintenance/2026-10-29/google-sitemap-report.png",
+      "textEvidenceLocal": "output/maintenance/2026-10-29/google-sitemap-report.txt",
+      "submissionAction": "none; read-only existing sitemap report",
+      "notEvidenceOf": "Actual indexation of 52 URLs, current site-wide indexed count, ranking or traffic growth"
+    },
+    "googleScopedIndexReport": {
+      "at": "2026-10-29T02:06:15.640Z",
+      "examplesObservedAt": "2026-10-29T02:06:34.014Z",
+      "provider": "Google Search Console",
+      "property": "sc-domain:genedai.me",
+      "kind": "sitemap_filtered_index_report",
+      "sitemap": "https://prompt.genedai.me/sitemap.xml",
+      "status": "delayed_report_observed",
+      "reportLastUpdatedDisplayed": "10/23/26",
+      "indexedPagesInReport": 2,
+      "notIndexedPagesInReport": 50,
+      "notIndexedReason": "Discovered - currently not indexed",
+      "indexedExamples": [
+        {
+          "url": "https://prompt.genedai.me/en/",
+          "lastCrawledDisplayed": "Oct 22, 2026"
+        },
+        {
+          "url": "https://prompt.genedai.me/",
+          "lastCrawledDisplayed": "Oct 22, 2026"
+        }
+      ],
+      "currentSiteIndexedPageCount": null,
+      "evidence": "The report explicitly selects https://prompt.genedai.me/sitemap.xml. It last updated 10/23/26, shows Indexed 2 / Not indexed 50, and lists Chinese/English homepages as indexed examples. This is a delayed submitted-URL snapshot; no domain totals were used.",
+      "screenshotLocal": [
+        "output/maintenance/2026-10-29/google-scoped-index-report.png",
+        "output/maintenance/2026-10-29/google-indexed-examples.png"
+      ],
+      "textEvidenceLocal": [
+        "output/maintenance/2026-10-29/google-scoped-index-report.txt",
+        "output/maintenance/2026-10-29/google-indexed-examples.txt"
+      ],
+      "submissionAction": "none",
+      "notEvidenceOf": "A new indexation event today, current whole-site indexed count, indexation of newly added prompts, ranking or visitor growth"
+    }
+  }
+}

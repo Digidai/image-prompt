@@ -2,6 +2,14 @@
 
 Launch date: **2026-10-20, Asia/Shanghai**. Public site: **https://prompt.genedai.me/**. Public repository: **https://github.com/Digidai/image-prompt**.
 
+## Read-only daily maintenance — 2026-10-29
+
+- **12 health probes passed**, with zero failures and zero timing warnings. Live source remains `8dc0b84a645dfc1ba98da379179c81c86fb2ac6e`, dataset `ea7708682eb63dd8`, 18,142 cases and 52 collection entrances. Chinese/English prompt directories return STATIC with synthetic response samples of 276/431 ms; these are not field Core Web Vitals.
+- Exact-homepage status is unchanged: **Google indexed**, last crawl still displayed October 22, 10:01:32 AM (timezone unspecified), successful fetch and the inspected canonical; **Bing discovered/not crawled**, discovered October 20. Bing's exact-site Indexed URLs report still shows No data available; its numeric count remains unknown.
+- Google's homepage Inspection separately shows **Temporary processing error** for sitemap discovery. The exact sitemap report confirms **Sitemap processed successfully**, last read **October 28**, with **52 discovered pages**. Its sitemap-filtered Page indexing report, last updated **October 23**, shows **2 indexed / 50 discovered-not-indexed** and lists the Chinese/English homepages. This is a delayed submitted-URL snapshot, not today's whole-site count or a new indexation event. No resubmission is needed.
+- Cloudflare CLI metrics for the complete **October 28 Beijing day** show **306 Worker requests, zero script errors**, and exact-host RUM count 5 / summed visits 4. These are not unique humans or proven organic growth. Cloudflare dashboard access was not used.
+- No evidence justified another source/content change or deployment. No production catalog writes, Google/Bing requests, Sitemap resubmissions or IndexNow submissions occurred. GitHub Actions remains disabled. The next weekly source/growth review remains November 2; ongoing maintenance stays ACTIVE and routine unchanged waiting stays quiet. Receipt: `docs/evidence/maintenance-2026-10-29.json`. Read-only observations are appended to the historical ledger; authenticated captures remain ignored locally. No full build/hosting tests were rerun for evidence-only documentation.
+
 ## Read-only daily maintenance — 2026-10-28
 
 - **12 health probes passed**, with zero failures and zero timing warnings. Live source remains `8dc0b84a645dfc1ba98da379179c81c86fb2ac6e`, dataset `ea7708682eb63dd8`, 18,142 cases and 52 collection entrances. Chinese/English prompt directories return STATIC, with synthetic response samples of 485/324 ms; no field-performance claim is made.
