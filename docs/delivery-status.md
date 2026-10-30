@@ -2,6 +2,14 @@
 
 Launch date: **2026-10-20, Asia/Shanghai**. Public site: **https://prompt.genedai.me/**. Public repository: **https://github.com/Digidai/image-prompt**.
 
+## Read-only daily maintenance — 2026-10-30
+
+- **12 health probes passed**, with zero failures and zero timing warnings. Live source remains `8dc0b84a645dfc1ba98da379179c81c86fb2ac6e`, dataset `ea7708682eb63dd8`, 18,142 cases and 52 collection entrances. Chinese/English prompt directories return STATIC; synthetic samples are 295/331 ms, without a field-performance claim.
+- Official exact-homepage status is unchanged: **Google indexed**, with last crawl displayed October 22, 10:01:32 AM (timezone unspecified), successful fetch, crawling/indexing allowed and the inspected canonical; **Bing discovered/not crawled**, discovered October 20. Bing's exact-site Indexed URLs report still has No data available, so its numeric count stays unknown.
+- Google homepage Inspection still has the temporary sitemap-discovery processing error, while the exact sitemap report confirms **processed successfully**, last read October 28, with **52 discovered pages**. The sitemap-filtered index report remains dated **October 23**, with **2 indexed / 50 discovered-not-indexed**. This delayed submitted-URL snapshot is unchanged; today's whole-site indexed count remains unknown.
+- Cloudflare CLI metrics for the complete **October 29 Beijing day** show **569 Worker requests, zero script errors**, and exact-host RUM count 20 / summed visits 7. These measurements may include bots/checks and do not establish unique humans or organic growth. No Cloudflare dashboard was used.
+- No source/content change, deployment, production catalog write or search resubmission was warranted or performed. GitHub Actions remains disabled. Full build/hosting tests were not rerun for evidence-only documentation. The next weekly source/growth review remains November 2, and ongoing maintenance stays ACTIVE. Receipt: `docs/evidence/maintenance-2026-10-30.json`; append-only search observations and ignored local captures preserve the evidence. Routine unchanged waiting stays quiet.
+
 ## Read-only daily maintenance — 2026-10-29
 
 - **12 health probes passed**, with zero failures and zero timing warnings. Live source remains `8dc0b84a645dfc1ba98da379179c81c86fb2ac6e`, dataset `ea7708682eb63dd8`, 18,142 cases and 52 collection entrances. Chinese/English prompt directories return STATIC with synthetic response samples of 276/431 ms; these are not field Core Web Vitals.
