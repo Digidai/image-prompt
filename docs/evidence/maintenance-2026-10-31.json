@@ -1,0 +1,296 @@
+{
+  "at": "2026-10-31T03:03:34.966Z",
+  "status": "site_healthy_after_repeat_provider_authentication_required",
+  "scope": "Read-only maintenance; one readiness timeout cleared on repeat, Google inspected, current Bing state and Cloudflare metrics limited by login/access. No source changes or release.",
+  "baseline": {
+    "checkout": "ed4aa3d6b0a745faa4eb1e91b382636f9b6095dc",
+    "originMainMatched": true,
+    "dirty": false
+  },
+  "liveBuildInfo": {
+    "project": "image-prompt",
+    "commit": "8dc0b84a645dfc1ba98da379179c81c86fb2ac6e",
+    "sourceSha256": "1d21d434c78ad730b9b7fb9a52c8d87ab19db7dc60fb76989ed1b7498397196b",
+    "snapshotDate": "2026-10-26",
+    "contentUpdatedAt": "2026-10-26",
+    "catalogSnapshotDate": "2026-10-26",
+    "cases": 18142,
+    "originalCases": 474,
+    "opennanaCases": 17668,
+    "contentRelease": "ea7708682eb63dd8",
+    "categories": 23,
+    "canonicalOrigin": "https://prompt.genedai.me",
+    "interfaceLanguages": [
+      "zh-CN",
+      "en"
+    ],
+    "searchSubmissions": {
+      "policy": "listing-landings-v1",
+      "urlCount": 52
+    }
+  },
+  "health": {
+    "at": "2026-10-31T02:59:32.832Z",
+    "status": "healthy",
+    "probes": 12,
+    "failures": [],
+    "warnings": [],
+    "promptDirectories": [
+      {
+        "path": "/prompts/",
+        "method": "GET",
+        "userAgent": "default",
+        "status": 200,
+        "ms": 240,
+        "bytes": 37822,
+        "contentType": "text/html",
+        "xRobots": null,
+        "mitigated": null,
+        "catalogCache": "STATIC"
+      },
+      {
+        "path": "/en/prompts/",
+        "method": "GET",
+        "userAgent": "default",
+        "status": 200,
+        "ms": 227,
+        "bytes": 33523,
+        "contentType": "text/html",
+        "xRobots": null,
+        "mitigated": null,
+        "catalogCache": "STATIC"
+      }
+    ]
+  },
+  "actualIndexation": {
+    "google": {
+      "at": "2026-10-31T02:59:38.635Z",
+      "provider": "Google Search Console",
+      "property": "sc-domain:genedai.me",
+      "kind": "url_inspection",
+      "url": "https://prompt.genedai.me/",
+      "status": "indexed",
+      "homepageIndexed": true,
+      "lastCrawlDisplayed": "Oct 22, 2026, 10:01:32 AM",
+      "lastCrawlTimezone": "Not specified in captured UI",
+      "crawledAs": "Googlebot smartphone",
+      "crawlAllowed": true,
+      "pageFetch": "Successful",
+      "indexingAllowed": true,
+      "userDeclaredCanonical": "https://prompt.genedai.me/",
+      "googleSelectedCanonical": "Inspected URL",
+      "siteIndexedPageCount": null,
+      "siteCountLimitation": "Current exact-host total remains unknown. A separately captured sitemap-filtered report last updated October 23 shows 2 indexed / 50 discovered-not-indexed pages; this delayed submitted-URL snapshot is not a current site-wide count.",
+      "evidence": "Authenticated exact-homepage URL Inspection remains URL is on Google / Page is indexed. Last crawl, successful fetch, allowed indexing and inspected canonical are unchanged. The sitemap field again displays the canonical sitemap, replacing the prior temporary processing error.",
+      "screenshotLocal": "output/maintenance/2026-10-31/google-indexed.png",
+      "textEvidenceLocal": "output/maintenance/2026-10-31/google-indexed.txt",
+      "submissionAction": "none; successful October 22 requested receipt preserved",
+      "notEvidenceOf": "Indexation of newly added cases, site-wide indexed count, ranking, traffic growth or AI citation",
+      "sourceCommit": "8dc0b84a645dfc1ba98da379179c81c86fb2ac6e",
+      "sitemapDiscovery": "Canonical sitemap detected",
+      "referringSitemaps": [
+        "https://prompt.genedai.me/sitemap.xml"
+      ]
+    },
+    "bing": {
+      "at": "2026-10-31T03:00:49.483Z",
+      "provider": "Bing Webmaster Tools",
+      "kind": "url_inspection_attempt",
+      "site": "https://prompt.genedai.me/",
+      "url": "https://prompt.genedai.me/",
+      "status": "unknown_authentication_or_site_access_required",
+      "homepageIndexed": null,
+      "lastCrawl": null,
+      "siteIndexedPageCount": null,
+      "evidence": "With the in-app browser unavailable, an existing Chrome Google sign-in reached Bing but exact-homepage URL Inspection returned User is unauthorized to access the site. Its website selector did not include this property. The Microsoft sign-in path required account input; no credentials or account guesses were entered. Current indexation cannot be verified.",
+      "lastKnownObservation": {
+        "at": "2026-10-30T01:56:52.578Z",
+        "status": "discovered_not_crawled",
+        "homepageIndexed": false,
+        "discoveredOn": "2026-10-20",
+        "receipt": "docs/evidence/maintenance-2026-10-30.json"
+      },
+      "screenshotLocal": [
+        "output/maintenance/2026-10-31/bing-inspection-unauthorized.png",
+        "output/maintenance/2026-10-31/bing-login-required.png"
+      ],
+      "textEvidenceLocal": [
+        "output/maintenance/2026-10-31/bing-inspection-unauthorized.txt",
+        "output/maintenance/2026-10-31/bing-account-site-access.txt",
+        "output/maintenance/2026-10-31/bing-login-required.txt"
+      ],
+      "userAction": "Restore the already-authorized Bing account that owns https://prompt.genedai.me/. Do not re-add, import or verify a new site property.",
+      "submissionAction": "none",
+      "notEvidenceOf": "Current Bing indexation status, removal from the index, zero indexed pages, loss of the original owner permission, ranking or traffic",
+      "sourceCommit": "8dc0b84a645dfc1ba98da379179c81c86fb2ac6e"
+    }
+  },
+  "comparison": {
+    "previousReceipt": "docs/evidence/maintenance-2026-10-30.json",
+    "googleHomepageIndexationChanged": false,
+    "bingHomepageIndexationChanged": null,
+    "googleLastCrawlChanged": false,
+    "siteIndexedCountsRemainUnknown": true,
+    "liveSourceChanged": false,
+    "datasetChanged": false,
+    "googleSitemapDiscoveryFieldChanged": true,
+    "googleSitemapProcessingIndependentlySuccessful": true,
+    "newlyObservedHistoricalScopedReport": false,
+    "scopedIndexReportChanged": false,
+    "bingCurrentObservationAvailable": false,
+    "cloudflareMetricsAvailable": false
+  },
+  "cloudflareMetrics": {
+    "at": "2026-10-31T03:03:34.965Z",
+    "state": "unknown_authentication_required",
+    "window": {
+      "since": "2026-10-29T16:00:00.000Z",
+      "until": "2026-10-30T16:00:00.000Z",
+      "timezone": "Asia/Shanghai",
+      "description": "Previous complete Beijing calendar day; requested but unreadable"
+    },
+    "workerName": "image-prompt",
+    "rumHostname": "prompt.genedai.me",
+    "workerInvocations": null,
+    "rum": {
+      "state": "unknown",
+      "visits": null,
+      "pageLoads": null
+    },
+    "errors": [
+      {
+        "kind": "local_wrangler_authentication_required",
+        "message": "Existing local CLI token expired and refresh failed."
+      }
+    ],
+    "limitations": [
+      "No request, error, RUM PV or UV values were obtained for this window. Missing data is unknown, not zero.",
+      "No historical metric was reused as a current observation.",
+      "The local CLI credential is separate from the Cloudflare-managed build token; native build authentication was not tested or changed."
+    ]
+  },
+  "maintenanceDecision": {
+    "sourceOrContentEdits": 0,
+    "deploymentsRequested": 0,
+    "productionCatalogWrites": 0,
+    "reason": "The first release-readiness request timed out, but a full repeat passed all 12 probes. No reproducible site fault justifies code/deployment churn. Continue healthy-site checks while the existing local CLI authorization and the correct Bing property-owner login are restored.",
+    "lastSuccessfulWeeklySourceRefresh": "2026-10-26",
+    "nextScheduledWeeklyReview": "2026-11-02",
+    "weeklyCatchupNeeded": false,
+    "validation": "Initial daily crawl audit plus one evidence-driven complete repeat; authenticated Google reports; Bing denied-access proof; Wrangler whoami authentication failure; append-only evidence checks. No source changes; full build/hosting tests were not rerun."
+  },
+  "boundaries": {
+    "githubActionsEnabled": false,
+    "cloudflareDashboardUsed": false,
+    "googleIndexingRequests": 0,
+    "bingIndexingRequests": 0,
+    "sitemapSubmissions": 0,
+    "indexNowSubmissions": 0,
+    "searchPolicy": "listing-landings-v1",
+    "searchEntrances": 52,
+    "catalogCases": 18142,
+    "catalogSnapshotDate": "2026-10-26"
+  },
+  "automation": {
+    "id": "image-prompt",
+    "status": "ACTIVE",
+    "ongoingProductMaintenance": true,
+    "indexWatch": "Read-only; Google homepage indexed, current Bing status unknown pending authorized site-owner login. Last reliable Bing observation is October 30 discovered/not crawled."
+  },
+  "notification": {
+    "decision": "NOTIFY",
+    "reason": "New actionable authentication blockers: Cloudflare CLI cannot refresh its expired token, and the available Bing login cannot access this site. Site checks recovered; no search resubmission required.",
+    "firstNotifiedLocalDate": "2026-10-31",
+    "repeatPolicy": "Do not repeat the same login request on unchanged waiting runs; continue independent read-only site checks."
+  },
+  "notClaimed": [
+    "Current Bing actual indexation",
+    "Current site-wide indexed-page counts",
+    "Cloudflare request/errors/PV/UV for the unreadable October 30 window",
+    "A reproducible production outage or a code fix",
+    "Human unique visitors or organic growth",
+    "Any new search submission or production release",
+    "Loss of the original Bing property-owner permissions"
+  ],
+  "localEvidenceSha256": {
+    "output/maintenance/2026-10-31/bing-account-site-access.txt": "5887bbc6f54afa6242505997aab4892884727d4a5ea34198f4f00567046d4fb3",
+    "output/maintenance/2026-10-31/bing-inspection-unauthorized.png": "9824e72a56c47d76017a46ca356a5f25e9a06eb2580de3df7636be8205fb9538",
+    "output/maintenance/2026-10-31/bing-inspection-unauthorized.txt": "a7cc09d9c64ba1564524963f0e13ad29b10840c63cdd9e7372147aabff078cd4",
+    "output/maintenance/2026-10-31/bing-login-required.png": "650a1b0c312feacf2f3d930a0f5d19b7d6856be72f2bc3c5517afc99878c0251",
+    "output/maintenance/2026-10-31/bing-login-required.txt": "2c78f5fb4e20f13abf905be82fb6bf9df854860f7c53b1415ce5323bfe16d6e4",
+    "output/maintenance/2026-10-31/cloudflare-auth-unavailable.json": "43214ee133d567d5364a166a0a5eddade809ce5e1e973af337fe60119b21d2e3",
+    "output/maintenance/2026-10-31/cloudflare-metrics-unavailable.json": "98c726370c20f9c6aaa194f32a360d64481e62a339a6d0d284f1e8ebd9b52286",
+    "output/maintenance/2026-10-31/google-indexed.png": "9f2232b9abc2fe05424089a29f1192ed92840119d7fe8b6b9b7059f21e595437",
+    "output/maintenance/2026-10-31/google-indexed.txt": "fda5f6d199eaaa02154c13bf378c6964af0455b417e115c2f0f87cc34825917c",
+    "output/maintenance/2026-10-31/google-scoped-index-report.png": "9ba18d8aaba98031e8cbaad0dc0f1bfb92cea8c0792110036b5ba96999b867c0",
+    "output/maintenance/2026-10-31/google-scoped-index-report.txt": "5cc725014dbf8c30b33a66c705cc8013fe550efd029147c4197a60f9a6a51339",
+    "output/maintenance/2026-10-31/google-sitemap-report.png": "0abd4124fc22edaf7557fcd12b5f0121137972b87083213d1b5f4ffb7fa92f4f",
+    "output/maintenance/2026-10-31/google-sitemap-report.txt": "8a0930a4966061e9128dfe89e81e16b8ac68f1553023930c2a2db08264c5dffd",
+    "output/maintenance/2026-10-31/health-repeat.json": "63fff527dbfe126f5157c0b096124c3ceaac09e33bb9b3e3954d3f9e29496017",
+    "output/maintenance/2026-10-31/health.json": "975d9c5e76292808a5a618a085dda761ad209574c7c30f9887d869b25ed312b1",
+    "output/maintenance/2026-10-31/provider-observations.json": "3862a9a0e13d8153f120f07769f0707201fed901aa133267cd67d3d4529b537f"
+  },
+  "searchReports": {
+    "googleSitemap": {
+      "at": "2026-10-31T03:01:54.111Z",
+      "provider": "Google Search Console",
+      "property": "sc-domain:genedai.me",
+      "kind": "sitemap_report_read_only",
+      "url": "https://prompt.genedai.me/sitemap.xml",
+      "status": "processed_successfully",
+      "lastReadDisplayed": "10/28/26",
+      "discoveredPages": 52,
+      "discoveredVideos": 0,
+      "evidence": "Authenticated exact-sitemap report still shows Sitemap processed successfully, last read 10/28/26, 52 discovered pages and 0 discovered videos. The exact-homepage Inspection sitemap field also shows the canonical sitemap today.",
+      "screenshotLocal": "output/maintenance/2026-10-31/google-sitemap-report.png",
+      "textEvidenceLocal": "output/maintenance/2026-10-31/google-sitemap-report.txt",
+      "submissionAction": "none; read-only existing sitemap report",
+      "notEvidenceOf": "Actual indexation of 52 URLs, current site-wide indexed count, ranking or traffic growth"
+    },
+    "googleScopedIndexReport": {
+      "at": "2026-10-31T03:02:33.896Z",
+      "provider": "Google Search Console",
+      "property": "sc-domain:genedai.me",
+      "kind": "sitemap_filtered_index_report",
+      "sitemap": "https://prompt.genedai.me/sitemap.xml",
+      "status": "delayed_report_observed",
+      "reportLastUpdatedDisplayed": "10/23/26",
+      "indexedPagesInReport": 2,
+      "notIndexedPagesInReport": 50,
+      "notIndexedReason": "Discovered - currently not indexed",
+      "currentSiteIndexedPageCount": null,
+      "evidence": "Authenticated Page indexing explicitly selects https://prompt.genedai.me/sitemap.xml. The report is still last updated 10/23/26 and shows Indexed 2 / Not indexed 50, reason Discovered - currently not indexed. This is the same delayed submitted-URL snapshot; no domain totals were used.",
+      "screenshotLocal": "output/maintenance/2026-10-31/google-scoped-index-report.png",
+      "textEvidenceLocal": "output/maintenance/2026-10-31/google-scoped-index-report.txt",
+      "submissionAction": "none",
+      "notEvidenceOf": "A new indexation event today, current whole-site indexed count, indexation of newly added prompts, ranking or visitor growth",
+      "historicalIndexedExamplesReceipt": "docs/evidence/maintenance-2026-10-29.json"
+    }
+  },
+  "initialHealth": {
+    "at": "2026-10-31T02:21:30.800Z",
+    "status": "failed",
+    "completedProbes": 11,
+    "failures": [
+      {
+        "check": "catalog release",
+        "message": "The operation was aborted due to timeout"
+      }
+    ],
+    "localReceipt": "output/maintenance/2026-10-31/health.json",
+    "followup": "A complete repeat passed all 12 checks, including release readiness HTTP 200 in 1567 ms. No reproducible outage or application fault established."
+  },
+  "cloudflareAuthentication": {
+    "at": "2026-10-31T03:03:34.965Z",
+    "provider": "Cloudflare CLI",
+    "operation": "npx wrangler whoami",
+    "status": "authentication_required",
+    "exitCode": 1,
+    "evidence": "Not logged in. Your auth token has expired and could not be refreshed, and the environment is non-interactive.",
+    "metricsAttempt": "node docs/tools/cloudflare-metrics.mjs exited 1 because the existing Wrangler session could not return a usable token.",
+    "credentialsWritten": false,
+    "loginInvoked": false,
+    "scopesChanged": false,
+    "userAction": "Restore the existing local Wrangler CLI authorization with npx wrangler login, then verify npx wrangler whoami. No Cloudflare dashboard login is requested."
+  }
+}
