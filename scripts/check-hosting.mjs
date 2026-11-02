@@ -3,8 +3,9 @@ import fs from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
-import {spawn} from 'node:child_process';
+import {spawn,execFileSync} from 'node:child_process';
 import {createServer} from 'node:net';
+import {gzipSync} from 'node:zlib';
 import meta from '../src/catalog-meta.json' with {type:'json'};
 
 // Exercise the real Static Assets HTML routing, which unit-test ASSETS stubs
@@ -17,6 +18,17 @@ const port=socket.address().port;
 await new Promise((resolve,reject)=>socket.close(error=>error?reject(error):resolve()));
 const origin=`http://127.0.0.1:${port}`,env={...process.env,CI:'true',WRANGLER_SEND_METRICS:'false'};
 for(const name of ['CLOUDFLARE_API_TOKEN','CLOUDFLARE_API_KEY','CLOUDFLARE_EMAIL'])delete env[name];
+const exportFixtures=new Map([
+  ['/data/catalog.json',JSON.stringify({prompt:'原始 Prompt <subject>\n'.repeat(4000),end:true})],
+  ['/llms-full.txt','# Complete catalog\n\n'+'原始 Prompt <subject>\n'.repeat(4000)+'END\n']
+]);
+try{
+  for(const [pathname,value] of exportFixtures){
+    const name=pathname.split('/').at(-1)+'.gz',file=path.join(state,name);
+    await fs.writeFile(file,gzipSync(value));
+    execFileSync(process.execPath,[path.join(root,'node_modules/wrangler/bin/wrangler.js'),'r2','object','put',`image-prompt-content/catalog/${meta.releaseId}/${name}`,'--file',file,'--local','--persist-to',state],{cwd:root,env,stdio:'pipe'});
+  }
+}catch(error){await fs.rm(state,{recursive:true,force:true});throw error;}
 const child=spawn(process.execPath,[path.join(root,'node_modules/wrangler/bin/wrangler.js'),'dev','--local','--ip','127.0.0.1','--port',String(port),'--inspector-port','0','--persist-to',state,'--show-interactive-dev-session=false'],{cwd:root,env,detached:process.platform!=='win32',stdio:['ignore','pipe','pipe']});
 let output='',ended=false,spawnError;
 const exited=new Promise(resolve=>child.once('exit',()=>{ended=true;resolve();}));
@@ -50,7 +62,11 @@ try{
     const response=await request(`${prefix}/prompts/${example.id}/`,{headers:{accept:'text/markdown'}}),markdown=await response.text();
     assert.equal(response.status,200);assert(response.headers.get('content-type')?.includes('text/markdown'));assert(markdown.includes(example.promptReady||example.prompt));assert.equal(response.headers.get('vary'),'Accept');checks++;
   }
-  console.log(`Passed ${checks} local Workers/Static Assets checks: localized HTML, real 404 bodies, HEAD and Markdown negotiation. No production resources used.`);
+  for(const [pathname,value] of exportFixtures){
+    const response=await request(pathname);assert.equal(response.status,200,pathname);assert.equal(await response.text(),value,`Complete gzip export must decode exactly once: ${pathname}`);assert.equal(response.headers.get('x-content-release'),meta.releaseId);assert.equal(response.headers.get('x-robots-tag'),'noindex, follow');checks++;
+  }
+  const exportHead=await request('/data/catalog.json',{method:'HEAD'});assert.equal(exportHead.status,200);assert.equal(await exportHead.text(),'');checks++;
+  console.log(`Passed ${checks} local Workers/Static Assets checks: localized HTML, real 404 bodies, HEAD, Markdown and complete compressed exports. Only local R2 fixtures used; no production resources used.`);
 }catch(error){console.error(output);throw error;}
 finally{
   signalChild('SIGTERM');

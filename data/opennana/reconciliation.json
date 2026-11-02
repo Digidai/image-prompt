@@ -1,6 +1,30 @@
 {
   "duplicates": [
     {
+      "id": 28874,
+      "canonicalId": "opennana-28796",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/dark-romantic-lace-bunny-girl-editorial",
+      "sourceUrl": "https://x.com/ViggoHayes/status/2114494456158429262",
+      "author": "@ViggoHayes"
+    },
+    {
+      "id": 28847,
+      "canonicalId": "opennana-18131",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/black-blazer-fashion-editorial-portrait",
+      "sourceUrl": "https://x.com/MissDelulu9/status/2114321139959001218",
+      "author": "@MissDelulu9"
+    },
+    {
+      "id": 28783,
+      "canonicalId": "opennana-28267",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/ultra-realistic-6-photo-collage-canon-g7x-aesthetic",
+      "sourceUrl": "https://x.com/MissDelulu9/status/2113461687902994578",
+      "author": "@MissDelulu9"
+    },
+    {
       "id": 28611,
       "canonicalId": "opennana-28615",
       "collection": "OpenNana",
@@ -41,6 +65,14 @@
       "author": "@oneviske"
     },
     {
+      "id": 27667,
+      "canonicalId": "opennana-27685",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/premium-sports-campaign-poster",
+      "sourceUrl": "https://x.com/VigoCreativeAI/status/2104839244808409564",
+      "author": "@VigoCreativeAI"
+    },
+    {
       "id": 27823,
       "canonicalId": "opennana-27824",
       "collection": "OpenNana",
@@ -54,14 +86,6 @@
       "collection": "OpenNana",
       "url": "https://opennana.com/awesome-prompt-gallery/editorial-geometric-character-poster-style",
       "sourceUrl": "https://x.com/VigoCreativeAI/status/2106366293104603332",
-      "author": "@VigoCreativeAI"
-    },
-    {
-      "id": 27667,
-      "canonicalId": "opennana-27685",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/premium-sports-campaign-poster",
-      "sourceUrl": "https://x.com/VigoCreativeAI/status/2104839244808409564",
       "author": "@VigoCreativeAI"
     },
     {
@@ -129,14 +153,6 @@
       "author": "@AI_money_club"
     },
     {
-      "id": 26088,
-      "canonicalId": "opennana-27326",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/premium-vertical-travel-journal-poster-split",
-      "sourceUrl": "https://x.com/MissDelulu9/status/2096902953110299096",
-      "author": "@MissDelulu9"
-    },
-    {
       "id": 26169,
       "canonicalId": "opennana-26275",
       "collection": "OpenNana",
@@ -151,6 +167,14 @@
       "url": "https://opennana.com/awesome-prompt-gallery/editorial-travel-photography-to-watercolor-illustration",
       "sourceUrl": "https://x.com/Taaruk_/status/2097568880680185895",
       "author": "@Taaruk_"
+    },
+    {
+      "id": 26088,
+      "canonicalId": "opennana-27326",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/premium-vertical-travel-journal-poster-split",
+      "sourceUrl": "https://x.com/MissDelulu9/status/2096902953110299096",
+      "author": "@MissDelulu9"
     },
     {
       "id": 25693,
@@ -697,6 +721,22 @@
       "author": "@SimplyAnnisa"
     },
     {
+      "id": 16798,
+      "canonicalId": "opennana-17541",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/minimalist-cinematic-poster-design",
+      "sourceUrl": "https://x.com/ZephyraLeigh/status/2070067531482882321",
+      "author": "@ZephyraLeigh"
+    },
+    {
+      "id": 16749,
+      "canonicalId": "opennana-19857",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/minimalist-hand-drawn-doodle-illustration-1782402801626",
+      "sourceUrl": "https://x.com/iamsofiaijaz/status/2070038155236090040",
+      "author": "@iamsofiaijaz"
+    },
+    {
       "id": 16849,
       "canonicalId": "opennana-16944",
       "collection": "OpenNana",
@@ -735,54 +775,6 @@
       "url": "https://opennana.com/awesome-prompt-gallery/sunny-bedroom-pink-pajamas-selfie",
       "sourceUrl": "https://x.com/Xmira_belle/status/2010586040403398659",
       "author": "@Xmira_belle"
-    },
-    {
-      "id": 16798,
-      "canonicalId": "opennana-17541",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/minimalist-cinematic-poster-design",
-      "sourceUrl": "https://x.com/ZephyraLeigh/status/2070067531482882321",
-      "author": "@ZephyraLeigh"
-    },
-    {
-      "id": 16749,
-      "canonicalId": "opennana-19857",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/minimalist-hand-drawn-doodle-illustration-1782402801626",
-      "sourceUrl": "https://x.com/iamsofiaijaz/status/2070038155236090040",
-      "author": "@iamsofiaijaz"
-    },
-    {
-      "id": 16721,
-      "canonicalId": "opennana-24994",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/high-contrast-typographic-portrait-poster",
-      "sourceUrl": "https://x.com/harboriis/status/2069761035536613394",
-      "author": "@harboriis"
-    },
-    {
-      "id": 16693,
-      "canonicalId": "opennana-16775",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/whimsical-folk-flat-illustration-doodle-style",
-      "sourceUrl": "https://x.com/Naiknelofar788/status/2069639987008798809",
-      "author": "@Naiknelofar788"
-    },
-    {
-      "id": 16689,
-      "canonicalId": "opennana-19857",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/minimalist-hand-drawn-doodle-illustration-1782311911341",
-      "sourceUrl": "https://x.com/AiwithLariab/status/2069772837355716971",
-      "author": "@AiwithLariab"
-    },
-    {
-      "id": 16671,
-      "canonicalId": "opennana-16857",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/minimal-flat-vector-city-travel-poster",
-      "sourceUrl": "https://x.com/jzaib4269/status/2069450142118465986",
-      "author": "@jzaib4269"
     },
     {
       "id": 16670,
@@ -879,6 +871,38 @@
       "url": "https://opennana.com/awesome-prompt-gallery/ultra-realistic-iphone-front-camera-backstage-selfie",
       "sourceUrl": "https://x.com/doctorwasif/status/2069286390333153746",
       "author": "@doctorwasif"
+    },
+    {
+      "id": 16721,
+      "canonicalId": "opennana-24994",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/high-contrast-typographic-portrait-poster",
+      "sourceUrl": "https://x.com/harboriis/status/2069761035536613394",
+      "author": "@harboriis"
+    },
+    {
+      "id": 16693,
+      "canonicalId": "opennana-16775",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/whimsical-folk-flat-illustration-doodle-style",
+      "sourceUrl": "https://x.com/Naiknelofar788/status/2069639987008798809",
+      "author": "@Naiknelofar788"
+    },
+    {
+      "id": 16689,
+      "canonicalId": "opennana-19857",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/minimalist-hand-drawn-doodle-illustration-1782311911341",
+      "sourceUrl": "https://x.com/AiwithLariab/status/2069772837355716971",
+      "author": "@AiwithLariab"
+    },
+    {
+      "id": 16671,
+      "canonicalId": "opennana-16857",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/minimal-flat-vector-city-travel-poster",
+      "sourceUrl": "https://x.com/jzaib4269/status/2069450142118465986",
+      "author": "@jzaib4269"
     },
     {
       "id": 16593,
@@ -1193,46 +1217,6 @@
       "author": "@Taaruk_"
     },
     {
-      "id": 8284,
-      "canonicalId": "opennana-8312",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/snowy-forest-minimalist-fashion",
-      "sourceUrl": "https://x.com/xmliisu/status/2011750680122269708",
-      "author": "@xmliisu"
-    },
-    {
-      "id": 8319,
-      "canonicalId": "opennana-7748",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/ultra-realistic-executive-portrait",
-      "sourceUrl": "https://x.com/ChillaiKalan__/status/2011653000000127336",
-      "author": "@ChillaiKalan__"
-    },
-    {
-      "id": 8318,
-      "canonicalId": "opennana-8300",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/8k-cinematic-gym-goddess",
-      "sourceUrl": "https://x.com/YaseenK7212/status/2011714932211908616",
-      "author": "@YaseenK7212"
-    },
-    {
-      "id": 8326,
-      "canonicalId": "opennana-7913",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/golden-sunlight-white-dress-portrait",
-      "sourceUrl": "https://x.com/FilmHub00/status/2011825609144766809",
-      "author": "@FilmHub00"
-    },
-    {
-      "id": 8331,
-      "canonicalId": "meigen-2011762827866845208",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/extreme-stretching-food-macro-photography",
-      "sourceUrl": "https://x.com/kaanakz/status/2011762827866845208",
-      "author": "@kaanakz"
-    },
-    {
       "id": 8345,
       "canonicalId": "opennana-8075",
       "collection": "OpenNana",
@@ -1279,6 +1263,46 @@
       "url": "https://opennana.com/awesome-prompt-gallery/90s-supermodel-ana-leopard-backless-allure",
       "sourceUrl": "https://x.com/Aizalkhan11sc/status/2011706028736594208",
       "author": "@Aizalkhan11sc"
+    },
+    {
+      "id": 8284,
+      "canonicalId": "opennana-8312",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/snowy-forest-minimalist-fashion",
+      "sourceUrl": "https://x.com/xmliisu/status/2011750680122269708",
+      "author": "@xmliisu"
+    },
+    {
+      "id": 8319,
+      "canonicalId": "opennana-7748",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/ultra-realistic-executive-portrait",
+      "sourceUrl": "https://x.com/ChillaiKalan__/status/2011653000000127336",
+      "author": "@ChillaiKalan__"
+    },
+    {
+      "id": 8318,
+      "canonicalId": "opennana-8300",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/8k-cinematic-gym-goddess",
+      "sourceUrl": "https://x.com/YaseenK7212/status/2011714932211908616",
+      "author": "@YaseenK7212"
+    },
+    {
+      "id": 8326,
+      "canonicalId": "opennana-7913",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/golden-sunlight-white-dress-portrait",
+      "sourceUrl": "https://x.com/FilmHub00/status/2011825609144766809",
+      "author": "@FilmHub00"
+    },
+    {
+      "id": 8331,
+      "canonicalId": "meigen-2011762827866845208",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/extreme-stretching-food-macro-photography",
+      "sourceUrl": "https://x.com/kaanakz/status/2011762827866845208",
+      "author": "@kaanakz"
     },
     {
       "id": 15925,
@@ -1625,54 +1649,6 @@
       "author": "@john_my07"
     },
     {
-      "id": 8703,
-      "canonicalId": "opennana-8342",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/black-velvet-corset-elegance",
-      "sourceUrl": "https://x.com/AIwithSanchit/status/2012950575772729617",
-      "author": "@AIwithSanchit"
-    },
-    {
-      "id": 8757,
-      "canonicalId": "opennana-8282",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/boho-floral-dress-girl-holding-boot",
-      "sourceUrl": "https://x.com/FilmHub00/status/2012821656830361794",
-      "author": "@FilmHub00"
-    },
-    {
-      "id": 8765,
-      "canonicalId": "opennana-7987",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/elegant-girl-in-traditional-vest",
-      "sourceUrl": "https://x.com/SimplyAnnisa/status/2012736863141019789",
-      "author": "@SimplyAnnisa"
-    },
-    {
-      "id": 8752,
-      "canonicalId": "opennana-8350",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/modern-minimalist-fashion-portrait",
-      "sourceUrl": "https://x.com/john_my07/status/2012770119051817399",
-      "author": "@john_my07"
-    },
-    {
-      "id": 8739,
-      "canonicalId": "opennana-8727",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/modern-hotel-black-lingerie-selfie",
-      "sourceUrl": "https://x.com/Xmira_belle/status/2012761017139462452",
-      "author": "@Xmira_belle"
-    },
-    {
-      "id": 8751,
-      "canonicalId": "opennana-8145",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/la-rooftop-luxury-pool-selfie",
-      "sourceUrl": "https://x.com/Vishnudxe/status/2012814431672205407",
-      "author": "@Vishnudxe"
-    },
-    {
       "id": 8800,
       "canonicalId": "opennana-8112",
       "collection": "OpenNana",
@@ -1742,6 +1718,54 @@
       "collection": "OpenNana",
       "url": "https://opennana.com/awesome-prompt-gallery/dreamland-warm-moments-cute-mascots",
       "sourceUrl": "https://x.com/Vishnudxe/status/2012798232209104911",
+      "author": "@Vishnudxe"
+    },
+    {
+      "id": 8703,
+      "canonicalId": "opennana-8342",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/black-velvet-corset-elegance",
+      "sourceUrl": "https://x.com/AIwithSanchit/status/2012950575772729617",
+      "author": "@AIwithSanchit"
+    },
+    {
+      "id": 8757,
+      "canonicalId": "opennana-8282",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/boho-floral-dress-girl-holding-boot",
+      "sourceUrl": "https://x.com/FilmHub00/status/2012821656830361794",
+      "author": "@FilmHub00"
+    },
+    {
+      "id": 8765,
+      "canonicalId": "opennana-7987",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/elegant-girl-in-traditional-vest",
+      "sourceUrl": "https://x.com/SimplyAnnisa/status/2012736863141019789",
+      "author": "@SimplyAnnisa"
+    },
+    {
+      "id": 8752,
+      "canonicalId": "opennana-8350",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/modern-minimalist-fashion-portrait",
+      "sourceUrl": "https://x.com/john_my07/status/2012770119051817399",
+      "author": "@john_my07"
+    },
+    {
+      "id": 8739,
+      "canonicalId": "opennana-8727",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/modern-hotel-black-lingerie-selfie",
+      "sourceUrl": "https://x.com/Xmira_belle/status/2012761017139462452",
+      "author": "@Xmira_belle"
+    },
+    {
+      "id": 8751,
+      "canonicalId": "opennana-8145",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/la-rooftop-luxury-pool-selfie",
+      "sourceUrl": "https://x.com/Vishnudxe/status/2012814431672205407",
       "author": "@Vishnudxe"
     },
     {
@@ -2361,22 +2385,6 @@
       "author": "@harboriis"
     },
     {
-      "id": 14677,
-      "canonicalId": "opennana-14883",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/melancholic-korean-drama-poster-subway-isolation",
-      "sourceUrl": "https://x.com/saniaspeaks_/status/2056019930051674455",
-      "author": "@saniaspeaks_"
-    },
-    {
-      "id": 14626,
-      "canonicalId": "opennana-14726",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/luxury-facial-aesthetics-analysis-report-minimalist",
-      "sourceUrl": "https://x.com/saniaspeaks_/status/2055857787637522908",
-      "author": "@saniaspeaks_"
-    },
-    {
       "id": 14599,
       "canonicalId": "opennana-14732",
       "collection": "OpenNana",
@@ -2391,6 +2399,22 @@
       "url": "https://opennana.com/awesome-prompt-gallery/maple-syrup-belgian-waffles-food-photography",
       "sourceUrl": "https://x.com/brightcoding/status/2014836577084588445",
       "author": "@brightcoding"
+    },
+    {
+      "id": 14677,
+      "canonicalId": "opennana-14883",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/melancholic-korean-drama-poster-subway-isolation",
+      "sourceUrl": "https://x.com/saniaspeaks_/status/2056019930051674455",
+      "author": "@saniaspeaks_"
+    },
+    {
+      "id": 14626,
+      "canonicalId": "opennana-14726",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/luxury-facial-aesthetics-analysis-report-minimalist",
+      "sourceUrl": "https://x.com/saniaspeaks_/status/2055857787637522908",
+      "author": "@saniaspeaks_"
     },
     {
       "id": 9435,
@@ -2537,22 +2561,6 @@
       "author": "@Vishnudxe"
     },
     {
-      "id": 9623,
-      "canonicalId": "opennana-9621",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/y2k-babe-flash-intimate-vibe",
-      "sourceUrl": "https://x.com/Vishnudxe/status/2015414147006280120",
-      "author": "@Vishnudxe"
-    },
-    {
-      "id": 9816,
-      "canonicalId": "opennana-7701",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/sultry-flash-mirror-selfie",
-      "sourceUrl": "https://x.com/Nooreman1k/status/2015698067949842757",
-      "author": "@Nooreman1k"
-    },
-    {
       "id": 14340,
       "canonicalId": "opennana-15285",
       "collection": "OpenNana",
@@ -2567,6 +2575,22 @@
       "url": "https://opennana.com/awesome-prompt-gallery/mirror-selfie-collage-playful-summer-bikini-girl",
       "sourceUrl": "https://x.com/linkproia/status/2015020914212008410",
       "author": "@linkproia"
+    },
+    {
+      "id": 9623,
+      "canonicalId": "opennana-9621",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/y2k-babe-flash-intimate-vibe",
+      "sourceUrl": "https://x.com/Vishnudxe/status/2015414147006280120",
+      "author": "@Vishnudxe"
+    },
+    {
+      "id": 9816,
+      "canonicalId": "opennana-7701",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/sultry-flash-mirror-selfie",
+      "sourceUrl": "https://x.com/Nooreman1k/status/2015698067949842757",
+      "author": "@Nooreman1k"
     },
     {
       "id": 14284,
@@ -3433,6 +3457,22 @@
       "author": "@xbella_bee"
     },
     {
+      "id": 11383,
+      "canonicalId": "opennana-14229",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/cinematic-hd-restoration",
+      "sourceUrl": "https://x.com/doctorwasif/status/2020369831191572567",
+      "author": "@doctorwasif"
+    },
+    {
+      "id": 11688,
+      "canonicalId": "opennana-11687",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/gen-z-night-doodle-mixed-media",
+      "sourceUrl": "https://x.com/SaixCEO/status/2021125610895180139",
+      "author": "@SaixCEO"
+    },
+    {
       "id": 11330,
       "canonicalId": "opennana-11328",
       "collection": "OpenNana",
@@ -3471,22 +3511,6 @@
       "url": "https://opennana.com/awesome-prompt-gallery/floral-dress-girl-holding-green-boot",
       "sourceUrl": "https://x.com/chatgptpaglu/status/2019996494821044694",
       "author": "@chatgptpaglu"
-    },
-    {
-      "id": 11383,
-      "canonicalId": "opennana-14229",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/cinematic-hd-restoration",
-      "sourceUrl": "https://x.com/doctorwasif/status/2020369831191572567",
-      "author": "@doctorwasif"
-    },
-    {
-      "id": 11688,
-      "canonicalId": "opennana-11687",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/gen-z-night-doodle-mixed-media",
-      "sourceUrl": "https://x.com/SaixCEO/status/2021125610895180139",
-      "author": "@SaixCEO"
     },
     {
       "id": 11561,
@@ -3537,30 +3561,6 @@
       "author": "@aliceglassierai"
     },
     {
-      "id": 11458,
-      "canonicalId": "opennana-11484",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/vintage-red-lips-piano-dream",
-      "sourceUrl": "https://x.com/KeorUnreal/status/2020443836539895854",
-      "author": "@KeorUnreal"
-    },
-    {
-      "id": 11470,
-      "canonicalId": "opennana-11413",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/playful-red-hat-cowgirl-fashion",
-      "sourceUrl": "https://x.com/p3rikly/status/2020585152838054106",
-      "author": "@p3rikly"
-    },
-    {
-      "id": 11542,
-      "canonicalId": "opennana-11319",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/old-photo-portrait-restore",
-      "sourceUrl": "https://x.com/doctorwasif/status/2020810522111955013",
-      "author": "@doctorwasif"
-    },
-    {
       "id": 11615,
       "canonicalId": "opennana-11616",
       "collection": "OpenNana",
@@ -3582,6 +3582,30 @@
       "collection": "OpenNana",
       "url": "https://opennana.com/awesome-prompt-gallery/ultra-realistic-photo-restoration",
       "sourceUrl": "https://x.com/doctorwasif/status/2021099412639056289",
+      "author": "@doctorwasif"
+    },
+    {
+      "id": 11458,
+      "canonicalId": "opennana-11484",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/vintage-red-lips-piano-dream",
+      "sourceUrl": "https://x.com/KeorUnreal/status/2020443836539895854",
+      "author": "@KeorUnreal"
+    },
+    {
+      "id": 11470,
+      "canonicalId": "opennana-11413",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/playful-red-hat-cowgirl-fashion",
+      "sourceUrl": "https://x.com/p3rikly/status/2020585152838054106",
+      "author": "@p3rikly"
+    },
+    {
+      "id": 11542,
+      "canonicalId": "opennana-11319",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/old-photo-portrait-restore",
+      "sourceUrl": "https://x.com/doctorwasif/status/2020810522111955013",
       "author": "@doctorwasif"
     },
     {
@@ -4249,6 +4273,54 @@
       "author": "@YaseenK7212"
     },
     {
+      "id": 7992,
+      "canonicalId": "opennana-8683",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/intense-red-hair-blue-eyes-fashion-foreshortening",
+      "sourceUrl": "https://x.com/YaseenK7212/status/2011050078400626893",
+      "author": "@YaseenK7212"
+    },
+    {
+      "id": 7993,
+      "canonicalId": "opennana-7990",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/fitting-room-burgundy-fashion-editorial",
+      "sourceUrl": "https://x.com/Xmira_belle/status/2011045754090242149",
+      "author": "@Xmira_belle"
+    },
+    {
+      "id": 7997,
+      "canonicalId": "opennana-8034",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/fresh-blue-fashion-ivy-arch",
+      "sourceUrl": "https://x.com/Xmira_belle/status/2010984488264683523",
+      "author": "@Xmira_belle"
+    },
+    {
+      "id": 8009,
+      "canonicalId": "opennana-7882",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/16k-realistic-luxury-pool-fashion",
+      "sourceUrl": "https://x.com/ivytheai/status/2011109907215364597",
+      "author": "@ivytheai"
+    },
+    {
+      "id": 6847,
+      "canonicalId": "opennana-9949",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/candlelight-luxury-restaurant-selfie",
+      "sourceUrl": "https://x.com/xmliisu/status/2007820713546146175",
+      "author": "@xmliisu"
+    },
+    {
+      "id": 6839,
+      "canonicalId": "opennana-9949",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/elegant-lady-mirror-selfie",
+      "sourceUrl": "https://x.com/chatgptpaglu/status/2007837440162385986",
+      "author": "@chatgptpaglu"
+    },
+    {
       "id": 10303,
       "canonicalId": "opennana-10376",
       "collection": "OpenNana",
@@ -4375,54 +4447,6 @@
       "url": "https://opennana.com/awesome-prompt-gallery/hollywood-star-red-latex-couture",
       "sourceUrl": "https://x.com/TheLOKII_/status/2011111204316725282",
       "author": "@TheLOKII_"
-    },
-    {
-      "id": 7992,
-      "canonicalId": "opennana-8683",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/intense-red-hair-blue-eyes-fashion-foreshortening",
-      "sourceUrl": "https://x.com/YaseenK7212/status/2011050078400626893",
-      "author": "@YaseenK7212"
-    },
-    {
-      "id": 7993,
-      "canonicalId": "opennana-7990",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/fitting-room-burgundy-fashion-editorial",
-      "sourceUrl": "https://x.com/Xmira_belle/status/2011045754090242149",
-      "author": "@Xmira_belle"
-    },
-    {
-      "id": 7997,
-      "canonicalId": "opennana-8034",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/fresh-blue-fashion-ivy-arch",
-      "sourceUrl": "https://x.com/Xmira_belle/status/2010984488264683523",
-      "author": "@Xmira_belle"
-    },
-    {
-      "id": 8009,
-      "canonicalId": "opennana-7882",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/16k-realistic-luxury-pool-fashion",
-      "sourceUrl": "https://x.com/ivytheai/status/2011109907215364597",
-      "author": "@ivytheai"
-    },
-    {
-      "id": 6847,
-      "canonicalId": "opennana-9949",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/candlelight-luxury-restaurant-selfie",
-      "sourceUrl": "https://x.com/xmliisu/status/2007820713546146175",
-      "author": "@xmliisu"
-    },
-    {
-      "id": 6839,
-      "canonicalId": "opennana-9949",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/elegant-lady-mirror-selfie",
-      "sourceUrl": "https://x.com/chatgptpaglu/status/2007837440162385986",
-      "author": "@chatgptpaglu"
     },
     {
       "id": 6860,
@@ -4649,6 +4673,78 @@
       "author": "@iamrealsnow"
     },
     {
+      "id": 2585,
+      "canonicalId": "opennana-3035",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/optimus-prime-battles-godzilla-in-rainy-tokyo",
+      "sourceUrl": "https://x.com/HopefulofNFTs/status/2021822131143635160",
+      "author": "@HopefulofNFTs"
+    },
+    {
+      "id": 2582,
+      "canonicalId": "opennana-3088",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/ancient-cliff-city-speeder-chase",
+      "sourceUrl": "https://x.com/umesh_ai/status/2022564055957811600",
+      "author": "@umesh_ai"
+    },
+    {
+      "id": 2580,
+      "canonicalId": "opennana-3036",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/lumine-shattered-temple-sword-art",
+      "sourceUrl": "https://x.com/Kokoboy886711/status/2021421581558481040",
+      "author": "@Kokoboy886711"
+    },
+    {
+      "id": 2565,
+      "canonicalId": "opennana-2581",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/seedance2-neon-rainy-night-rush",
+      "sourceUrl": "https://x.com/johnAGI168/status/2020414452147933437",
+      "author": "@johnAGI168"
+    },
+    {
+      "id": 2511,
+      "canonicalId": "meigen-2021057289785053348",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/frozen-arctic-monster-can",
+      "sourceUrl": "https://x.com/Sheldon056/status/2021057289785053348",
+      "author": "@Sheldon056"
+    },
+    {
+      "id": 2508,
+      "canonicalId": "meigen-2020856678351065532",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/soft-minimal-3d-character",
+      "sourceUrl": "https://x.com/ecommartinez/status/2020911494742016159",
+      "author": "@ecommartinez"
+    },
+    {
+      "id": 2504,
+      "canonicalId": "opennana-12408",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/high-fashion-soft-lighting",
+      "sourceUrl": "https://x.com/YaseenK7212/status/2019133045320691773",
+      "author": "@YaseenK7212"
+    },
+    {
+      "id": 2503,
+      "canonicalId": "meigen-2020367995131105685",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/hummingbird-setting-spray-rainforest",
+      "sourceUrl": "https://x.com/oggii_0/status/2020367995131105685",
+      "author": "@oggii_0"
+    },
+    {
+      "id": 2398,
+      "canonicalId": "opennana-10932",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/warm-luxury-bathroom",
+      "sourceUrl": "https://x.com/xmliisu/status/2018932558868742276",
+      "author": "@xmliisu"
+    },
+    {
       "id": 2669,
       "canonicalId": "meigen-2026703924888219706",
       "collection": "OpenNana",
@@ -4729,150 +4825,6 @@
       "author": "@ZephyraLeigh"
     },
     {
-      "id": 2585,
-      "canonicalId": "opennana-3035",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/optimus-prime-battles-godzilla-in-rainy-tokyo",
-      "sourceUrl": "https://x.com/HopefulofNFTs/status/2021822131143635160",
-      "author": "@HopefulofNFTs"
-    },
-    {
-      "id": 2582,
-      "canonicalId": "opennana-3088",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/ancient-cliff-city-speeder-chase",
-      "sourceUrl": "https://x.com/umesh_ai/status/2022564055957811600",
-      "author": "@umesh_ai"
-    },
-    {
-      "id": 2580,
-      "canonicalId": "opennana-3036",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/lumine-shattered-temple-sword-art",
-      "sourceUrl": "https://x.com/Kokoboy886711/status/2021421581558481040",
-      "author": "@Kokoboy886711"
-    },
-    {
-      "id": 2565,
-      "canonicalId": "opennana-2581",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/seedance2-neon-rainy-night-rush",
-      "sourceUrl": "https://x.com/johnAGI168/status/2020414452147933437",
-      "author": "@johnAGI168"
-    },
-    {
-      "id": 2511,
-      "canonicalId": "meigen-2021057289785053348",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/frozen-arctic-monster-can",
-      "sourceUrl": "https://x.com/Sheldon056/status/2021057289785053348",
-      "author": "@Sheldon056"
-    },
-    {
-      "id": 2508,
-      "canonicalId": "meigen-2020856678351065532",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/soft-minimal-3d-character",
-      "sourceUrl": "https://x.com/ecommartinez/status/2020911494742016159",
-      "author": "@ecommartinez"
-    },
-    {
-      "id": 2504,
-      "canonicalId": "opennana-12408",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/high-fashion-soft-lighting",
-      "sourceUrl": "https://x.com/YaseenK7212/status/2019133045320691773",
-      "author": "@YaseenK7212"
-    },
-    {
-      "id": 2503,
-      "canonicalId": "meigen-2020367995131105685",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/hummingbird-setting-spray-rainforest",
-      "sourceUrl": "https://x.com/oggii_0/status/2020367995131105685",
-      "author": "@oggii_0"
-    },
-    {
-      "id": 2398,
-      "canonicalId": "opennana-10932",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/warm-luxury-bathroom",
-      "sourceUrl": "https://x.com/xmliisu/status/2018932558868742276",
-      "author": "@xmliisu"
-    },
-    {
-      "id": 2375,
-      "canonicalId": "meigen-2018685474131562751",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/ultra-realistic-cinematic-street-portrait",
-      "sourceUrl": "https://x.com/Taaruk_/status/2018685474131562751",
-      "author": "@Taaruk_"
-    },
-    {
-      "id": 2370,
-      "canonicalId": "meigen-2018606861403197833",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/levitating-deodorant-ribbon",
-      "sourceUrl": "https://x.com/harboriis/status/2018606861403197833",
-      "author": "@harboriis"
-    },
-    {
-      "id": 2365,
-      "canonicalId": "opennana-16503",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/layered-paper-cut-whimsy",
-      "sourceUrl": "https://x.com/azed_ai/status/2018641634863575530",
-      "author": "@azed_ai"
-    },
-    {
-      "id": 2354,
-      "canonicalId": "meigen-2017865644365255078",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/indonesian-levitating-food-infographic",
-      "sourceUrl": "https://x.com/Taaruk_/status/2017865644365255078",
-      "author": "@Taaruk_"
-    },
-    {
-      "id": 2341,
-      "canonicalId": "meigen-2017479603921600730",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/orange-studio-closeup",
-      "sourceUrl": "https://x.com/harboriis/status/2017479603921600730",
-      "author": "@harboriis"
-    },
-    {
-      "id": 2321,
-      "canonicalId": "meigen-2017093337564746040",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/commercial-grade-packaging-render",
-      "sourceUrl": "https://x.com/ksa8Turky/status/2017234544806461457",
-      "author": "@ksa8Turky"
-    },
-    {
-      "id": 2310,
-      "canonicalId": "opennana-11369",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/hyper-realistic-yogurt-splash",
-      "sourceUrl": "https://x.com/Taaruk_/status/2017560015620739493",
-      "author": "@Taaruk_"
-    },
-    {
-      "id": 2309,
-      "canonicalId": "meigen-2017420332458774791",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/ice-blue-protein-splash",
-      "sourceUrl": "https://x.com/mehvishs25/status/2017420332458774791",
-      "author": "@mehvishs25"
-    },
-    {
-      "id": 2299,
-      "canonicalId": "opennana-9173",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/korean-glass-skin-collage",
-      "sourceUrl": "https://x.com/miilesus/status/2015899976727974295",
-      "author": "@miilesus"
-    },
-    {
       "id": 2295,
       "canonicalId": "meigen-2015982694228975977",
       "collection": "OpenNana",
@@ -4951,6 +4903,78 @@
       "url": "https://opennana.com/awesome-prompt-gallery/golden-night-goddess",
       "sourceUrl": "https://x.com/YaseenK7212/status/2014995396792103278",
       "author": "@YaseenK7212"
+    },
+    {
+      "id": 2375,
+      "canonicalId": "meigen-2018685474131562751",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/ultra-realistic-cinematic-street-portrait",
+      "sourceUrl": "https://x.com/Taaruk_/status/2018685474131562751",
+      "author": "@Taaruk_"
+    },
+    {
+      "id": 2370,
+      "canonicalId": "meigen-2018606861403197833",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/levitating-deodorant-ribbon",
+      "sourceUrl": "https://x.com/harboriis/status/2018606861403197833",
+      "author": "@harboriis"
+    },
+    {
+      "id": 2365,
+      "canonicalId": "opennana-16503",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/layered-paper-cut-whimsy",
+      "sourceUrl": "https://x.com/azed_ai/status/2018641634863575530",
+      "author": "@azed_ai"
+    },
+    {
+      "id": 2354,
+      "canonicalId": "meigen-2017865644365255078",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/indonesian-levitating-food-infographic",
+      "sourceUrl": "https://x.com/Taaruk_/status/2017865644365255078",
+      "author": "@Taaruk_"
+    },
+    {
+      "id": 2341,
+      "canonicalId": "meigen-2017479603921600730",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/orange-studio-closeup",
+      "sourceUrl": "https://x.com/harboriis/status/2017479603921600730",
+      "author": "@harboriis"
+    },
+    {
+      "id": 2321,
+      "canonicalId": "meigen-2017093337564746040",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/commercial-grade-packaging-render",
+      "sourceUrl": "https://x.com/ksa8Turky/status/2017234544806461457",
+      "author": "@ksa8Turky"
+    },
+    {
+      "id": 2310,
+      "canonicalId": "opennana-11369",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/hyper-realistic-yogurt-splash",
+      "sourceUrl": "https://x.com/Taaruk_/status/2017560015620739493",
+      "author": "@Taaruk_"
+    },
+    {
+      "id": 2309,
+      "canonicalId": "meigen-2017420332458774791",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/ice-blue-protein-splash",
+      "sourceUrl": "https://x.com/mehvishs25/status/2017420332458774791",
+      "author": "@mehvishs25"
+    },
+    {
+      "id": 2299,
+      "canonicalId": "opennana-9173",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/korean-glass-skin-collage",
+      "sourceUrl": "https://x.com/miilesus/status/2015899976727974295",
+      "author": "@miilesus"
     },
     {
       "id": 2191,
@@ -5505,14 +5529,6 @@
       "author": "@TechieBySA"
     },
     {
-      "id": 882,
-      "canonicalId": "gpt4o-083",
-      "collection": "OpenNana",
-      "url": "https://opennana.com/awesome-prompt-gallery/prompt-112",
-      "sourceUrl": "https://x.com/umesh_ai/status/1931637370639520011",
-      "author": "@umesh_ai"
-    },
-    {
       "id": 789,
       "canonicalId": "gpt4o-055",
       "collection": "OpenNana",
@@ -5527,6 +5543,14 @@
       "url": "https://opennana.com/awesome-prompt-gallery/prompt-12",
       "sourceUrl": "https://x.com/azed_ai/status/1923016036120658122",
       "author": "@azed_ai"
+    },
+    {
+      "id": 882,
+      "canonicalId": "gpt4o-083",
+      "collection": "OpenNana",
+      "url": "https://opennana.com/awesome-prompt-gallery/prompt-112",
+      "sourceUrl": "https://x.com/umesh_ai/status/1931637370639520011",
+      "author": "@umesh_ai"
     }
   ],
   "excluded": [
@@ -5587,10 +5611,6 @@
       "reason": "no_public_original_source"
     },
     {
-      "id": 2863,
-      "reason": "no_public_original_source"
-    },
-    {
       "id": 2784,
       "reason": "no_public_original_source"
     },
@@ -5607,11 +5627,7 @@
       "reason": "no_public_original_source"
     },
     {
-      "id": 2652,
-      "reason": "no_public_original_source"
-    },
-    {
-      "id": 2600,
+      "id": 2863,
       "reason": "no_public_original_source"
     },
     {
@@ -5636,6 +5652,14 @@
     },
     {
       "id": 2576,
+      "reason": "no_public_original_source"
+    },
+    {
+      "id": 2652,
+      "reason": "no_public_original_source"
+    },
+    {
+      "id": 2600,
       "reason": "no_public_original_source"
     },
     {

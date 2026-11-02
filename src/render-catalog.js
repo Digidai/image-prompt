@@ -29,8 +29,15 @@ export async function dynamicResponse(request,env,locale='zh'){
  const u=new URL(request.url),p=u.pathname;
  if(['/data/catalog.json','/llms-full.txt'].includes(p)){
   const text=p.endsWith('.txt'),key=`catalog/${meta.releaseId}/${text?'llms-full.txt':'catalog.json'}`;
-  const object=await env.CONTENT.get(key);if(!object)throw Error('Complete export unavailable');
-  return new Response(request.method==='HEAD'?null:object.body,{headers:{'content-type':text?'text/plain; charset=utf-8':'application/json; charset=utf-8','cache-control':'public, max-age=3600','access-control-allow-origin':'*','x-content-release':meta.releaseId,...(object.httpEtag?{etag:object.httpEtag}:{})}});
+  const compressed=await env.CONTENT.get(key+'.gz');
+  const object=compressed||await env.CONTENT.get(key);if(!object)throw Error('Complete export unavailable');
+  // Decompress without buffering the full catalog in the Worker's memory.
+  // The public representation stays ordinary JSON/text; the edge negotiates
+  // HTTP compression. Plain objects remain readable for older snapshots.
+  let body=null;
+  if(request.method==='HEAD')await object.body?.cancel();
+  else body=compressed?object.body.pipeThrough(new DecompressionStream('gzip')):object.body;
+  return new Response(body,{headers:{'content-type':text?'text/plain; charset=utf-8':'application/json; charset=utf-8','cache-control':'public, max-age=3600','access-control-allow-origin':'*','x-content-release':meta.releaseId,...(object.httpEtag?{etag:object.httpEtag}:{})}});
  }
  if(/^\/prompts\/opennana-\d+$/.test(p)||/^\/categories\/opennana(?:\/page\/[1-9]\d*)?$/.test(p)||/^\/prompts\/page\/[1-9]\d*$/.test(p)){u.pathname+='/';return Response.redirect(locale==='en'?localePath(u.href,'en'):u.href,308);}
  const detail=/^\/prompts\/(opennana-\d+)\/(index\.md)?$/.exec(p);

@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {execFileSync} from 'node:child_process';
+import {gzipSync} from 'node:zlib';
 import {data,meta,original,expansion,root} from './catalog-data.mjs';
 import {indexText} from '../src/catalog-search.js';
 import {caseMarkdown} from '../src/catalog-markdown.js';
@@ -29,9 +30,11 @@ console.log(`Prepared ${data.cases.length} rows in ${keyed.size} R2 shards and $
 if(args.has('--prepare-only'))process.exit(0);
 const token=cloudflareToken();
 const uploads=new Map([...keyed].map(([key,rows])=>[key,JSON.stringify(rows)]));
-uploads.set(`catalog/${meta.releaseId}/catalog.json`,JSON.stringify({...data,releaseId:meta.releaseId}));
-uploads.set(`catalog/${meta.releaseId}/llms-full.txt`,'# Image Prompt / Full source-attributed catalog\n\n'+data.cases.map(c=>caseMarkdown(c,meta.snapshotDate)).join('\n---\n'));
-if(!args.has('--db-only'))for(const [key,body] of uploads){let done=false;for(let tries=0;tries<4&&!done;tries++){try{const r=await fetch(`https://api.cloudflare.com/client/v4/accounts/${account}/r2/buckets/${bucket}/objects/${key}`,{method:'PUT',headers:{authorization:'Bearer '+token,'content-type':key.endsWith('.txt')?'text/plain; charset=utf-8':'application/json'},body,signal:AbortSignal.timeout(180000)});if(!r.ok)throw Error('R2 upload HTTP '+r.status);done=true;}catch(e){if(tries===3)throw e;await new Promise(r=>setTimeout(r,2000));}}
+// Store complete exports compressed so weekly publication does not depend on
+// a single 160+ MB upload. Public responses decompress as a bounded stream.
+uploads.set(`catalog/${meta.releaseId}/catalog.json.gz`,gzipSync(JSON.stringify({...data,releaseId:meta.releaseId})));
+uploads.set(`catalog/${meta.releaseId}/llms-full.txt.gz`,gzipSync('# Image Prompt / Full source-attributed catalog\n\n'+data.cases.map(c=>caseMarkdown(c,meta.snapshotDate)).join('\n---\n')));
+if(!args.has('--db-only'))for(const [key,body] of uploads){let done=false;for(let tries=0;tries<4&&!done;tries++){try{const r=await fetch(`https://api.cloudflare.com/client/v4/accounts/${account}/r2/buckets/${bucket}/objects/${key}`,{method:'PUT',headers:{authorization:'Bearer '+token,'content-type':key.endsWith('.gz')?'application/gzip':'application/json'},body,signal:AbortSignal.timeout(180000)});if(!r.ok)throw Error('R2 upload HTTP '+r.status);done=true;}catch(e){if(tries===3)throw e;await new Promise(r=>setTimeout(r,2000));}}
  console.log('Uploaded '+key);
 }
 const mode=args.has('--local')?'--local':'--remote';
