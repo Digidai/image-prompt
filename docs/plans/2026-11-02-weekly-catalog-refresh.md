@@ -41,3 +41,7 @@ The first D1 recovery import hit the provider CPU limit. A read-only follow-up c
 ## Pre-push verification
 
 At `2026-11-02T04:20:16Z`, `npm run ci:build` exited 0: complete build/output validation, 32 tests, 20 real local Worker/Static Assets/R2 fixture checks and remote readiness passed. All 48 new R2 objects match size/MD5; D1 has 18,444 catalog and FTS rows, with all 18,142 prior indexed texts exactly equal. Both new and previous public readiness endpoints return 200/ready. The corrected import committed successfully; a later SSL error affected only a read-only verification call, so verification resumed without repeating the import. Native Cloudflare and post-release full export checks are still required before calling the release delivered.
+
+## Verified delivery
+
+Source `556bf563d4b82ff6a467084fe29913e9b79cf4b7` is live after native Cloudflare build `54ed7448-45a0-42b6-bd6a-edf54e5eb2dc` succeeded. Worker version `9a07a3d0-24f7-4465-8533-9f7c276d120a` has 100% traffic. Independent 52 standard live checks, 33 new/retained bilingual content checks and 12 health probes pass. Both complete decoded public export streams match local byte counts and SHA-256; both HEAD requests pass. The old dataset remains ready. Full evidence is in `docs/evidence/maintenance-2026-11-02.json`; no search resubmissions or GitHub Actions runs occurred. Weekly maintenance continues November 9.

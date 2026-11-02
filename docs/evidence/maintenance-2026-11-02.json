@@ -1,0 +1,891 @@
+{
+  "at": "2026-11-02T04:32:15.140768+00:00",
+  "status": "published_verified",
+  "scope": "Authorized Monday complete free/public source refresh, necessary export-upload repair and requested change from daily to weekly maintenance. No search submission.",
+  "baseline": {
+    "checkout": "e767dff1abaca79a37c6611c5dd225b94a1b8e67",
+    "liveSource": "8dc0b84a645dfc1ba98da379179c81c86fb2ac6e",
+    "releaseId": "ea7708682eb63dd8",
+    "cases": 18142,
+    "dirty": false
+  },
+  "sourceAcquisition": {
+    "at": "2026-11-02T03:27:04.133Z",
+    "reportedTotal": 24328,
+    "manifestCount": 24328,
+    "publicDetailCount": 18701,
+    "paidExcludedCount": 5627,
+    "cached": 0,
+    "failed": [],
+    "authorization": "Project maintainer confirmed full redistribution authorization on 2026-10-20. This does not bypass source access controls."
+  },
+  "sourceCompleteness": {
+    "manifestUniqueCount": 24328,
+    "freeDetailsChecked": 18701,
+    "paidManifestItemsExcluded": 5627,
+    "identityAccessAndFullTextErrors": [],
+    "complete": true
+  },
+  "catalogDelta": {
+    "baselineRelease": "ea7708682eb63dd8",
+    "candidateRelease": "a3953d426135812f",
+    "originalCases": 474,
+    "previousExpansionCases": 17668,
+    "candidateExpansionCases": 17970,
+    "candidateTotalCases": 18444,
+    "addedCount": 302,
+    "removedIds": [],
+    "coreChanges": [],
+    "otherContentChanges": [],
+    "manifest": {
+      "snapshotDate": "2026-11-02",
+      "acquisitionCompletedAt": "2026-11-02T03:27:04.133Z",
+      "releaseId": "a3953d426135812f",
+      "source": "https://opennana.com/awesome-prompt-gallery",
+      "fetchedAt": "2026-11-02T02:44:42.647Z",
+      "reportedTotal": 24328,
+      "manifestCount": 24328,
+      "freeCount": 18701,
+      "paidExcluded": 5627,
+      "downloadedFree": 18701,
+      "imported": 17970,
+      "duplicates": 694,
+      "excluded": 37,
+      "missing": 0,
+      "mediaCounts": {
+        "image": 17378,
+        "video": 592
+      },
+      "sourceDomains": [
+        "x.com",
+        "mp.weixin.qq.com"
+      ],
+      "repairedSourceUrls": 1,
+      "exclusionReasons": {
+        "profile_only_no_original_post": 1,
+        "no_public_original_source": 36
+      },
+      "policy": "Only free, unlocked full prompts with attributed public original URLs. Paid and non-public sources excluded by maintainer instruction. Redistribution authorization confirmed by maintainer 2026-10-20; original creator rights retained. Source URLs are references, not independently verified authorship or current availability."
+    },
+    "gatePassed": true,
+    "limitations": "Zero removed/changed core or other content is the automatic gate. Any actual upstream content/access change requires explicit evidence-backed review before release; no case is silently replaced."
+  },
+  "sourceReview": {
+    "newFreeSourceCandidates": 305,
+    "newImported": 302,
+    "newDuplicates": [
+      {
+        "id": 28874,
+        "canonicalId": "opennana-28796",
+        "collection": "OpenNana",
+        "url": "https://opennana.com/awesome-prompt-gallery/dark-romantic-lace-bunny-girl-editorial",
+        "sourceUrl": "https://x.com/ViggoHayes/status/2114494456158429262",
+        "author": "@ViggoHayes"
+      },
+      {
+        "id": 28847,
+        "canonicalId": "opennana-18131",
+        "collection": "OpenNana",
+        "url": "https://opennana.com/awesome-prompt-gallery/black-blazer-fashion-editorial-portrait",
+        "sourceUrl": "https://x.com/MissDelulu9/status/2114321139959001218",
+        "author": "@MissDelulu9"
+      },
+      {
+        "id": 28783,
+        "canonicalId": "opennana-28267",
+        "collection": "OpenNana",
+        "url": "https://opennana.com/awesome-prompt-gallery/ultra-realistic-6-photo-collage-canon-g7x-aesthetic",
+        "sourceUrl": "https://x.com/MissDelulu9/status/2113461687902994578",
+        "author": "@MissDelulu9"
+      }
+    ],
+    "paidExcluded": 5627,
+    "missing": [],
+    "publicOriginalPostUrls": 302,
+    "mediaType": "image",
+    "allPreviousCanonicalIdsAndCoreFieldsPreserved": true,
+    "sampleNewCases": [
+      {
+        "id": "opennana-28984",
+        "sourceUrl": "https://x.com/spark_chenlin/status/2114930091549462852",
+        "author": "@spark_chenlin",
+        "mediaType": "image",
+        "promptCharacters": 120
+      },
+      {
+        "id": "opennana-28982",
+        "sourceUrl": "https://x.com/nanyuan0412/status/2115273253992485252",
+        "author": "@nanyuan0412",
+        "mediaType": "image",
+        "promptCharacters": 1935
+      },
+      {
+        "id": "opennana-28933",
+        "sourceUrl": "https://x.com/AIjee_tpe/status/2115102847054614796",
+        "author": "@AIjee_tpe",
+        "mediaType": "image",
+        "promptCharacters": 4521
+      }
+    ]
+  },
+  "existingAdditionalCitations": {
+    "cases": [
+      {
+        "caseId": "opennana-16775",
+        "addedCitations": [],
+        "removedCitations": [],
+        "reorderedOnly": true
+      },
+      {
+        "caseId": "opennana-16857",
+        "addedCitations": [],
+        "removedCitations": [],
+        "reorderedOnly": true
+      },
+      {
+        "caseId": "opennana-17541",
+        "addedCitations": [],
+        "removedCitations": [],
+        "reorderedOnly": true
+      },
+      {
+        "caseId": "opennana-18131",
+        "addedCitations": [
+          {
+            "author": "@MissDelulu9",
+            "collection": "OpenNana",
+            "sourceUrl": "https://x.com/MissDelulu9/status/2114321139959001218",
+            "url": "https://opennana.com/awesome-prompt-gallery/black-blazer-fashion-editorial-portrait"
+          }
+        ],
+        "removedCitations": [],
+        "reorderedOnly": false
+      },
+      {
+        "caseId": "opennana-28267",
+        "addedCitations": [
+          {
+            "author": "@MissDelulu9",
+            "collection": "OpenNana",
+            "sourceUrl": "https://x.com/MissDelulu9/status/2113461687902994578",
+            "url": "https://opennana.com/awesome-prompt-gallery/ultra-realistic-6-photo-collage-canon-g7x-aesthetic"
+          }
+        ],
+        "removedCitations": [],
+        "reorderedOnly": false
+      },
+      {
+        "caseId": "opennana-8300",
+        "addedCitations": [],
+        "removedCitations": [],
+        "reorderedOnly": true
+      }
+    ],
+    "noCitationsRemoved": true
+  },
+  "volatileMetadataChanges": {
+    "count": 17662,
+    "scope": "Source view/like/review counters; not claimed as human growth or prompt changes."
+  },
+  "storage": {
+    "receipt": {
+      "at": "2026-11-02T04:19:36.151Z",
+      "releaseId": "a3953d426135812f",
+      "caseCount": 18444,
+      "objectCount": 48,
+      "remoteCount": 18444,
+      "indexedCount": 18444
+    },
+    "readiness": {
+      "observedAt": "2026-11-02T04:19:56.522Z",
+      "httpStatus": 200,
+      "status": "ready",
+      "at": "2026-11-02T04:19:36.151Z",
+      "releaseId": "a3953d426135812f",
+      "caseCount": 18444,
+      "objectCount": 48,
+      "remoteCount": 18444,
+      "indexedCount": 18444
+    },
+    "rollbackReadiness": {
+      "observedAt": "2026-11-02T04:19:57.164Z",
+      "httpStatus": 200,
+      "status": "ready",
+      "at": "2026-10-26T02:07:15.698Z",
+      "releaseId": "ea7708682eb63dd8",
+      "caseCount": 18142,
+      "objectCount": 48,
+      "remoteCount": 18142,
+      "indexedCount": 18142
+    },
+    "oldDatasetsRetained": true,
+    "r2VerifiedObjects": 48,
+    "r2AllSizesAndMd5Match": true,
+    "d1Verification": {
+      "at": "2026-11-02T04:19:36.148Z",
+      "releaseId": "a3953d426135812f",
+      "counts": {
+        "total": 18444,
+        "indexed": 18444
+      },
+      "oldDatasetCounts": {
+        "total": 18142,
+        "indexed": 18142
+      },
+      "fullExistingSearchTextComparison": {
+        "compared": 18142,
+        "changed": 0
+      },
+      "baselineModified": false,
+      "import": "catalog-recovery.sql; regenerated full catalog rows, exact-input-equivalent server-side FTS copy plus 302 new FTS records"
+    }
+  },
+  "exportRepair": {
+    "trigger": "Large raw complete-export upload could not complete reliably: Node connection timeout, curl HTTP/2 framing error and HTTP/1.1 peer reset. No production switch during those failed preparation attempts.",
+    "change": "Store deterministic gzip complete exports; stream-decompress for unchanged public JSON/text URLs. Retain plain-object fallback and cancel unused HEAD bodies.",
+    "beforeLogicalBytes": 249831606,
+    "storedCompressedBytes": 63146404,
+    "comparisonScope": "Storage/publication upload bytes only; not a universal visitor-download speedup or measured field-performance improvement.",
+    "liveCompleteDownloads": {
+      "at": "2026-11-02T04:30:11.850Z",
+      "status": "passed",
+      "sourceCommit": "556bf563d4b82ff6a467084fe29913e9b79cf4b7",
+      "releaseId": "a3953d426135812f",
+      "checks": [
+        {
+          "path": "/data/catalog.json",
+          "status": 200,
+          "logicalBytes": 169375409,
+          "sha256": "132893a0db7050b5a6d05db88bd2c6a3bc4a47a2945ea16d2a230cb04bf30051",
+          "fullDecodedContentMatches": true,
+          "storedCompressedBytes": 34270332,
+          "headStatus": 200,
+          "contentEncoding": null,
+          "ms": 202901
+        },
+        {
+          "path": "/llms-full.txt",
+          "status": 200,
+          "logicalBytes": 80456197,
+          "sha256": "e05298ee61372ab68311e1fbee46c2520573d1791bb51c4a7cfd8daee72bb966",
+          "fullDecodedContentMatches": true,
+          "storedCompressedBytes": 28876072,
+          "headStatus": 200,
+          "contentEncoding": null,
+          "ms": 154948
+        }
+      ],
+      "scope": "Entire decoded public export streams and HEAD; bounded-memory publication check, not human traffic or generation-quality evidence."
+    },
+    "references": [
+      "https://developers.cloudflare.com/workers/runtime-apis/web-standards/#compression-streams",
+      "https://developers.cloudflare.com/workers/runtime-apis/streams/"
+    ]
+  },
+  "d1ImportRecovery": {
+    "firstAttempt": "Provider CPU limit; read-only follow-up confirmed complete transaction rollback, no candidate rows and previous catalog/FTS counts retained.",
+    "correction": "Fixed 150-ID batches using indexed ID lookups; no repeated sort/OFFSET. All 18142 existing exact search inputs compared before reusing stored text.",
+    "localRecoverySqlCheck": {
+      "status": "passed",
+      "statements": 18867,
+      "candidateCatalogAndFtsRows": [
+        18444,
+        18444
+      ],
+      "unchangedBaselineTextsCompared": 18142,
+      "changedBaselineTexts": 0,
+      "copyQueryPlan": [
+        [
+          5,
+          0,
+          54,
+          "SEARCH n USING COVERING INDEX sqlite_autoindex_catalog_entries_1 (release_id=? AND id=?)"
+        ],
+        [
+          470,
+          0,
+          44,
+          "SEARCH o USING COVERING INDEX sqlite_autoindex_catalog_entries_1 (release_id=? AND id=?)"
+        ],
+        [
+          475,
+          0,
+          46,
+          "SCAN f VIRTUAL TABLE INDEX 0:="
+        ]
+      ],
+      "seconds": 2.32,
+      "scope": "Full generated recovery SQL against real SQLite/FTS5 with complete candidate rows and fixture baseline text; query uses fixed ID chunks without temporary sort. Exact real baseline text equality asserted before generation and checked remotely before readiness."
+    },
+    "successfulImport": {
+      "statements": 18867,
+      "providerElapsedMs": 51885.29,
+      "databaseSizeAfterBytes": 733392896
+    },
+    "postImportVerification": "One SSL connection failure affected a read-only verification call after successful import. Resumed verification only; did not repeat successful import. Ready marker written only after complete remote counts and exact old/new search-text equality.",
+    "regularSeeder": "Continues standard full import; one-off recovery scripts/SQL remain ignored locally."
+  },
+  "publication": {
+    "sourceCommit": "556bf563d4b82ff6a467084fe29913e9b79cf4b7",
+    "provider": "Cloudflare Workers Builds",
+    "nativeCheck": {
+      "name": "Workers Builds: image-prompt",
+      "app": "cloudflare-workers-and-pages",
+      "headSha": "556bf563d4b82ff6a467084fe29913e9b79cf4b7",
+      "conclusion": "success",
+      "completedAt": "2026-11-02T04:22:53Z",
+      "buildUrl": "https://dash.cloudflare.com/48d9ccaf5ee7914c803b5d0656462848/workers/services/view/image-prompt/production/builds/54ed7448-45a0-42b6-bd6a-edf54e5eb2dc"
+    },
+    "deployment": {
+      "id": "521ae28b-bc8b-4c0e-8e0d-0fce85fe3b7e",
+      "createdAt": "2026-11-02T04:22:38.504295Z",
+      "versions": [
+        {
+          "version_id": "9a07a3d0-24f7-4465-8533-9f7c276d120a",
+          "percentage": 100
+        }
+      ]
+    },
+    "liveBuildInfo": {
+      "project": "image-prompt",
+      "commit": "556bf563d4b82ff6a467084fe29913e9b79cf4b7",
+      "sourceSha256": "1d21d434c78ad730b9b7fb9a52c8d87ab19db7dc60fb76989ed1b7498397196b",
+      "snapshotDate": "2026-11-02",
+      "contentUpdatedAt": "2026-11-02",
+      "catalogSnapshotDate": "2026-11-02",
+      "cases": 18444,
+      "originalCases": 474,
+      "opennanaCases": 17970,
+      "contentRelease": "a3953d426135812f",
+      "categories": 23,
+      "canonicalOrigin": "https://prompt.genedai.me",
+      "interfaceLanguages": [
+        "zh-CN",
+        "en"
+      ],
+      "searchSubmissions": {
+        "policy": "listing-landings-v1",
+        "urlCount": 52
+      }
+    }
+  },
+  "verification": {
+    "ciBuild": {
+      "command": "npm run ci:build",
+      "startedAt": "2026-11-02T04:20:02.098446+00:00",
+      "completedAt": "2026-11-02T04:20:16.954146+00:00",
+      "exitCode": 0,
+      "log": "output/maintenance/2026-11-02/ci-build.log"
+    },
+    "unitTests": 32,
+    "realLocalHostingChecks": 20,
+    "standardLiveChecks": 52,
+    "targetedBilingualContentChecks": 33,
+    "completeExportChecks": 2,
+    "completeExportHeadChecks": 2,
+    "health": {
+      "at": "2026-11-02T04:24:13.419Z",
+      "status": "healthy",
+      "origin": "https://prompt.genedai.me",
+      "buildInfo": {
+        "project": "image-prompt",
+        "commit": "556bf563d4b82ff6a467084fe29913e9b79cf4b7",
+        "sourceSha256": "1d21d434c78ad730b9b7fb9a52c8d87ab19db7dc60fb76989ed1b7498397196b",
+        "snapshotDate": "2026-11-02",
+        "contentUpdatedAt": "2026-11-02",
+        "catalogSnapshotDate": "2026-11-02",
+        "cases": 18444,
+        "originalCases": 474,
+        "opennanaCases": 17970,
+        "contentRelease": "a3953d426135812f",
+        "categories": 23,
+        "canonicalOrigin": "https://prompt.genedai.me",
+        "interfaceLanguages": [
+          "zh-CN",
+          "en"
+        ],
+        "searchSubmissions": {
+          "policy": "listing-landings-v1",
+          "urlCount": 52
+        }
+      },
+      "probes": [
+        {
+          "path": "/",
+          "method": "GET",
+          "userAgent": "default",
+          "status": 200,
+          "ms": 671,
+          "bytes": 63075,
+          "contentType": "text/html",
+          "xRobots": null,
+          "mitigated": null,
+          "catalogCache": null
+        },
+        {
+          "path": "/en/",
+          "method": "GET",
+          "userAgent": "default",
+          "status": 200,
+          "ms": 321,
+          "bytes": 52641,
+          "contentType": "text/html",
+          "xRobots": null,
+          "mitigated": null,
+          "catalogCache": null
+        },
+        {
+          "path": "/prompts/",
+          "method": "GET",
+          "userAgent": "default",
+          "status": 200,
+          "ms": 216,
+          "bytes": 37822,
+          "contentType": "text/html",
+          "xRobots": null,
+          "mitigated": null,
+          "catalogCache": "STATIC"
+        },
+        {
+          "path": "/en/prompts/",
+          "method": "GET",
+          "userAgent": "default",
+          "status": 200,
+          "ms": 326,
+          "bytes": 33523,
+          "contentType": "text/html",
+          "xRobots": null,
+          "mitigated": null,
+          "catalogCache": "STATIC"
+        },
+        {
+          "path": "/categories/product/",
+          "method": "GET",
+          "userAgent": "default",
+          "status": 200,
+          "ms": 340,
+          "bytes": 51472,
+          "contentType": "text/html",
+          "xRobots": null,
+          "mitigated": null,
+          "catalogCache": null
+        },
+        {
+          "path": "/",
+          "method": "GET",
+          "userAgent": "Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)",
+          "status": 200,
+          "ms": 231,
+          "bytes": 63075,
+          "contentType": "text/html",
+          "xRobots": null,
+          "mitigated": null,
+          "catalogCache": null
+        },
+        {
+          "path": "/robots.txt",
+          "method": "GET",
+          "userAgent": "default",
+          "status": 200,
+          "ms": 215,
+          "bytes": 71,
+          "contentType": "text/plain",
+          "xRobots": null,
+          "mitigated": null,
+          "catalogCache": null
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "userAgent": "default",
+          "status": 200,
+          "ms": 328,
+          "bytes": 15307,
+          "contentType": "application/xml",
+          "xRobots": null,
+          "mitigated": null,
+          "catalogCache": null
+        },
+        {
+          "path": "/api/v1/releases/a3953d426135812f",
+          "method": "GET",
+          "userAgent": "default",
+          "status": 200,
+          "ms": 557,
+          "bytes": 157,
+          "contentType": "application/json; charset=utf-8",
+          "xRobots": "noindex, follow",
+          "mitigated": null,
+          "catalogCache": null
+        },
+        {
+          "path": "/health-check-missing-page",
+          "method": "GET",
+          "userAgent": "default",
+          "status": 404,
+          "ms": 345,
+          "bytes": 5569,
+          "contentType": "text/html",
+          "xRobots": null,
+          "mitigated": null,
+          "catalogCache": null
+        },
+        {
+          "path": "/en/health-check-missing-page",
+          "method": "GET",
+          "userAgent": "default",
+          "status": 404,
+          "ms": 332,
+          "bytes": 5272,
+          "contentType": "text/html",
+          "xRobots": null,
+          "mitigated": null,
+          "catalogCache": null
+        },
+        {
+          "path": "/build-info.json",
+          "method": "GET",
+          "userAgent": "default",
+          "status": 200,
+          "ms": 553,
+          "bytes": 597,
+          "contentType": "application/json",
+          "xRobots": "noindex, follow",
+          "mitigated": null,
+          "catalogCache": null
+        }
+      ],
+      "failures": [],
+      "warnings": [],
+      "submissionsPerformed": 0,
+      "limitations": [
+        "Synthetic User-Agent tests do not establish genuine Bingbot access or actual indexation.",
+        "Response timings are local synthetic observations, not field Core Web Vitals or traffic metrics.",
+        "Applicable robots agent groups require review if root-blocking rules are detected."
+      ]
+    },
+    "dependencyVulnerabilities": 0
+  },
+  "actualIndexation": {
+    "observedBeforeThisPublication": true,
+    "productionSourceAtInspection": "8dc0b84a645dfc1ba98da379179c81c86fb2ac6e",
+    "observations": [
+      {
+        "at": "2026-11-02T02:45:10.446Z",
+        "provider": "Google Search Console",
+        "property": "sc-domain:genedai.me",
+        "kind": "url_inspection",
+        "url": "https://prompt.genedai.me/",
+        "status": "indexed",
+        "homepageIndexed": true,
+        "lastCrawlDisplayed": "Oct 31, 2026, 12:42:18 PM",
+        "lastCrawlTimezone": "Not specified in captured UI",
+        "crawledAs": "Googlebot smartphone",
+        "crawlAllowed": true,
+        "pageFetch": "Successful",
+        "indexingAllowed": true,
+        "userDeclaredCanonical": "https://prompt.genedai.me/",
+        "googleSelectedCanonical": "Inspected URL",
+        "siteIndexedPageCount": null,
+        "siteCountLimitation": "Current exact-host total remains unknown. A separately captured sitemap-filtered report last updated October 23 shows 2 indexed / 50 discovered-not-indexed pages; this delayed submitted-URL snapshot is not a current site-wide count.",
+        "evidence": "Authenticated exact-homepage URL Inspection still shows URL is on Google / Page is indexed. Last crawl remains Oct 31, 2026, 12:42:18 PM as displayed without timezone. Googlebot smartphone fetch is successful, crawl/indexing are allowed and selected canonical is the inspected URL. The canonical referring sitemap is displayed again. Observed before the weekly content publication; no indexation claim for the new snapshot.",
+        "screenshotLocal": "output/maintenance/2026-11-02/google-indexed.png",
+        "textEvidenceLocal": "output/maintenance/2026-11-02/google-indexed.txt",
+        "submissionAction": "none; successful October 22 requested receipt preserved",
+        "notEvidenceOf": "Indexation of newly added cases, site-wide indexed count, ranking, traffic growth or AI citation",
+        "sourceCommit": "8dc0b84a645dfc1ba98da379179c81c86fb2ac6e",
+        "sitemapDiscovery": "Canonical sitemap detected",
+        "referringSitemaps": [
+          "https://prompt.genedai.me/sitemap.xml"
+        ],
+        "screenshotSha256": "924402a236de99c49514a03fd2efda5e9dc28dbee085e63a5e38cfe6c8b759a0"
+      },
+      {
+        "at": "2026-11-02T02:44:54.820Z",
+        "provider": "Bing Webmaster Tools",
+        "kind": "login_session_check",
+        "site": "https://prompt.genedai.me/",
+        "url": "https://prompt.genedai.me/",
+        "status": "unknown_authentication_required",
+        "homepageIndexed": null,
+        "lastCrawl": null,
+        "siteIndexedPageCount": null,
+        "evidence": "Opening the exact-site Bing Webmaster Tools URL redirects to its about/sign-in page. No authenticated URL Inspection or Indexed URLs report was available. The previously notified login boundary remains pending; no account selection, credential entry, permission change, site import or verification was attempted today.",
+        "lastKnownObservation": {
+          "at": "2026-10-30T01:56:52.578Z",
+          "status": "discovered_not_crawled",
+          "homepageIndexed": false,
+          "discoveredOn": "2026-10-20",
+          "receipt": "docs/evidence/maintenance-2026-10-30.json"
+        },
+        "screenshotLocal": "output/maintenance/2026-11-02/bing-login-required.png",
+        "textEvidenceLocal": "output/maintenance/2026-11-02/bing-login-required.txt",
+        "previousLoginBlockerReceipt": "docs/evidence/maintenance-2026-10-31.json",
+        "userActionAlreadyNotifiedOn": "2026-10-31",
+        "submissionAction": "none",
+        "notEvidenceOf": "Current Bing indexation, removal from the index, zero indexed pages, loss of the original owner permission, ranking or traffic",
+        "sourceCommit": "8dc0b84a645dfc1ba98da379179c81c86fb2ac6e",
+        "screenshotSha256": "3b8d52d1822e3f0d9ec821f162fc34b3d9f3649ded8e4f96de936f8b3dee5dc7"
+      },
+      {
+        "at": "2026-11-02T02:51:15.331Z",
+        "provider": "Google Search Console",
+        "property": "sc-domain:genedai.me",
+        "kind": "sitemap_filtered_index_report",
+        "sitemap": "https://prompt.genedai.me/sitemap.xml",
+        "status": "delayed_report_observed",
+        "reportLastUpdatedDisplayed": "10/23/26",
+        "indexedPagesInReport": 2,
+        "notIndexedPagesInReport": 50,
+        "notIndexedReason": "Discovered - currently not indexed",
+        "currentSiteIndexedPageCount": null,
+        "evidence": "Authenticated Page indexing explicitly selects https://prompt.genedai.me/sitemap.xml. Report remains last updated 10/23/26 with 2 indexed and 50 discovered-not-indexed. This delayed submitted-URL snapshot does not establish the current site-wide indexed count.",
+        "screenshotLocal": "output/maintenance/2026-11-02/google-scoped-index-report.png",
+        "textEvidenceLocal": "output/maintenance/2026-11-02/google-scoped-index-report.txt",
+        "submissionAction": "none",
+        "notEvidenceOf": "A new indexation event today, current whole-site indexed count, indexation of newly added prompts, ranking or visitor growth",
+        "historicalIndexedExamplesReceipt": "docs/evidence/maintenance-2026-10-29.json",
+        "screenshotSha256": "8f97c818452f2a0d75cab8671d12b14894f4771416ac0623282c5c0c0bf40203"
+      },
+      {
+        "at": "2026-11-02T02:49:43.620Z",
+        "url": "https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Agenedai.me&page=~%5Ehttps%3A%2F%2Fprompt%5C.genedai%5C.me%2F&num_of_days=7",
+        "property": "sc-domain:genedai.me",
+        "searchType": "Web",
+        "pageRegex": "^https://prompt\\.genedai\\.me/",
+        "dateFromDisplayed": "2026-10-24",
+        "dateToDisplayed": "2026-10-30",
+        "clicks": 0,
+        "impressions": 0,
+        "queryRows": "No data",
+        "lastUpdateDisplayed": "3 hours ago",
+        "limitations": "Filtered report may be partial; provider date window lags current day. Average position is not meaningful with zero impressions.",
+        "provider": "Google Search Console",
+        "kind": "exact_host_search_performance_read_only",
+        "status": "sparse_report_observed",
+        "screenshotLocal": "output/maintenance/2026-11-02/google-performance-week.png",
+        "textEvidenceLocal": "output/maintenance/2026-11-02/google-performance-week.txt",
+        "submissionAction": "none",
+        "notEvidenceOf": "Current whole-site index count, ranking with zero impressions, causal release effect or human traffic growth",
+        "screenshotSha256": "0aab8a6e5a0cf1d4f88aaf24cda91ef82915b33c55543f13e3aa61d5efb82c26"
+      }
+    ],
+    "googleHomepage": "indexed",
+    "bingHomepage": null,
+    "bingLimitation": "Authorized site-owner login remains pending since the October 31 notification. Current status/count unknown; last reliable October 30 discovered/not crawled is historical. No repeated login request.",
+    "siteIndexedCounts": null,
+    "siteCountLimitation": "Google exact-sitemap index report still dated October 23: 2 indexed and 50 discovered/not indexed. It is delayed, not current site-wide total. Bing report inaccessible.",
+    "submissionActions": 0,
+    "priorGoogleRequestedReceiptPreserved": true
+  },
+  "cloudflareMetrics": {
+    "at": "2026-11-02T02:42:23.203Z",
+    "window": {
+      "since": "2026-10-31T16:00:00.000Z",
+      "until": "2026-11-01T16:00:00.000Z",
+      "timezone": "Asia/Shanghai",
+      "description": "Previous complete Beijing calendar day"
+    },
+    "workerName": "image-prompt",
+    "rumHostname": "prompt.genedai.me",
+    "workerInvocations": {
+      "errors": 0,
+      "requests": 245
+    },
+    "rum": {
+      "state": "recorded_beacons",
+      "groups": [
+        {
+          "count": 5,
+          "sum": {
+            "visits": 3
+          }
+        }
+      ]
+    },
+    "errors": [],
+    "limitations": [
+      "Worker requests include bots, probes, APIs, assets and alternate hosts. They are not PV, UV or organic visitors.",
+      "Empty RUM data does not establish zero visitors.",
+      "Bing/Google actual indexation and search performance require separate provider evidence."
+    ]
+  },
+  "weeklyGrowthBaseline": {
+    "host": "prompt.genedai.me",
+    "worker": "image-prompt",
+    "days": [
+      {
+        "beijingDay": "2026-10-26",
+        "window": {
+          "since": "2026-10-25T16:00:00.000Z",
+          "until": "2026-10-26T16:00:00.000Z",
+          "timezone": "Asia/Shanghai",
+          "description": "Previous complete Beijing calendar day"
+        },
+        "requests": 1162,
+        "errors": 0,
+        "rumGroupCount": 13,
+        "rumSummedVisits": 6,
+        "evidence": "docs/evidence/maintenance-2026-10-27.json",
+        "observedAt": "2026-10-27T02:28:02.362Z"
+      },
+      {
+        "beijingDay": "2026-10-27",
+        "window": {
+          "since": "2026-10-26T16:00:00.000Z",
+          "until": "2026-10-27T16:00:00.000Z",
+          "timezone": "Asia/Shanghai",
+          "description": "Previous complete Beijing calendar day"
+        },
+        "requests": 835,
+        "errors": 0,
+        "rumGroupCount": 5,
+        "rumSummedVisits": 3,
+        "evidence": "docs/evidence/maintenance-2026-10-28.json",
+        "observedAt": "2026-10-28T02:02:10.712Z"
+      },
+      {
+        "beijingDay": "2026-10-28",
+        "window": {
+          "since": "2026-10-27T16:00:00.000Z",
+          "until": "2026-10-28T16:00:00.000Z",
+          "timezone": "Asia/Shanghai",
+          "description": "Previous complete Beijing calendar day"
+        },
+        "requests": 306,
+        "errors": 0,
+        "rumGroupCount": 5,
+        "rumSummedVisits": 4,
+        "evidence": "docs/evidence/maintenance-2026-10-29.json",
+        "observedAt": "2026-10-29T02:03:17.631Z"
+      },
+      {
+        "beijingDay": "2026-10-29",
+        "window": {
+          "since": "2026-10-28T16:00:00.000Z",
+          "until": "2026-10-29T16:00:00.000Z",
+          "timezone": "Asia/Shanghai",
+          "description": "Previous complete Beijing calendar day"
+        },
+        "requests": 569,
+        "errors": 0,
+        "rumGroupCount": 20,
+        "rumSummedVisits": 7,
+        "evidence": "docs/evidence/maintenance-2026-10-30.json",
+        "observedAt": "2026-10-30T01:55:46.059Z"
+      },
+      {
+        "beijingDay": "2026-10-30",
+        "window": {
+          "since": "2026-10-29T16:00:00.000Z",
+          "until": "2026-10-30T16:00:00.000Z",
+          "timezone": "Asia/Shanghai",
+          "description": "Backfill of the previously unreadable complete October 30 Beijing calendar day"
+        },
+        "requests": 459,
+        "errors": 0,
+        "rumGroupCount": 2,
+        "rumSummedVisits": 2,
+        "evidence": "docs/evidence/maintenance-2026-11-01.json",
+        "observedAt": "2026-11-01T02:06:52.732Z"
+      },
+      {
+        "beijingDay": "2026-10-31",
+        "window": {
+          "since": "2026-10-30T16:00:00.000Z",
+          "until": "2026-10-31T16:00:00.000Z",
+          "timezone": "Asia/Shanghai",
+          "description": "Previous complete Beijing calendar day"
+        },
+        "requests": 1230,
+        "errors": 0,
+        "rumGroupCount": 40,
+        "rumSummedVisits": 5,
+        "evidence": "docs/evidence/maintenance-2026-11-01.json",
+        "observedAt": "2026-11-01T02:05:34.019Z"
+      },
+      {
+        "beijingDay": "2026-11-01",
+        "window": {
+          "since": "2026-10-31T16:00:00.000Z",
+          "until": "2026-11-01T16:00:00.000Z",
+          "timezone": "Asia/Shanghai",
+          "description": "Previous complete Beijing calendar day"
+        },
+        "requests": 245,
+        "errors": 0,
+        "rumGroupCount": 5,
+        "rumSummedVisits": 3,
+        "evidence": "output/metrics/cloudflare-2026-11-01-2026-11-02T02-42-23.203Z.json",
+        "observedAt": "2026-11-02T02:42:23.203Z"
+      }
+    ],
+    "totals": {
+      "requests": 4806,
+      "errors": 0,
+      "rumGroupCount": 90,
+      "rumSummedVisits": 30
+    },
+    "comparison": "No earlier complete seven-day post-launch baseline with the same scope; no weekly human-traffic growth claim. Daily request variation does not establish organic growth or release impact.",
+    "limitations": "Worker requests include bots/checks/APIs/assets/alternate hosts. Exact-host RUM counts and summed visits are not human UV, organic sessions or conversion evidence."
+  },
+  "growthDecision": {
+    "value": "302 new eligible source-attributed prompts and reliable complete-export publication; no speculative landing-page expansion.",
+    "googleComparison": "Exact-host Web report October 24-30: 0 impressions, 0 clicks, no query rows; earlier October 17-23 had 2 impressions / 0 clicks. Reports sparse, filtered and lagged; no causal trend or ranking claim.",
+    "futureComparison": "Next weekly review compares matching complete-day scopes and provider windows; no organic growth claimed today."
+  },
+  "boundaries": {
+    "githubActionsEnabled": false,
+    "cloudflareOperations": "Existing CLI/API authorization only; no dashboard login or new credential/scope/billing change.",
+    "searchPromotionPolicy": "listing-landings-v1",
+    "promotedUrls": 52,
+    "paidNonPublicAndMissingOriginalSourcesExcluded": true,
+    "newSourcesIntroduced": false,
+    "outreachOrPaidPromotion": false,
+    "authenticatedScreenshots": "Local ignored output only."
+  },
+  "automation": {
+    "id": "image-prompt",
+    "status": "ACTIVE",
+    "schedule": "Weekly Monday 10:00 Asia/Shanghai",
+    "previousSchedule": "Daily 10:00 Asia/Shanghai",
+    "frequencyChangedByMaintainerOn": "2026-11-02",
+    "nextScheduledRun": "2026-11-09T10:00:00+08:00",
+    "notificationPolicy": "Meaningful release/indexation change, failure or required user action; otherwise quiet."
+  },
+  "notClaimed": [
+    "New prompt indexation",
+    "Current site-wide indexed counts",
+    "Human PV/UV or organic-traffic growth",
+    "Independent generation testing, original authorship or current accessibility of every cited post",
+    "Universal visitor speedup from compressed-at-rest exports"
+  ],
+  "localEvidenceSha256": {
+    "output/maintenance/2026-11-02/health-before.json": "4d882ca5857bd813f806281fa44c34953861812dcdd551bf4d92923a65373dbc",
+    "output/maintenance/2026-11-02/health-after.json": "aaf7f3f6a3cb4c2915ce5712108a524a1b37fc6d1edf748b4b07b697f39a9cca",
+    "output/maintenance/2026-11-02/catalog-comparison.json": "f5e0af345f4af21d5f462bf877436ddbeff3eef3a66e29dba7c4709ee5991e29",
+    "output/maintenance/2026-11-02/source-completeness-audit.json": "16ff9d13b187fce4188a0489168e0ffa138e4341be00451991ff56a6f1d49672",
+    "output/maintenance/2026-11-02/source-sync-summary.json": "28bd5f0f83fcad23c29cffd4c62dcde4fbda9aa58c6192ce85a1b8c7a0db1ea4",
+    "output/maintenance/2026-11-02/source-release-review.json": "53bed5f06576a190520557b5368fc33d3b7a8ef62226c314a550530b7e9103a8",
+    "output/maintenance/2026-11-02/additional-citations-review.json": "b66a7e152bd703788f3b4b3afbcf209e391125cf2674529572ea8b28ad78f5b5",
+    "output/maintenance/2026-11-02/r2-content-verification.json": "8d8b1949bc12cda02f3a8506c31b968783fe6f1bf17f4f94a0682b6027128ad0",
+    "output/maintenance/2026-11-02/d1-after-failed-import.json": "0dd7200b9ebe3acb733115e5589f5cccea7cbda4230dad713d42b3550c26ec48",
+    "output/maintenance/2026-11-02/d1-recovery-plan.json": "e42c9314fd0a1514b7938cf7ec5a3eb9bdeab0636b6452bfb7bbeaf954846b9b",
+    "output/maintenance/2026-11-02/d1-recovery-local-check.json": "f17d79eea9457b722632f4ae996f0f187667bb45b82cdb32a20458de9e2a11b5",
+    "output/maintenance/2026-11-02/d1-recovery-verification.json": "cc2d38e7e7e2f8d65032d2b9e713357eb2f38cd7a624c178324353eda3859533",
+    "output/maintenance/2026-11-02/seed-catalog-receipt.json": "0c70c223d79e75d13cf8f29769cc20fe82f6459de034d1c90e7bfa38ba0d36b3",
+    "output/maintenance/2026-11-02/release-readiness.json": "47dff68654522744c75a7c21ed21d1a56e438d4349c792090b4414aa293c9e3f",
+    "output/maintenance/2026-11-02/ci-build-result.json": "8ebde07b9a6ca1f873fe0dda66cbf0c5802f7a4b95620cdeb51c7e05f47f11a9",
+    "output/maintenance/2026-11-02/cloudflare-check-runs.json": "6f298ec13a43e4026aa7bae9ba4426f4fd0c5b983803d84e8e760b8652a4050f",
+    "output/maintenance/2026-11-02/publication-proof.json": "03b76489714a70ea399cf4e9d474f36a3da47f03b40f66c8c93ca0e78c93d92f",
+    "output/maintenance/2026-11-02/targeted-live.json": "69d5e1574e6cf27fd7ffcc349557536849fbac905602b60cc31cc9cac02a0698",
+    "output/maintenance/2026-11-02/complete-exports-live.json": "d133ec96048cd198e12491b5e9422432dfc12648bbc9c10e4f1811b6bfecd3e5",
+    "output/maintenance/2026-11-02/provider-observations.json": "f87f75cef7dde8539ae0b8c02f850442d1277e5f02a1ca049f146ce539ff4380",
+    "output/maintenance/2026-11-02/weekly-cloudflare-baseline.json": "8e8c495cdfd6d564085b14dae7d2d995a4ded45e43a1795ae6cd187bfdbfbb52",
+    "output/maintenance/2026-11-02/ledger-append-proof.json": "0d29583f08ea21a3cf336a7c82dcac0f25c526bcd56b159dcfe0f050a61f8ba9",
+    "output/maintenance/2026-11-02/google-indexed.png": "924402a236de99c49514a03fd2efda5e9dc28dbee085e63a5e38cfe6c8b759a0",
+    "output/maintenance/2026-11-02/google-scoped-index-report.png": "8f97c818452f2a0d75cab8671d12b14894f4771416ac0623282c5c0c0bf40203",
+    "output/maintenance/2026-11-02/google-performance-week.png": "0aab8a6e5a0cf1d4f88aaf24cda91ef82915b33c55543f13e3aa61d5efb82c26",
+    "output/maintenance/2026-11-02/bing-login-required.png": "3b8d52d1822e3f0d9ec821f162fc34b3d9f3649ded8e4f96de936f8b3dee5dc7"
+  }
+}
