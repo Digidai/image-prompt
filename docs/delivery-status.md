@@ -2,6 +2,18 @@
 
 Launch date: **2026-10-20, Asia/Shanghai**. Public site: **https://prompt.genedai.me/**. Public repository: **https://github.com/Digidai/image-prompt**.
 
+## Weekly catalog refresh — published and verified, 2026-11-09
+
+Added **178 free image prompts with public original-post citations**. The catalog now contains **18,622 cases**, including 474 original cases and 18,148 from OpenNana. The complete manifest covered 24,536 entries. Acquisition resolved all 18,881 free details, using 18,701 still-valid cached details and 180 new fetches. Preparation excluded 5,655 paid entries, reconciled 696 duplicates and excluded 37 records without eligible original references. All published IDs, original texts and translations, authors, primary sources, licenses and curated order are preserved. Two existing cases gained a citation and five citation arrays only reordered.
+
+Cloudflare Workers Builds published source `b326c121106238be35c00e21d44501310598108b` and dataset `4d46cd6d6d588e2b`. Worker version `8d26aa41-9e74-4ef8-b5a9-6bd9bc86d64d` serves 100% of traffic. All 49 storage objects match their checksums. D1 contains 18,622 catalog rows and 18,622 search rows, including exact matches for all 18,444 previous search texts. The previous dataset remains ready for rollback. [Native Cloudflare build](https://dash.cloudflare.com/48d9ccaf5ee7914c803b5d0656462848/workers/services/view/image-prompt/production/builds/25c95143-137b-4084-a5c1-cf6abbf1bc95)
+
+Passed 32 unit and API tests, 20 real local hosting checks, 52 standard live checks and 33 targeted bilingual HTML, Markdown and API checks. Both 12-probe crawl audits report zero failures and timing warnings. The complete live JSON and text exports match the expected decoded byte counts and SHA-256 hashes. Both HEAD checks passed. The sitemap contains 52 bilingual list entrances. GitHub Actions is disabled, and npm audit reports zero vulnerabilities.
+
+Google confirms the exact homepage is indexed, with the last crawl displayed as October 31 at 12:42:18 PM in an unspecified time zone. The sitemap-filtered coverage report is still dated October 23, with 2 indexed and 50 discovered but unindexed pages. Current host-wide coverage is unknown. Bing indexation and performance are unknown because the existing site-owner sign-in is pending. This week's provider actions were read-only.
+
+For November 2–8 versus October 26–November 1 Beijing time, matched Cloudflare queries recorded 7,036 versus 4,806 Worker requests and zero errors in each window. Exact-host RUM `count` was 65 versus 60, and the provider's summed `visits` field was 33 versus 30. These fields include measurement and request activity with different scopes, so human traffic and release impact remain unmeasured. Exact-host Google Web performance showed zero clicks and impressions for October 31–November 6, as in the prior seven-day report. The week's update focuses on eligible new content. Next weekly run is November 16 at 10:00 Beijing time. [Maintenance evidence](evidence/maintenance-2026-11-09.json)
+
 ## Weekly catalog refresh and export repair — published and verified, 2026-11-02
 
 - **Maintenance is now weekly, Monday 10:00 Asia/Shanghai**, per the maintainer's November 2 request. The existing automation remains ACTIVE in this chat; next scheduled run is **November 9**. Healthy/no-change and normal waiting runs remain quiet. No duplicate automation was created.
